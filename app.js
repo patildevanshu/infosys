@@ -49,7 +49,7 @@ function renderTestCards() {
 
   container.innerHTML = '';
   tests.forEach((test, idx) => {
-    const difficultyLabel = { 4: ' 🔥 Advanced', 5: ' 💀 Expert', 6: ' ⭐ PYQ Special' };
+    const difficultyLabel = { 4: ' 🔥 Advanced', 5: ' 💀 Expert', 6: ' ⭐ PYQ Special', 7: ' ☠️ GAND FAAD' };
     const topicHighlights = {
       0: 'Syllogisms, Data Sufficiency, Coding-Decoding, Number Series, Ratios, P&C, RC Passage (IoT), Critical Reasoning, Bubble Sort',
       1: 'Seating Arrangements, Blood Relations, Mixture Problems, Probability, Boats & Streams, RC Passage (Climate Change), Recursion, Binary Search, Magic Square',
@@ -57,7 +57,8 @@ function renderTestCards() {
       3: 'Prime Series, Alligation, Derangement, Shadow Direction, RC Passage (Blockchain), Affect/Effect, Stack Operations, Fibonacci Pseudocode, Digital Privacy Essay',
       4: '🔥 HARD: Trap DS (x²=4 puzzle), 4-statement Syllogisms, 10-person Circular Seating, Tower of Hanoi, RC (Cognitive Biases & Behavioral Economics), OBFUSCATE/MAGNANIMOUS vocab, Inverted Conditionals, Quantum Computing Essay',
       5: '💀 EXPERT: DS where NEITHER stmt is sufficient, 3-set Venn Diagram, 2¹⁰⁰ mod 7 (cyclicity), XOR missing number, Geometric Probability, RC (Neuroplasticity & TBI), SANCTION/CLEAVE dual-meaning vocab, AI Existential Risk Essay',
-      6: '⭐ PYQ: Real Infosys Questions — FRIEND→HUMJTK coding, 5km South direction, Train passing platform (132m), Sum doubles in 5 yrs, LEADER arrangements, HCF/LCM ratio, Pipes & tank, Loquacious/Frugal/Tenacious vocab, Anagram TRIANGLE, Squares of primes puzzle, Social Media essay'
+      6: '⭐ PYQ: Real Infosys Questions — FRIEND→HUMJTK coding, 5km South direction, Train passing platform (132m), Sum doubles in 5 yrs, LEADER arrangements, HCF/LCM ratio, Pipes & tank, Loquacious/Frugal/Tenacious vocab, Anagram TRIANGLE, Squares of primes puzzle, Social Media essay',
+      7: '☠️ GAND FAAD: CREATIVE→BQDRXHAD coding, DS (divisibility by 6), Merge Sort comparisons, BST Inorder, Sieve of Eratosthenes, 5^99 mod 13 (cyclicity), SEND+MORE=MONEY cryptarithmetic, Boats+Streams, Factorial series puzzle, VOCIFEROUS/MENDACIOUS/EQUIVOCATE vocab, Inverted Conditional Were, Carbon Neutrality essay'
     };
 
     const card = document.createElement('div');
@@ -65,17 +66,18 @@ function renderTestCards() {
     if (idx === 4) card.style.borderColor = '#f59e0b';
     if (idx === 5) card.style.borderColor = '#ef4444';
     if (idx === 6) card.style.borderColor = '#10b981';
+    if (idx === 7) { card.style.borderColor = '#7c0000'; card.style.background = '#fff5f5'; }
     card.innerHTML = `
-      <div class="card-badge" style="${idx===4?'background:#f59e0b':idx===5?'background:#ef4444':idx===6?'background:#10b981':''}">Test ${idx + 1}${difficultyLabel[idx] || ''}</div>
+      <div class="card-badge" style="${idx===4?'background:#f59e0b':idx===5?'background:#ef4444':idx===6?'background:#10b981':idx===7?'background:#7c0000':''}">Test ${idx + 1}${difficultyLabel[idx] || ''}</div>
       <h2>${test.test_title || `Infosys SE Mock Test ${idx + 1}`}</h2>
       <p class="card-description">${topicHighlights[idx] || 'Full-length assessment covering all 7 sections with unique PYQ-based questions.'}</p>
       <div class="card-stats">
         <div class="stat-item"><div class="stat-val">${test.total_questions || 60}</div><div class="stat-label">Questions</div></div>
         <div class="stat-item"><div class="stat-val">${test.total_marks || 75}</div><div class="stat-label">Total Marks</div></div>
-        <div class="stat-item"><div class="stat-val">${idx===6?'⭐ PYQ':idx>=4?'⚠️ Hard':'Normal'}</div><div class="stat-label">Difficulty</div></div>
+        <div class="stat-item"><div class="stat-val">${idx===7?'☠️ MAX':idx===6?'⭐ PYQ':idx>=4?'⚠️ Hard':'Normal'}</div><div class="stat-label">Difficulty</div></div>
         <div class="stat-item"><div class="stat-val">${test.total_duration_minutes || 120} min</div><div class="stat-label">Duration</div></div>
       </div>
-      <button class="btn-start-test" style="${idx===4?'background:#f59e0b':idx===5?'background:#ef4444':idx===6?'background:#10b981':''}" onclick="event.stopPropagation(); startTest(${idx})">▶ Start Mock Test ${idx + 1}${difficultyLabel[idx] || ''}</button>
+      <button class="btn-start-test" style="${idx===4?'background:#f59e0b':idx===5?'background:#ef4444':idx===6?'background:#10b981':idx===7?'background:#7c0000':''}" onclick="event.stopPropagation(); startTest(${idx})">▶ Start Mock Test ${idx + 1}${difficultyLabel[idx] || ''}</button>
     `;
     card.addEventListener('click', () => startTest(idx));
     container.appendChild(card);

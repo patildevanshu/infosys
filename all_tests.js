@@ -6788,6 +6788,977 @@ window.ALL_TESTS = {
           "explanation": "Essay evaluated qualitatively on structure, grammar, vocabulary, and relevance to the prompt."
         }
       ]
+    },
+    {
+      "test_title": "Infosys SE Mock Test 8 \u2014 GAND FAAD Level (PYQ + Expert Original)",
+      "total_questions": 60,
+      "total_marks": 75,
+      "total_duration_minutes": 120,
+      "sections": [
+        {
+          "id": 1,
+          "name": "Reasoning Ability Test",
+          "total_questions": 15,
+          "max_marks": 15,
+          "duration_minutes": 25,
+          "instructions": "PYQ + Extreme difficulty. Topics: Data Sufficiency, DI, Syllogisms, Coding-Decoding, Blood Relations, Directional Sense, Seating Arrangements, Logical Deduction, Statistical DI. ~1 min 40 sec per question."
+        },
+        {
+          "id": 2,
+          "name": "Technical Ability Test (Mathematical)",
+          "total_questions": 10,
+          "max_marks": 10,
+          "duration_minutes": 35,
+          "instructions": "PYQ + Extreme difficulty. Number Series, Work & Time, Boats & Streams, P&C, Probability, Cryptarithmetic, Number Theory, Profit-Loss, Partnerships. ~3.5 min per question."
+        },
+        {
+          "id": 3,
+          "name": "Verbal Ability Test",
+          "total_questions": 20,
+          "max_marks": 20,
+          "duration_minutes": 20,
+          "instructions": "Critical Reasoning (Strengthen/Weaken/Assumption), Corrective Usage, Error Correction, Error ID, RC Passage (Game Theory & Nash Equilibrium), Para Jumbles, Advanced Vocabulary. 1 min per question."
+        },
+        {
+          "id": 4,
+          "name": "Pseudocode Test",
+          "total_questions": 5,
+          "max_marks": 10,
+          "duration_minutes": 10,
+          "instructions": "Each 2 marks. Merge Sort comparisons, BST inorder, Sieve of Eratosthenes, Dynamic Programming (Coin Change), Linked List Reversal. 2 min per question."
+        },
+        {
+          "id": 5,
+          "name": "Numerical Puzzle Test",
+          "total_questions": 4,
+          "max_marks": 10,
+          "duration_minutes": 10,
+          "instructions": "Each 2.5 marks. Factorial series, NOT-anagram detection, 5x5 recurrence grid, 5-attribute logic puzzle. ~2.5 min per question."
+        },
+        {
+          "id": 6,
+          "name": "English Grammar Test",
+          "total_questions": 5,
+          "max_marks": 10,
+          "duration_minutes": 10,
+          "instructions": "Each 2 marks. Rare grammar: inverted conditionals, ellipsis in comparatives, future perfect, subjunctive 'high time', dangling participle identification. 2 min per question."
+        },
+        {
+          "id": 7,
+          "name": "English Writing Test",
+          "total_questions": 1,
+          "max_marks": 0,
+          "marks_label": "NA (Evaluated Separately)",
+          "duration_minutes": 10,
+          "instructions": "Essay on Carbon Neutrality and Net-Zero commitments. 150-250 words. 10 min."
+        }
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "section_id": 1,
+          "topic": "[PYQ - Infosys] Coding-Decoding",
+          "marks": 1,
+          "question": "In a certain code language, CREATIVE is written as BQDRXHAD (each letter shifted back by 1). Using the same code, DREAM would be written as:",
+          "options": {
+            "A": "CQDZL",
+            "B": "CRDZA",
+            "C": "CQEZA",
+            "D": "DQDZL"
+          },
+          "correct_answer": "A",
+          "explanation": "Each letter is shifted back by 1 position in the alphabet (A-1 wraps to Z).\nD-1=C, R-1=Q, E-1=D, A-1=Z, M-1=L.\nDREAM -> CQDZL."
+        },
+        {
+          "id": 2,
+          "section_id": 1,
+          "topic": "[PYQ - Infosys] Blood Relations",
+          "marks": 1,
+          "question": "A is the son of B. C is B's sister. D is C's father. E is D's son. How is E related to A?",
+          "options": {
+            "A": "Brother",
+            "B": "Nephew",
+            "C": "Uncle",
+            "D": "Cousin"
+          },
+          "correct_answer": "C",
+          "explanation": "B's sister = C. Both B and C share father D. E is D's son, so E is a sibling of B (both are D's children). A is B's son. Therefore E (B's sibling) is A's uncle."
+        },
+        {
+          "id": 3,
+          "section_id": 1,
+          "topic": "[PYQ - Infosys] Data Sufficiency",
+          "marks": 1,
+          "question": "Is the positive integer N divisible by 6?\nStatement I: N is divisible by 3.\nStatement II: N is divisible by 4.",
+          "options": {
+            "A": "Statement I alone is sufficient",
+            "B": "Statement II alone is sufficient",
+            "C": "Both statements together are sufficient",
+            "D": "Neither statement alone or together is sufficient"
+          },
+          "correct_answer": "C",
+          "explanation": "Stmt I alone: divisible by 3 but not 2 (e.g., N=9) means not divisible by 6. Insufficient.\nStmt II alone: divisible by 4 but not 3 (e.g., N=4, 8) means not divisible by 6. Insufficient.\nTogether: gcd(3,4)=1, so N divisible by both 3 and 4 => divisible by 12 => divisible by 6. Both together are sufficient."
+        },
+        {
+          "id": 4,
+          "section_id": 1,
+          "topic": "[PYQ - Infosys] Data Sufficiency",
+          "marks": 1,
+          "question": "What is the two-digit number XY (where X is tens digit and Y is units digit)?\nStatement I: The number is even.\nStatement II: The sum of digits X + Y = 9.",
+          "options": {
+            "A": "Statement I alone is sufficient",
+            "B": "Statement II alone is sufficient",
+            "C": "Both statements together are sufficient",
+            "D": "Neither statement alone or together is sufficient"
+          },
+          "correct_answer": "D",
+          "explanation": "Even two-digit numbers with digit sum 9: 18, 36, 54, 72, 90. That's 5 possibilities. Together the two statements are still not sufficient to uniquely determine XY."
+        },
+        {
+          "id": 5,
+          "section_id": 1,
+          "topic": "[PYQ - Infosys] Data Interpretation (Table)",
+          "marks": 1,
+          "question": "The quarterly sales revenue (in lakhs) of 4 companies is given below:\n| Company | Q1  | Q2  | Q3  | Q4  |\n|---------|-----|-----|-----|-----|\n| Alpha   | 120 | 135 | 150 | 165 |\n| Beta    | 200 | 190 | 210 | 220 |\n| Gamma   | 80  | 95  | 110 | 130 |\n| Delta   | 160 | 155 | 170 | 180 |\n\nWhich company had the highest TOTAL annual revenue?",
+          "options": {
+            "A": "Alpha",
+            "B": "Beta",
+            "C": "Gamma",
+            "D": "Delta"
+          },
+          "correct_answer": "B",
+          "explanation": "Alpha total: 120+135+150+165 = 570\nBeta total: 200+190+210+220 = 820\nGamma total: 80+95+110+130 = 415\nDelta total: 160+155+170+180 = 665\nBeta has the highest total annual revenue of 820 lakhs."
+        },
+        {
+          "id": 6,
+          "section_id": 1,
+          "topic": "[PYQ - Infosys] Data Interpretation (Table)",
+          "marks": 1,
+          "question": "Using the same sales table:\n| Company | Q1  | Q2  | Q3  | Q4  |\n| Alpha   | 120 | 135 | 150 | 165 |\n| Beta    | 200 | 190 | 210 | 220 |\n| Gamma   | 80  | 95  | 110 | 130 |\n| Delta   | 160 | 155 | 170 | 180 |\n\nFor which company was the % growth from Q1 to Q4 the highest?",
+          "options": {
+            "A": "Alpha",
+            "B": "Beta",
+            "C": "Gamma",
+            "D": "Delta"
+          },
+          "correct_answer": "C",
+          "explanation": "% growth = (Q4 - Q1) / Q1 * 100\nAlpha: (165-120)/120 * 100 = 37.5%\nBeta: (220-200)/200 * 100 = 10%\nGamma: (130-80)/80 * 100 = 62.5%\nDelta: (180-160)/160 * 100 = 12.5%\nGamma had the highest % growth from Q1 to Q4."
+        },
+        {
+          "id": 7,
+          "section_id": 1,
+          "topic": "[PYQ - Infosys] Syllogism",
+          "marks": 1,
+          "question": "Statements:\n1. All rivers are lakes.\n2. No lake is a pond.\n3. Some ponds are oceans.\n\nConclusions:\nI. No river is a pond.\nII. Some oceans are not lakes.\nIII. All lakes are rivers.",
+          "options": {
+            "A": "Only I and II follow",
+            "B": "Only I follows",
+            "C": "Only II and III follow",
+            "D": "All I, II, and III follow"
+          },
+          "correct_answer": "A",
+          "explanation": "All rivers are lakes AND No lake is a pond => No river is a pond. Conclusion I follows.\nSome ponds are oceans (given). No lake is a pond => those ponds that are oceans are not lakes => Some oceans are not lakes. Conclusion II follows.\nConclusion III (All lakes are rivers) does NOT follow from the statements (the converse of 'All rivers are lakes' is not necessarily true)."
+        },
+        {
+          "id": 8,
+          "section_id": 1,
+          "topic": "[PYQ - Infosys] Syllogism",
+          "marks": 1,
+          "question": "Statements:\nOnly graduates can be managers.\nSome engineers are graduates.\n\nConclusions:\nI. Some engineers can be managers.\nII. All managers are graduates.",
+          "options": {
+            "A": "Only I follows",
+            "B": "Only II follows",
+            "C": "Both I and II follow",
+            "D": "Neither follows"
+          },
+          "correct_answer": "C",
+          "explanation": "'Only graduates can be managers' means: to be a manager, one MUST be a graduate. This logically means: All managers are graduates. Conclusion II follows directly.\nSome engineers are graduates (given). Since graduates CAN be managers, those engineers who are graduates can potentially be managers. Conclusion I follows."
+        },
+        {
+          "id": 9,
+          "section_id": 1,
+          "topic": "[PYQ - Infosys] Directional Sense",
+          "marks": 1,
+          "question": "A man starts from his office facing East. He walks 6 km East, turns right and walks 4 km, turns right again and walks 6 km, then turns left and walks 3 km. How far and in which direction is he from his starting point?",
+          "options": {
+            "A": "7 km, North",
+            "B": "7 km, South",
+            "C": "5 km, South",
+            "D": "3 km, East"
+          },
+          "correct_answer": "B",
+          "explanation": "Start: (0,0) facing East.\nWalk 6 km East: at (6,0).\nTurn right (now facing South): walk 4 km South: at (6,-4).\nTurn right (now facing West): walk 6 km West: at (0,-4).\nTurn left (now facing South): walk 3 km South: at (0,-7).\nDistance from start = sqrt(0^2 + 7^2) = 7 km. Direction = South."
+        },
+        {
+          "id": 10,
+          "section_id": 1,
+          "topic": "[PYQ - Infosys] Linear Seating Arrangement",
+          "marks": 1,
+          "question": "Eight persons A, B, C, D, E, F, G, H sit in a row facing North.\n- D is 4th from the left.\n- B is between C and D (C and D on either side of B).\n- There are exactly 3 persons between A and F.\n- G is at one of the extreme ends.\n- E sits immediately to the right of H.\n- F is not at an extreme end.\n\nWho sits exactly in the middle (4th position from the left)?",
+          "options": {
+            "A": "A",
+            "B": "B",
+            "C": "D",
+            "D": "F"
+          },
+          "correct_answer": "C",
+          "explanation": "D = position 4. B between C and D: C=2, B=3, D=4.\nG at extreme: G=1 or G=8. F not extreme: F not at 1 or 8.\nRemaining positions for A,E,F,G,H: {1,5,6,7,8}.\nWith G=8: {1,5,6,7} for A,E,F,H. 3 persons between A and F => |pos_A - pos_F|=4.\nA=1, F=5 satisfies |1-5|=4 and F=5 (not extreme). Remaining: E,H from {6,7}.\nE immediately right of H: H=6, E=7.\nArrangement: A(1) C(2) B(3) D(4) F(5) H(6) E(7) G(8).\n4th from left = D."
+        },
+        {
+          "id": 11,
+          "section_id": 1,
+          "topic": "[PYQ - Infosys] Linear Seating Arrangement",
+          "marks": 1,
+          "question": "Using the same seating arrangement from the previous question:\nA(1) C(2) B(3) D(4) F(5) H(6) E(7) G(8)\n\nWhat is F's position from the RIGHT end?",
+          "options": {
+            "A": "3rd from right",
+            "B": "4th from right",
+            "C": "5th from right",
+            "D": "6th from right"
+          },
+          "correct_answer": "B",
+          "explanation": "F is at position 5 from the left in an 8-person row.\nPosition from right = (Total persons - Position from left + 1) = 8 - 5 + 1 = 4.\nF is 4th from the right end."
+        },
+        {
+          "id": 12,
+          "section_id": 1,
+          "topic": "[PYQ - Infosys] Statement-Assumption",
+          "marks": 1,
+          "question": "Statement: 'The government has decided to allow private companies to invest in the railway sector.'\n\nAssumptions:\nI. Private companies have the capability and resources to contribute to railway development.\nII. The government-owned railway system has completely failed.",
+          "options": {
+            "A": "Only Assumption I is implicit",
+            "B": "Only Assumption II is implicit",
+            "C": "Both I and II are implicit",
+            "D": "Neither is implicit"
+          },
+          "correct_answer": "A",
+          "explanation": "For the government's decision to make sense, it must assume that private companies ARE capable of contributing meaningfully (Assumption I is implicit \u2014 the decision presupposes this).\nAssumption II is NOT implicit: the government might be inviting private investment for expansion or improvement, not because the system has 'completely failed'. This is too strong an inference."
+        },
+        {
+          "id": 13,
+          "section_id": 1,
+          "topic": "[PYQ - Infosys] Course of Action",
+          "marks": 1,
+          "question": "Problem: A major bridge is found to have critical structural damage and may collapse.\n\nCourses of Action:\nI. Immediately close the bridge to all traffic pending assessment.\nII. Conduct a detailed structural assessment by certified engineers immediately.\nIII. Allow light vehicles to cross the bridge while the assessment is underway.",
+          "options": {
+            "A": "Only I and II follow",
+            "B": "Only II follows",
+            "C": "All I, II and III follow",
+            "D": "Only I follows"
+          },
+          "correct_answer": "A",
+          "explanation": "I: Closing the bridge immediately is a necessary safety measure \u2014 this directly follows.\nII: A professional structural assessment is essential for informed action \u2014 this follows.\nIII: Allowing vehicles to cross a structurally compromised bridge is dangerous and irresponsible. This course of action does NOT follow."
+        },
+        {
+          "id": 14,
+          "section_id": 1,
+          "topic": "[PYQ - Infosys] Statistical DI (Frequency Table)",
+          "marks": 1,
+          "question": "A frequency distribution table is given:\n| Class Interval | Frequency |\n| [0-10)         | 5         |\n| [10-20)        | 15        |\n| [20-30)        | 25        |\n| [30-40)        | 35        |\n| [40-50)        | 20        |\nTotal N = 100\n\nWhich is the MEDIAN class?",
+          "options": {
+            "A": "[10-20)",
+            "B": "[20-30)",
+            "C": "[30-40)",
+            "D": "[40-50)"
+          },
+          "correct_answer": "C",
+          "explanation": "Median = N/2 = 50th value.\nCumulative frequencies: 5, 20, 45, 80, 100.\nThe 50th value lies in the class where cumulative frequency first exceeds 50.\nCumulative up to [20-30) = 45 < 50. Cumulative up to [30-40) = 80 >= 50.\nTherefore the median class is [30-40)."
+        },
+        {
+          "id": 15,
+          "section_id": 1,
+          "topic": "[PYQ - Infosys] Statistical DI (Mean Calculation)",
+          "marks": 1,
+          "question": "Using the same frequency table:\n| [0-10): 5 | [10-20): 15 | [20-30): 25 | [30-40): 35 | [40-50): 20 |\n\nCalculate the arithmetic mean of the distribution.",
+          "options": {
+            "A": "28",
+            "B": "30",
+            "C": "32",
+            "D": "34"
+          },
+          "correct_answer": "B",
+          "explanation": "Mean = Sum(midpoint * frequency) / N\nMidpoints: 5, 15, 25, 35, 45.\n= (5*5 + 15*15 + 25*25 + 35*35 + 45*20) / 100\n= (25 + 225 + 625 + 1225 + 900) / 100\n= 3000 / 100 = 30."
+        },
+        {
+          "id": 16,
+          "section_id": 2,
+          "topic": "[PYQ - Infosys] Number Series (Cubes)",
+          "marks": 1,
+          "question": "Find the next number in the series: 2, 9, 28, 65, 126, 217, ?",
+          "options": {
+            "A": "338",
+            "B": "344",
+            "C": "350",
+            "D": "362"
+          },
+          "correct_answer": "B",
+          "explanation": "Pattern: n^3 + 1\n1^3+1=2, 2^3+1=9, 3^3+1=28, 4^3+1=65, 5^3+1=126, 6^3+1=217, 7^3+1=344.\nNext term = 344."
+        },
+        {
+          "id": 17,
+          "section_id": 2,
+          "topic": "[PYQ - Infosys] Number Series (Powers of 2)",
+          "marks": 1,
+          "question": "Find the next number in the series: 3, 7, 15, 31, 63, 127, ?",
+          "options": {
+            "A": "251",
+            "B": "253",
+            "C": "255",
+            "D": "259"
+          },
+          "correct_answer": "C",
+          "explanation": "Pattern: 2^n - 1\n2^2-1=3, 2^3-1=7, 2^4-1=15, 2^5-1=31, 2^6-1=63, 2^7-1=127, 2^8-1=255.\nNext term = 255."
+        },
+        {
+          "id": 18,
+          "section_id": 2,
+          "topic": "[PYQ - Infosys] Time & Work (3 persons, combined)",
+          "marks": 1,
+          "question": "A and B together complete a work in 12 days. B and C together complete it in 16 days. C and A together complete it in 24 days. In how many days can A alone complete the work?",
+          "options": {
+            "A": "16 days",
+            "B": "24 days",
+            "C": "48 days",
+            "D": "32 days"
+          },
+          "correct_answer": "D",
+          "explanation": "(A+B) = 1/12 per day. (B+C) = 1/16 per day. (C+A) = 1/24 per day.\nAdding all three: 2(A+B+C) = 1/12 + 1/16 + 1/24 = 4/48 + 3/48 + 2/48 = 9/48 = 3/16.\nSo A+B+C = 3/32 per day.\nA alone = (A+B+C) - (B+C) = 3/32 - 1/16 = 3/32 - 2/32 = 1/32.\nA alone completes the work in 32 days."
+        },
+        {
+          "id": 19,
+          "section_id": 2,
+          "topic": "[PYQ - Infosys] Boats & Streams",
+          "marks": 1,
+          "question": "A boat travels 40 km upstream in 5 hours and 40 km downstream in 2 hours. What is the speed of the stream?",
+          "options": {
+            "A": "4 km/h",
+            "B": "5 km/h",
+            "C": "6 km/h",
+            "D": "8 km/h"
+          },
+          "correct_answer": "C",
+          "explanation": "Upstream speed = 40/5 = 8 km/h.\nDownstream speed = 40/2 = 20 km/h.\nSpeed of stream = (Downstream - Upstream) / 2 = (20 - 8) / 2 = 12 / 2 = 6 km/h."
+        },
+        {
+          "id": 20,
+          "section_id": 2,
+          "topic": "[PYQ - Infosys] Permutations & Combinations (Constraint)",
+          "marks": 1,
+          "question": "In how many ways can 5 boys and 3 girls be seated in a row such that NO two girls sit adjacent to each other?",
+          "options": {
+            "A": "14400",
+            "B": "12600",
+            "C": "10800",
+            "D": "7200"
+          },
+          "correct_answer": "A",
+          "explanation": "First arrange 5 boys in 5! = 120 ways.\nAfter placing boys, there are 6 possible gaps (including both ends): _ B _ B _ B _ B _ B _\nChoose 3 gaps from 6 for girls: C(6,3) = 20 ways.\nArrange 3 girls in the chosen gaps: 3! = 6 ways.\nTotal = 120 x 20 x 6 = 14,400."
+        },
+        {
+          "id": 21,
+          "section_id": 2,
+          "topic": "[PYQ - Infosys] Probability (Complement Method)",
+          "marks": 1,
+          "question": "A bag contains 5 red, 4 white, and 3 blue balls. Three balls are drawn at random. What is the probability that at least one red ball is drawn?",
+          "options": {
+            "A": "37/44",
+            "B": "35/44",
+            "C": "7/44",
+            "D": "1/2"
+          },
+          "correct_answer": "A",
+          "explanation": "Total balls = 12. Non-red balls = 4+3 = 7.\nP(no red) = C(7,3) / C(12,3) = 35 / 220 = 7/44.\nP(at least one red) = 1 - P(no red) = 1 - 7/44 = 37/44."
+        },
+        {
+          "id": 22,
+          "section_id": 2,
+          "topic": "[PYQ - Infosys] Cryptarithmetic (SEND + MORE = MONEY)",
+          "marks": 1,
+          "question": "In the cryptarithmetic puzzle SEND + MORE = MONEY, where each letter represents a unique digit (0-9), the known solution is: S=9, E=5, N=6, D=7, M=1, O=0, R=8, Y=?",
+          "options": {
+            "A": "1",
+            "B": "2",
+            "C": "3",
+            "D": "4"
+          },
+          "correct_answer": "B",
+          "explanation": "SEND = 9567, MORE = 1085. Sum = 9567 + 1085 = 10652 = MONEY.\nM=1, O=0, N=6, E=5, Y=2.\nVerify: 9567 + 1085 = 10652. Y = 2."
+        },
+        {
+          "id": 23,
+          "section_id": 2,
+          "topic": "[PYQ - Infosys] Number Theory (Cyclicity of Remainders)",
+          "marks": 1,
+          "question": "What is the remainder when 5^99 is divided by 13?",
+          "options": {
+            "A": "5",
+            "B": "8",
+            "C": "12",
+            "D": "1"
+          },
+          "correct_answer": "B",
+          "explanation": "Find the pattern of 5^n mod 13:\n5^1 mod 13 = 5\n5^2 mod 13 = 25 mod 13 = 12 (= -1)\n5^3 mod 13 = 5 * 12 mod 13 = 60 mod 13 = 8\n5^4 mod 13 = 5 * 8 mod 13 = 40 mod 13 = 1\nCycle length = 4: {5, 12, 8, 1}.\n99 = 4*24 + 3. So 5^99 mod 13 = 5^3 mod 13 = 8."
+        },
+        {
+          "id": 24,
+          "section_id": 2,
+          "topic": "[PYQ - Infosys] Profit & Loss (Mark-up + Discount)",
+          "marks": 1,
+          "question": "A trader marks his goods 40% above cost price and allows a discount of 20%. If he makes a profit of Rs. 168, find the cost price.",
+          "options": {
+            "A": "Rs. 1000",
+            "B": "Rs. 1200",
+            "C": "Rs. 1400",
+            "D": "Rs. 1600"
+          },
+          "correct_answer": "C",
+          "explanation": "Marked Price = 1.40 * CP.\nSelling Price = 0.80 * MP = 0.80 * 1.40 * CP = 1.12 * CP.\nProfit = SP - CP = 1.12*CP - CP = 0.12 * CP = 168.\nCP = 168 / 0.12 = Rs. 1400."
+        },
+        {
+          "id": 25,
+          "section_id": 2,
+          "topic": "[PYQ - Infosys] Partnerships (Time-weighted Investment)",
+          "marks": 1,
+          "question": "A invests Rs. 5000 for the entire year. B invests Rs. 6000 for 8 months. C invests Rs. 8000 for 6 months. If the total annual profit is Rs. 10,400, what is B's share?",
+          "options": {
+            "A": "Rs. 3200",
+            "B": "Rs. 4000",
+            "C": "Rs. 3600",
+            "D": "Rs. 2800"
+          },
+          "correct_answer": "A",
+          "explanation": "Capital * Time ratios:\nA: 5000 * 12 = 60,000\nB: 6000 * 8  = 48,000\nC: 8000 * 6  = 48,000\nRatio A:B:C = 60:48:48 = 5:4:4. Total = 13 parts.\nB's share = (4/13) * 10400 = Rs. 3200."
+        },
+        {
+          "id": 26,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Critical Reasoning (Strengthen)",
+          "marks": 1,
+          "question": "Argument: 'Cities that build dedicated cycling infrastructure see a significant reduction in automobile traffic and air pollution.'\n\nWhich statement most strongly STRENGTHENS this argument?",
+          "options": {
+            "A": "Cycling is a form of exercise that improves personal health.",
+            "B": "After Amsterdam expanded its cycling network, car traffic fell by 20% and NOx emissions dropped by 15%.",
+            "C": "Many cities have started building cycling lanes in the last decade.",
+            "D": "Cyclists are more vulnerable to accidents than car drivers."
+          },
+          "correct_answer": "B",
+          "explanation": "Option B provides direct empirical evidence (Amsterdam data) that cycling infrastructure DOES cause the exact outcomes claimed in the argument (reduced car traffic and air pollution). This is the strongest strengthener.\nOption A discusses personal health \u2014 irrelevant to traffic/pollution.\nOption C shows a trend but doesn't confirm the outcome.\nOption D introduces a concern unrelated to the claim."
+        },
+        {
+          "id": 27,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Critical Reasoning (Weaken)",
+          "marks": 1,
+          "question": "Argument: 'Eating dark chocolate regularly improves cardiovascular health.'\n\nWhich statement most effectively WEAKENS this argument?",
+          "options": {
+            "A": "Dark chocolate contains flavonoids that are known to reduce blood pressure.",
+            "B": "People who eat dark chocolate tend to prefer it over milk chocolate.",
+            "C": "Regular dark chocolate consumers also tend to exercise daily and follow a balanced diet.",
+            "D": "The cocoa content in dark chocolate varies between 50% and 90%."
+          },
+          "correct_answer": "C",
+          "explanation": "Option C introduces a CONFOUNDING VARIABLE: the improved cardiovascular health may be due to exercise and diet habits, not the dark chocolate itself. This undermines the causal link.\nOption A actually strengthens the argument.\nOptions B and D are irrelevant to the claim about cardiovascular health."
+        },
+        {
+          "id": 28,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Critical Reasoning (Logical Conclusion)",
+          "marks": 1,
+          "question": "Premises:\n1. All computers require electricity to function.\n2. This device does not require electricity.\n\nWhich conclusion MUST logically follow?",
+          "options": {
+            "A": "This device is more efficient than a computer.",
+            "B": "This device is not a computer.",
+            "C": "This device is better than a computer.",
+            "D": "Computers can function without electricity sometimes."
+          },
+          "correct_answer": "B",
+          "explanation": "If ALL computers require electricity AND this device does NOT require electricity, then by logical deduction (modus tollens), this device CANNOT be a computer.\nConclusion B follows with certainty from the given premises.\nConclusions A, C, and D are not supported by the given premises."
+        },
+        {
+          "id": 29,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Corrective Usage (Inversion)",
+          "marks": 1,
+          "question": "Choose the grammatically CORRECT sentence:",
+          "options": {
+            "A": "No sooner he left than it started raining.",
+            "B": "No sooner had he left than it started raining.",
+            "C": "No sooner did he leave when it started raining.",
+            "D": "No sooner he had left when it started raining."
+          },
+          "correct_answer": "B",
+          "explanation": "The construction 'No sooner... than' requires:\n1. Inverted word order in the first clause: 'No sooner HAD he left' (auxiliary + subject).\n2. The connector must be 'than' (not 'when').\n'No sooner had he left THAN it started raining' is correct."
+        },
+        {
+          "id": 30,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Corrective Usage (Mandative Subjunctive)",
+          "marks": 1,
+          "question": "Fill in the blank with the correct form:\n'It is imperative that every employee ___ the safety protocol.'",
+          "options": {
+            "A": "follows",
+            "B": "follow",
+            "C": "followed",
+            "D": "will follow"
+          },
+          "correct_answer": "B",
+          "explanation": "After expressions of necessity or importance (imperative, essential, necessary, important), the verb in the 'that' clause uses the MANDATIVE SUBJUNCTIVE: the base form of the verb without any inflection, regardless of the subject.\n'It is imperative that every employee FOLLOW the safety protocol.' (NOT 'follows')"
+        },
+        {
+          "id": 31,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Corrective Usage (Would Rather)",
+          "marks": 1,
+          "question": "Choose the correct sentence:",
+          "options": {
+            "A": "She would rather walks to work than taking the bus.",
+            "B": "She would rather walk to work than take the bus.",
+            "C": "She would rather to walk to work than to take the bus.",
+            "D": "She would rather walked to work than took the bus."
+          },
+          "correct_answer": "B",
+          "explanation": "After 'would rather', use the BASE FORM of the verb (bare infinitive without 'to'). The comparison with 'than' also requires the base form: 'She would rather WALK...than TAKE...' is correct.\nOptions A, C, and D violate this rule."
+        },
+        {
+          "id": 32,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Error Correction (Redundancy)",
+          "marks": 1,
+          "question": "Correct the error in: 'The reason for his failure is because he did not prepare adequately.'",
+          "options": {
+            "A": "The reason for his failure is that he did not prepare adequately.",
+            "B": "The reason for his failure is due to he did not prepare adequately.",
+            "C": "The reason for his failure is because of not preparing adequately.",
+            "D": "No correction needed."
+          },
+          "correct_answer": "A",
+          "explanation": "'The reason is because' is grammatically redundant. 'Because' already means 'for the reason that.' The correct construction is: 'The reason is THAT...'\n'The reason for his failure is THAT he did not prepare adequately.'"
+        },
+        {
+          "id": 33,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Error Correction (Comparative Pronoun)",
+          "marks": 1,
+          "question": "Which sentence is grammatically correct in formal English?",
+          "options": {
+            "A": "He is smarter than me.",
+            "B": "He is smarter than I.",
+            "C": "He is smarter than myself.",
+            "D": "He is more smarter than I am."
+          },
+          "correct_answer": "B",
+          "explanation": "In formal English, comparisons use the subject pronoun, not the object pronoun, because the full comparison is 'He is smarter than I [am].'\nOption A ('than me') is colloquially accepted but not formally correct.\nOption C ('myself') is incorrect \u2014 reflexive pronouns are not used in this context.\nOption D uses 'more smarter' which is a double comparative error."
+        },
+        {
+          "id": 34,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Error Correction (Non-standard Word)",
+          "marks": 1,
+          "question": "Correct the error in: 'Irregardless of the outcome, we will stand by our decision.'",
+          "options": {
+            "A": "Regardless of the outcome, we will stand by our decision.",
+            "B": "Irrespective to the outcome, we will stand by our decision.",
+            "C": "Irregardless to the outcome, we will stand by our decision.",
+            "D": "No correction needed."
+          },
+          "correct_answer": "A",
+          "explanation": "'Irregardless' is a non-standard, widely considered incorrect word \u2014 it is a double-negative blend of 'irrespective' and 'regardless.' The correct word is simply 'REGARDLESS'.\n'Regardless of the outcome, we will stand by our decision.'"
+        },
+        {
+          "id": 35,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Error Identification (Subject-Verb)",
+          "marks": 1,
+          "question": "Identify the part that contains an error:\n'(A) He is one of those leaders (B) who has (C) always prioritised (D) the interests of the people.'",
+          "options": {
+            "A": "Part A: He is one of those leaders",
+            "B": "Part B: who has",
+            "C": "Part C: always prioritised",
+            "D": "Part D: the interests of the people"
+          },
+          "correct_answer": "B",
+          "explanation": "In the construction 'one of those [plural noun] who...', the relative pronoun 'who' refers to the PLURAL noun ('leaders'), so the verb must be PLURAL.\nCorrect: 'He is one of those leaders who HAVE always prioritised the interests of the people.'\nError: 'who has' should be 'who have'."
+        },
+        {
+          "id": 36,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Error Identification (Idiom Misuse)",
+          "marks": 1,
+          "question": "Identify the part that contains an error:\n'(A) His sudden resignation (B) begs the question (C) of whether he was (D) pushed out.'",
+          "options": {
+            "A": "Part A: His sudden resignation",
+            "B": "Part B: begs the question",
+            "C": "Part C: of whether he was",
+            "D": "No error"
+          },
+          "correct_answer": "B",
+          "explanation": "'Beg the question' is a formal logical term meaning to assume the conclusion within the premise (circular reasoning) \u2014 NOT to raise or invite a question.\nIn this context, the correct phrase should be 'RAISES the question' or 'prompts the question'.\nUsing 'begs the question' to mean 'raises the question' is a common idiomatic error."
+        },
+        {
+          "id": 37,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Reading Comprehension (Direct)",
+          "marks": 1,
+          "question": "Game theory, a branch of mathematics and economics pioneered by John von Neumann and Oskar Morgenstern in their 1944 work 'Theory of Games and Economic Behavior,' provides a systematic framework for analysing strategic interactions among rational agents. The concept of a Nash Equilibrium, named after mathematician John Nash, describes a state in which no player can improve their outcome by unilaterally changing their strategy, given the strategies of all other players. Perhaps the most famous illustration is the Prisoner's Dilemma: two suspects, unable to communicate, must each decide independently whether to cooperate or defect. If both cooperate, they receive light sentences; if one defects while the other cooperates, the defector goes free while the cooperator receives a harsh sentence; if both defect, both receive moderate sentences. Paradoxically, the rational self-interest of each player leads to an outcome \u2014 mutual defection \u2014 that is worse for both than if they had cooperated. This insight has profound implications across economics, political science, evolutionary biology, and artificial intelligence, where multi-agent systems must navigate complex interdependencies without centralised coordination.\n\nWho pioneered the field of Game Theory with their 1944 work?",
+          "options": {
+            "A": "John Nash and Albert Einstein",
+            "B": "John von Neumann and Oskar Morgenstern",
+            "C": "John Nash and John von Neumann",
+            "D": "Oskar Morgenstern and John Nash"
+          },
+          "correct_answer": "B",
+          "explanation": "The passage explicitly states: 'Game theory...pioneered by John von Neumann and Oskar Morgenstern in their 1944 work.'"
+        },
+        {
+          "id": 38,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Reading Comprehension (Definition)",
+          "marks": 1,
+          "question": "Game theory, a branch of mathematics and economics pioneered by John von Neumann and Oskar Morgenstern in their 1944 work 'Theory of Games and Economic Behavior,' provides a systematic framework for analysing strategic interactions among rational agents. The concept of a Nash Equilibrium, named after mathematician John Nash, describes a state in which no player can improve their outcome by unilaterally changing their strategy, given the strategies of all other players. Perhaps the most famous illustration is the Prisoner's Dilemma: two suspects, unable to communicate, must each decide independently whether to cooperate or defect. If both cooperate, they receive light sentences; if one defects while the other cooperates, the defector goes free while the cooperator receives a harsh sentence; if both defect, both receive moderate sentences. Paradoxically, the rational self-interest of each player leads to an outcome \u2014 mutual defection \u2014 that is worse for both than if they had cooperated. This insight has profound implications across economics, political science, evolutionary biology, and artificial intelligence, where multi-agent systems must navigate complex interdependencies without centralised coordination.\n\nAccording to the passage, what is a Nash Equilibrium?",
+          "options": {
+            "A": "A state where all players achieve their maximum possible payoff.",
+            "B": "A state where no player can improve their outcome by unilaterally changing their strategy.",
+            "C": "A state where players always cooperate to achieve the best joint outcome.",
+            "D": "A mathematical proof that rational players always defect."
+          },
+          "correct_answer": "B",
+          "explanation": "The passage defines Nash Equilibrium as: 'a state in which no player can improve their outcome by unilaterally changing their strategy, given the strategies of all other players.'"
+        },
+        {
+          "id": 39,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Reading Comprehension (Inference)",
+          "marks": 1,
+          "question": "Game theory, a branch of mathematics and economics pioneered by John von Neumann and Oskar Morgenstern in their 1944 work 'Theory of Games and Economic Behavior,' provides a systematic framework for analysing strategic interactions among rational agents. The concept of a Nash Equilibrium, named after mathematician John Nash, describes a state in which no player can improve their outcome by unilaterally changing their strategy, given the strategies of all other players. Perhaps the most famous illustration is the Prisoner's Dilemma: two suspects, unable to communicate, must each decide independently whether to cooperate or defect. If both cooperate, they receive light sentences; if one defects while the other cooperates, the defector goes free while the cooperator receives a harsh sentence; if both defect, both receive moderate sentences. Paradoxically, the rational self-interest of each player leads to an outcome \u2014 mutual defection \u2014 that is worse for both than if they had cooperated. This insight has profound implications across economics, political science, evolutionary biology, and artificial intelligence, where multi-agent systems must navigate complex interdependencies without centralised coordination.\n\nWhat makes the Prisoner's Dilemma 'paradoxical' according to the passage?",
+          "options": {
+            "A": "The prisoners are unable to communicate with each other.",
+            "B": "Rational self-interest leads to an outcome worse for both players than mutual cooperation would have been.",
+            "C": "The game has no Nash Equilibrium.",
+            "D": "One player always wins while the other always loses."
+          },
+          "correct_answer": "B",
+          "explanation": "The passage states: 'Paradoxically, the rational self-interest of each player leads to an outcome \u2014 mutual defection \u2014 that is worse for both than if they had cooperated.' The paradox is that individually rational choices lead to a collectively suboptimal outcome."
+        },
+        {
+          "id": 40,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Reading Comprehension (Tone/Purpose)",
+          "marks": 1,
+          "question": "Game theory, a branch of mathematics and economics pioneered by John von Neumann and Oskar Morgenstern in their 1944 work 'Theory of Games and Economic Behavior,' provides a systematic framework for analysing strategic interactions among rational agents. The concept of a Nash Equilibrium, named after mathematician John Nash, describes a state in which no player can improve their outcome by unilaterally changing their strategy, given the strategies of all other players. Perhaps the most famous illustration is the Prisoner's Dilemma: two suspects, unable to communicate, must each decide independently whether to cooperate or defect. If both cooperate, they receive light sentences; if one defects while the other cooperates, the defector goes free while the cooperator receives a harsh sentence; if both defect, both receive moderate sentences. Paradoxically, the rational self-interest of each player leads to an outcome \u2014 mutual defection \u2014 that is worse for both than if they had cooperated. This insight has profound implications across economics, political science, evolutionary biology, and artificial intelligence, where multi-agent systems must navigate complex interdependencies without centralised coordination.\n\nWhat is the PRIMARY purpose of this passage?",
+          "options": {
+            "A": "To argue that rational self-interest always leads to poor outcomes.",
+            "B": "To critique the work of John Nash.",
+            "C": "To explain game theory, the Nash Equilibrium, and their relevance through the Prisoner's Dilemma.",
+            "D": "To prove that cooperation is always better than competition."
+          },
+          "correct_answer": "C",
+          "explanation": "The passage introduces and explains game theory (definition, pioneers), then explains the Nash Equilibrium, then illustrates it with the Prisoner's Dilemma, and concludes with its broader applications. The primary purpose is explanatory \u2014 to introduce and contextualise these concepts."
+        },
+        {
+          "id": 41,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Para Jumbles (Renewable Energy)",
+          "marks": 1,
+          "question": "Arrange the following sentences into a coherent paragraph:\n\nP. However, the transition faces significant economic and political challenges from fossil fuel industries.\nQ. Renewable energy sources like solar and wind have seen unprecedented cost reductions over the past decade.\nR. Governments must implement supportive policies \u2014 carbon taxes and green subsidies \u2014 to accelerate adoption.\nS. These reductions have made renewables cost-competitive with coal and natural gas in many markets.\nT. Without coordinated global action, the window to limit warming to 1.5 degrees Celsius may close before 2030.",
+          "options": {
+            "A": "Q-S-P-R-T",
+            "B": "Q-P-S-R-T",
+            "C": "S-Q-P-T-R",
+            "D": "R-Q-S-P-T"
+          },
+          "correct_answer": "A",
+          "explanation": "Q introduces the topic (cost reductions in renewables). S follows with the consequence (cost-competitiveness \u2014 'these reductions'). P introduces the challenge ('However'). R proposes solutions ('must implement policies'). T concludes with urgency. Flow: Q -> S -> P -> R -> T."
+        },
+        {
+          "id": 42,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Para Jumbles (Microplastics)",
+          "marks": 1,
+          "question": "Arrange into a coherent paragraph:\n\nP. These particles have been found in human blood, lungs, and placentas, raising serious health concerns.\nQ. Microplastics \u2014 plastic fragments smaller than 5 millimetres \u2014 have permeated virtually every ecosystem.\nR. Regulatory bodies are exploring bans on single-use plastics and synthetic textile coatings.\nS. Despite growing evidence, the long-term health effects of microplastics remain poorly understood.\nT. Scientists estimate that an average person ingests approximately 50,000 microplastic particles annually.",
+          "options": {
+            "A": "Q-T-P-S-R",
+            "B": "Q-P-T-S-R",
+            "C": "T-Q-P-R-S",
+            "D": "Q-S-T-P-R"
+          },
+          "correct_answer": "A",
+          "explanation": "Q introduces microplastics (definition + scope). T gives a startling quantitative fact (ingestion estimate). P details where they've been found in the human body ('These particles'). S introduces the caveat (despite evidence, effects unclear). R concludes with regulatory response. Flow: Q -> T -> P -> S -> R."
+        },
+        {
+          "id": 43,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Vocabulary (Synonym - VOCIFEROUS)",
+          "marks": 1,
+          "question": "Choose the word CLOSEST in meaning to: VOCIFEROUS",
+          "options": {
+            "A": "Peaceful",
+            "B": "Clamorous",
+            "C": "Timid",
+            "D": "Reserved"
+          },
+          "correct_answer": "B",
+          "explanation": "VOCIFEROUS means making a lot of noise, especially in protest; loudly and forcefully expressive. Synonym: CLAMOROUS (loud and insistent). Antonym: Quiet, reserved."
+        },
+        {
+          "id": 44,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Vocabulary (Antonym - MENDACIOUS)",
+          "marks": 1,
+          "question": "Choose the word that is OPPOSITE in meaning to: MENDACIOUS",
+          "options": {
+            "A": "Dishonest",
+            "B": "Veracious",
+            "C": "Deceptive",
+            "D": "Cunning"
+          },
+          "correct_answer": "B",
+          "explanation": "MENDACIOUS means lying; given to or characterised by deception. Antonym: VERACIOUS (truthful, accurate). Options A, C, D are synonyms of mendacious, not antonyms."
+        },
+        {
+          "id": 45,
+          "section_id": 3,
+          "topic": "[PYQ - Infosys] Vocabulary (Synonym - EQUIVOCATE)",
+          "marks": 1,
+          "question": "Choose the word CLOSEST in meaning to: EQUIVOCATE",
+          "options": {
+            "A": "Clarify",
+            "B": "Prevaricate",
+            "C": "Assert",
+            "D": "Confirm"
+          },
+          "correct_answer": "B",
+          "explanation": "EQUIVOCATE means to use ambiguous language so as to conceal the truth or avoid commitment. Synonym: PREVARICATE (to speak or act in an evasive way). Both words describe deliberate vagueness to avoid a direct answer."
+        },
+        {
+          "id": 46,
+          "section_id": 4,
+          "topic": "[PYQ - Infosys] Pseudocode (Merge Sort - Comparisons)",
+          "marks": 2,
+          "question": "Array A = [5, 2, 8, 1]. Merge Sort is applied.\n\nTrace the total number of COMPARISONS made during the MERGE operations only.\n\nStep 1: Split -> [5, 2] and [8, 1]\nStep 2: Sort [5,2]: compare 5 vs 2 -> [2, 5]  (1 comparison)\nStep 3: Sort [8,1]: compare 8 vs 1 -> [1, 8]  (1 comparison)\nStep 4: Merge [2,5] and [1,8]: How many comparisons are needed?\nStep 5: Total comparisons in merge operations = ?",
+          "options": {
+            "A": "4",
+            "B": "5",
+            "C": "6",
+            "D": "3"
+          },
+          "correct_answer": "B",
+          "explanation": "Step 2 merge: [5] vs [2]: 1 comparison. Result: [2, 5].\nStep 3 merge: [8] vs [1]: 1 comparison. Result: [1, 8].\nStep 4 merge [2,5] vs [1,8]:\n  Compare 2 vs 1: pick 1. (1)\n  Compare 2 vs 8: pick 2. (2)\n  Compare 5 vs 8: pick 5. (3)\n  8 remains, appended. No comparison needed.\nTotal merge comparisons = 1 + 1 + 3 = 5."
+        },
+        {
+          "id": 47,
+          "section_id": 4,
+          "topic": "[PYQ - Infosys] Pseudocode (BST Inorder Traversal)",
+          "marks": 2,
+          "question": "A Binary Search Tree (BST) starts empty. The following values are inserted one by one:\n50, 30, 70, 20, 40, 60, 80\n\nWhat is the result of an INORDER traversal of this BST?",
+          "options": {
+            "A": "20 30 40 50 60 70 80",
+            "B": "50 30 70 20 40 60 80",
+            "C": "20 40 30 60 80 70 50",
+            "D": "50 70 80 60 30 40 20"
+          },
+          "correct_answer": "A",
+          "explanation": "Inorder traversal of a BST (Left -> Root -> Right) always yields the elements in SORTED ASCENDING ORDER.\nBST structure after all insertions:\n       50\n      /  \\\n    30    70\n   / \\   / \\\n  20  40 60  80\nInorder: 20, 30, 40, 50, 60, 70, 80."
+        },
+        {
+          "id": 48,
+          "section_id": 4,
+          "topic": "[PYQ - Infosys] Pseudocode (Sieve of Eratosthenes)",
+          "marks": 2,
+          "question": "The Sieve of Eratosthenes is used to find all prime numbers up to N.\n\nPseudocode:\nInitialize is_prime[0..30] = True\nSet is_prime[0] = is_prime[1] = False\nFor p = 2 to sqrt(30) approximately 5:\n    If is_prime[p]:\n        For multiple = p*p to 30, step p:\n            is_prime[multiple] = False\n\nHow many numbers from 1 to 30 (inclusive) are marked as prime?",
+          "options": {
+            "A": "8",
+            "B": "9",
+            "C": "10",
+            "D": "11"
+          },
+          "correct_answer": "C",
+          "explanation": "Primes from 1 to 30: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29.\nThat is exactly 10 prime numbers.\nThe Sieve eliminates: multiples of 2 (4,6,8...), multiples of 3 (9,15,21...), multiples of 5 (25), all within range."
+        },
+        {
+          "id": 49,
+          "section_id": 4,
+          "topic": "[PYQ - Infosys] Pseudocode (Dynamic Programming - Coin Change)",
+          "marks": 2,
+          "question": "Given coins = [1, 5, 6, 9] and target = 11.\nUsing Dynamic Programming (minimum coins), compute dp[11].\n\ndp[0]=0. For each amount a from 1 to 11:\n    dp[a] = min(dp[a-c] + 1) for each coin c <= a\n\nWhat is the MINIMUM number of coins needed to make 11?",
+          "options": {
+            "A": "1",
+            "B": "2",
+            "C": "3",
+            "D": "4"
+          },
+          "correct_answer": "B",
+          "explanation": "Building dp table:\ndp[0]=0, dp[1]=1 (1), dp[2]=2 (1+1), dp[3]=3, dp[4]=4, dp[5]=1 (5),\ndp[6]=1 (6), dp[7]=2 (6+1), dp[8]=3, dp[9]=1 (9), dp[10]=2 (9+1),\ndp[11] = min(dp[10]+1, dp[6]+1, dp[5]+1, dp[2]+1)\n       = min(3, 2, 2, 3) = 2.\nMinimum 2 coins: 5+6=11 or other combos with 2 coins."
+        },
+        {
+          "id": 50,
+          "section_id": 4,
+          "topic": "[PYQ - Infosys] Pseudocode (Linked List Reversal)",
+          "marks": 2,
+          "question": "A singly linked list is: 1 -> 2 -> 3 -> 4 -> 5 -> NULL\n\nThe following pseudocode reverses it:\nprev = NULL\ncurrent = head (pointing to node 1)\nWhile current != NULL:\n    next = current.next\n    current.next = prev\n    prev = current\n    current = next\nhead = prev\n\nAfter reversal, what is the value at the 2nd node from the new head?",
+          "options": {
+            "A": "2",
+            "B": "4",
+            "C": "3",
+            "D": "1"
+          },
+          "correct_answer": "B",
+          "explanation": "Original: 1->2->3->4->5->NULL\nAfter reversal: 5->4->3->2->1->NULL\nNew head = 5 (1st node).\n2nd node from new head = 4."
+        },
+        {
+          "id": 51,
+          "section_id": 5,
+          "topic": "[PYQ - Infosys] Number Puzzle (Factorial Series)",
+          "marks": 2.5,
+          "question": "Find the next number in the series: 1, 2, 6, 24, 120, 720, ?",
+          "options": {
+            "A": "4320",
+            "B": "5040",
+            "C": "5400",
+            "D": "4680"
+          },
+          "correct_answer": "B",
+          "explanation": "Pattern: Factorials!\n1 = 1! (or 0! but next is...)\n2 = 2!\n6 = 3!\n24 = 4!\n120 = 5!\n720 = 6!\nNext = 7! = 5040."
+        },
+        {
+          "id": 52,
+          "section_id": 5,
+          "topic": "[PYQ - Infosys] Word Puzzle (NOT an Anagram)",
+          "marks": 2.5,
+          "question": "Three of the following are anagrams of SILENT. Which one is NOT?",
+          "options": {
+            "A": "LISTEN",
+            "B": "ENLIST",
+            "C": "TINSEL",
+            "D": "LINERS"
+          },
+          "correct_answer": "D",
+          "explanation": "SILENT has letters: S, I, L, E, N, T.\nLISTEN: L,I,S,T,E,N -> same letters. IS an anagram.\nENLIST: E,N,L,I,S,T -> same letters. IS an anagram.\nTINSEL: T,I,N,S,E,L -> same letters. IS an anagram.\nLINERS: L,I,N,E,R,S -> has R instead of T. NOT an anagram of SILENT."
+        },
+        {
+          "id": 53,
+          "section_id": 5,
+          "topic": "[PYQ - Infosys] Number Grid (Recurrence Pattern)",
+          "marks": 2.5,
+          "question": "In the 5x5 grid below, each value = (row number)^2 x (column number):\n\n| Row\\Col | 1  | 2  | 3  | 4  | 5  |\n|---------|----|----|----|----|----|  \n| Row 1   | 1  | 2  | 3  | 4  | 5  |\n| Row 2   | 4  | 8  | 12 | 16 | 20 |\n| Row 3   | 9  | 18 | 27 | ?  | 45 |\n| Row 4   | 16 | 32 | 48 | 64 | 80 |\n| Row 5   | 25 | 50 | 75 | 100|125 |\n\nWhat is the missing value at Row 3, Column 4?",
+          "options": {
+            "A": "30",
+            "B": "33",
+            "C": "36",
+            "D": "39"
+          },
+          "correct_answer": "C",
+          "explanation": "Formula: Value = (row)^2 x (column).\nRow 3, Column 4: 3^2 x 4 = 9 x 4 = 36.\nVerification with neighbours: Row 3, Col 3 = 9x3=27. Row 3, Col 5 = 9x5=45. Row 4, Col 4 = 16x4=64. All consistent."
+        },
+        {
+          "id": 54,
+          "section_id": 5,
+          "topic": "[PYQ - Infosys] Logic Puzzle (5 Attributes)",
+          "marks": 2.5,
+          "question": "Five colleagues \u2014 Alex, Bob, Carol, Dave, Emma \u2014 work in different departments:\nHR, Finance, IT, Marketing, Operations.\n\nClues:\n1. Alex does not work in IT or HR.\n2. Bob works in Finance or Operations.\n3. Carol works in IT.\n4. Dave does not work in Finance or Marketing.\n5. Emma works in HR.\n\nWhat department does ALEX work in?",
+          "options": {
+            "A": "Finance",
+            "B": "HR",
+            "C": "Marketing",
+            "D": "Operations"
+          },
+          "correct_answer": "C",
+          "explanation": "From clue 3: Carol = IT. From clue 5: Emma = HR.\nFrom clue 1: Alex is NOT IT and NOT HR. So Alex in {Finance, Marketing, Operations}.\nFrom clue 4: Dave is NOT Finance, NOT Marketing. Dave can't be IT (Carol) or HR (Emma). So Dave = Operations.\nFrom clue 2: Bob in {Finance, Operations}. Since Dave = Operations, Bob = Finance.\nRemaining for Alex from {Marketing}: Alex = Marketing."
+        },
+        {
+          "id": 55,
+          "section_id": 6,
+          "topic": "[PYQ - Infosys] Grammar (Inverted Conditional)",
+          "marks": 2,
+          "question": "Fill in the blank with the correct form:\n'___ he to arrive late, the meeting would begin without him.'",
+          "options": {
+            "A": "If",
+            "B": "Were",
+            "C": "Should",
+            "D": "Had"
+          },
+          "correct_answer": "B",
+          "explanation": "This is a formal INVERTED CONDITIONAL. The pattern 'Were [subject] to [verb]' is the formal equivalent of 'If [subject] were to [verb]' for hypothetical present/future situations.\n'Were he to arrive late...' = 'If he were to arrive late...'\nThis inversion is common in formal writing and Infosys verbal tests."
+        },
+        {
+          "id": 56,
+          "section_id": 6,
+          "topic": "[PYQ - Infosys] Grammar (It is high time + Subjunctive)",
+          "marks": 2,
+          "question": "Fill in the blank:\n'It is high time the government ___ stricter measures against corruption.'",
+          "options": {
+            "A": "takes",
+            "B": "took",
+            "C": "has taken",
+            "D": "will take"
+          },
+          "correct_answer": "B",
+          "explanation": "The expression 'It is high time' is followed by the PAST SUBJUNCTIVE (simple past form) to indicate urgency about a present situation: 'It is high time + [subject] + PAST TENSE VERB.'\n'It is high time the government TOOK stricter measures.' (The past form doesn't indicate past time here \u2014 it's the subjunctive mood.)"
+        },
+        {
+          "id": 57,
+          "section_id": 6,
+          "topic": "[PYQ - Infosys] Grammar (Future Perfect Tense)",
+          "marks": 2,
+          "question": "Fill in the blank:\n'By the time you read this letter, I ___ left for London.'",
+          "options": {
+            "A": "will have",
+            "B": "would have",
+            "C": "shall have",
+            "D": "had"
+          },
+          "correct_answer": "A",
+          "explanation": "When we talk about an action that will be COMPLETED before a specific point in the future, we use the FUTURE PERFECT: will have + past participle.\n'By the time you read this...' (future moment) + 'I WILL HAVE left' (action completed before that moment).\n'Would have' is for conditional/past hypothetical situations, not future completion."
+        },
+        {
+          "id": 58,
+          "section_id": 6,
+          "topic": "[PYQ - Infosys] Grammar (Ellipsis in Comparatives)",
+          "marks": 2,
+          "question": "Choose the grammatically correct sentence:",
+          "options": {
+            "A": "She works harder than any of her colleagues does.",
+            "B": "She works harder than any of her colleagues do.",
+            "C": "She works harder than all of her colleagues does.",
+            "D": "She works harder as any of her colleagues do."
+          },
+          "correct_answer": "A",
+          "explanation": "When 'any' is used in a comparative clause to refer to other members of a group (excluding the subject herself), it takes a SINGULAR verb because 'any' in this context means 'any one individual colleague.'\n'She works harder than any of her colleagues DOES.' (singular 'does')\nOption C uses 'all' which would require 'do', and the comparison would be logically flawed (she can't be harder than ALL including herself)."
+        },
+        {
+          "id": 59,
+          "section_id": 6,
+          "topic": "[PYQ - Infosys] Grammar (Dangling Participle)",
+          "marks": 2,
+          "question": "Identify the grammatical error in:\n'Walking down the street, the trees appeared beautiful.'",
+          "options": {
+            "A": "No error \u2014 the sentence is correct.",
+            "B": "Dangling participle: 'walking' has no logical subject (the trees cannot walk).",
+            "C": "Wrong tense: 'appeared' should be 'appear'.",
+            "D": "'Beautiful' should be 'beautifully'."
+          },
+          "correct_answer": "B",
+          "explanation": "This is a classic DANGLING PARTICIPLE error. The participial phrase 'Walking down the street' must logically modify the subject of the main clause. But the main clause subject is 'the trees', and trees cannot walk.\nCorrected: 'Walking down the street, I found the trees beautiful.' OR\n'As I was walking down the street, the trees appeared beautiful.'"
+        },
+        {
+          "id": 60,
+          "section_id": 7,
+          "topic": "[PYQ - Infosys] Essay Writing \u2014 Corporate Sustainability",
+          "marks": 0,
+          "is_essay": true,
+          "word_limit_min": 150,
+          "word_limit_max": 250,
+          "question": "Topic: 'Carbon Neutrality and Net-Zero Commitments by Technology Companies: Accountability, Greenwashing, and the Path to Genuine Sustainability.'\n\nPrompt: Write a well-structured essay (150-250 words) addressing:\n1. What 'carbon neutral' and 'net-zero' mean, and why technology companies are making such pledges.\n2. The problem of greenwashing \u2014 where commitments are superficial, misleading, or reliant on offsets rather than real reductions.\n3. Practical recommendations for how enterprises and regulators can ensure verifiable, genuine environmental accountability.",
+          "sample_high_scoring_response": "As climate urgency intensifies, technology giants like Google, Microsoft, and Amazon have pledged to become 'carbon neutral' or achieve 'net-zero' emissions. While 'carbon neutral' typically means balancing emissions through offsets, 'net-zero' implies deep, structural reductions across the entire value chain \u2014 a fundamentally more ambitious and credible standard.\n\nHowever, greenwashing \u2014 the practice of making environmental claims that are exaggerated, vague, or dependent on low-quality carbon offsets \u2014 has become a serious concern. Many companies purchase credits from reforestation projects that may not deliver lasting carbon sequestration, while continuing to expand energy-intensive data centres. This selective accounting misleads investors, consumers, and regulators alike.\n\nTo ensure genuine accountability, enterprises must adopt science-based targets aligned with 1.5\u00b0C pathways, prioritise absolute emission reductions over offsetting, and disclose Scope 1, 2, and 3 emissions transparently under internationally recognised frameworks like the GHG Protocol. Regulators should mandate third-party auditing of sustainability claims and impose penalties for greenwashing.\n\nIn conclusion, meaningful corporate sustainability requires structural transformation, not performative pledges. Only transparent, independently verified, and science-aligned commitments deserve public trust.",
+          "evaluation_criteria": [
+            "Coherence and Logical Structure (Introduction, Body, Conclusion)",
+            "Clarity on Carbon Neutral vs Net-Zero distinction",
+            "Critical Analysis of Greenwashing with examples",
+            "Quality and Practicality of Recommendations",
+            "Vocabulary, Grammar, and Sentence Variety"
+          ],
+          "explanation": "Essay evaluated qualitatively. High-scoring responses demonstrate clear structure, use of domain-specific vocabulary (Scope 3, GHG Protocol, science-based targets), critical reasoning about greenwashing, and actionable recommendations."
+        }
+      ]
     }
   ]
 };
