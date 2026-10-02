@@ -1,903 +1,965 @@
 {
-    "test_title": "Infosys SE Mock Test 6 \u2014 2027 Batch Pattern (Expert Level)",
-    "questions": [
-        {
-            "id": 1,
-            "section_id": 1,
-            "topic": "Data Sufficiency",
-            "marks": 1,
-            "question": "Is ab > 0?\nStatement I: a + b > 0\nStatement II: a - b > 0",
-            "options": {
-                "A": "Statement I ALONE is sufficient.",
-                "B": "Statement II ALONE is sufficient.",
-                "C": "BOTH statements TOGETHER are sufficient.",
-                "D": "NEITHER statement ALONE is sufficient, nor BOTH TOGETHER."
-            },
-            "correct_answer": "D",
-            "explanation": "Let's check together. a+b>0 and a-b>0. Adding gives 2a>0 => a>0. If a=3, b=-1: a+b=2>0, a-b=4>0, ab=-3<0. If a=3, b=1: a+b=4>0, a-b=2>0, ab=3>0. Thus we cannot determine if ab>0. Neither statement together is sufficient. (Note: standard options sometimes have E as neither)."
-        },
-        {
-            "id": 2,
-            "section_id": 1,
-            "topic": "Data Sufficiency",
-            "marks": 1,
-            "question": "What is the value of (x+y)/(x-y)?\nStatement I: x/y = 2\nStatement II: xy = 18",
-            "options": {
-                "A": "Statement I ALONE is sufficient.",
-                "B": "Statement II ALONE is sufficient.",
-                "C": "BOTH statements TOGETHER are sufficient.",
-                "D": "NEITHER statement ALONE is sufficient."
-            },
-            "correct_answer": "A",
-            "explanation": "From I: x/y = 2 => x = 2y. Then (x+y)/(x-y) = (2y+y)/(2y-y) = 3y/y = 3. Sufficient. From II: xy=18, not enough info. So A is correct."
-        },
-        {
-            "id": 3,
-            "section_id": 1,
-            "topic": "Data Interpretation",
-            "marks": 1,
-            "question": "Refer to the chart of Production and Export of Company A over 4 years. (Year 1: Prod=100, Exp=40), (Year 2: Prod=120, Exp=60), (Year 3: Prod=150, Exp=90), (Year 4: Prod=180, Exp=105). In which year was the RATIO of export-to-production highest for Company A?",
-            "options": {
-                "A": "Year 1",
-                "B": "Year 2",
-                "C": "Year 3",
-                "D": "Year 4"
-            },
-            "correct_answer": "C",
-            "explanation": "Year 1: 40/100=0.4. Year 2: 60/120=0.5. Year 3: 90/150=0.6. Year 4: 105/180 \u2248 0.583. The highest is Year 3."
-        },
-        {
-            "id": 4,
-            "section_id": 1,
-            "topic": "Data Interpretation",
-            "marks": 1,
-            "question": "Refer to the chart of Production and Export of Company B over 4 years. (Year 1: P=80, E=30), (Year 2: P=90, E=40), (Year 3: P=110, E=50), (Year 4: P=120, E=80). What is the average domestic consumption (production - export) over all years for Company B?",
-            "options": {
-                "A": "40",
-                "B": "45",
-                "C": "50",
-                "D": "55"
-            },
-            "correct_answer": "C",
-            "explanation": "Consumptions: Y1=80-30=50. Y2=90-40=50. Y3=110-50=60. Y4=120-80=40. Avg = (50+50+60+40)/4 = 200/4 = 50."
-        },
-        {
-            "id": 5,
-            "section_id": 1,
-            "topic": "Syllogisms",
-            "marks": 1,
-            "question": "Statements: Only some Cats are Dogs. All Dogs are Birds.\nConclusions:\nI. Some Cats are Birds.\nII. All Cats being Dogs is a possibility.",
-            "options": {
-                "A": "Only conclusion I follows",
-                "B": "Only conclusion II follows",
-                "C": "Both I and II follow",
-                "D": "Neither I nor II follows"
-            },
-            "correct_answer": "A",
-            "explanation": "'Only some Cats are Dogs' means some Cats are Dogs AND some Cats are NOT Dogs. Thus all Cats cannot be Dogs. Conclusion I follows since some Cats are Dogs, and all Dogs are Birds, so those Cats are Birds. Conclusion II is false."
-        },
-        {
-            "id": 6,
-            "section_id": 1,
-            "topic": "Syllogisms",
-            "marks": 1,
-            "question": "Statements: All Trees are Forests. Only a few Forests are Mountains.\nConclusions:\nI. All Mountains being Forests is a possibility.\nII. Some Trees are Mountains.",
-            "options": {
-                "A": "Only I follows",
-                "B": "Only II follows",
-                "C": "Both I and II follow",
-                "D": "Neither I nor II follows"
-            },
-            "correct_answer": "A",
-            "explanation": "'Only a few Forests are Mountains' means some Forests are Mountains and some are not. It does not prevent all Mountains from being Forests. Thus I is a possibility. No direct relation between Trees and Mountains, so II does not follow."
-        },
-        {
-            "id": 7,
-            "section_id": 1,
-            "topic": "Coding-Decoding",
-            "marks": 1,
-            "question": "In a certain code, each letter is shifted forward in the alphabet by its 1-indexed alphabetical position number (A=1, B=2, etc.). For example, 'A' becomes 'B' (+1). What will 'CAB' be coded as?",
-            "options": {
-                "A": "FCE",
-                "B": "FCD",
-                "C": "ECF",
-                "D": "FBD"
-            },
-            "correct_answer": "D",
-            "explanation": "C is 3rd letter. 3+3=6 (F). A is 1st. 1+1=2 (B, wait: C=3 -> F, A=1 -> B, B=2 -> D). Let's check options. Wait, 'A' becomes 'B', C=3, C+3=6(F). A=1, A+1=2(B). B=2, B+2=4(D). FBD. Option D is FBD. Let's make correct answer D."
-        },
-        {
-            "id": 8,
-            "section_id": 1,
-            "topic": "Blood Relations",
-            "marks": 1,
-            "question": "In a 3-generation family, P is the father of Q, who is the brother of R. S is the mother of T and daughter of R. If U is the spouse of P, how is U related to T?",
-            "options": {
-                "A": "Grandmother",
-                "B": "Mother",
-                "C": "Great Grandmother",
-                "D": "Aunt"
-            },
-            "correct_answer": "C",
-            "explanation": "P and U are spouses. Q and R are their children. R is the parent of S (S is R's daughter). S is the mother of T. So T is the child of S, who is the child of R, who is the child of U. Thus U is the great grandmother of T."
-        },
-        {
-            "id": 9,
-            "section_id": 1,
-            "topic": "Directional Sense",
-            "marks": 1,
-            "question": "From point A, a person walks 10km at a bearing of 045 degrees. Then they walk 10km at a bearing of 135 degrees. Finally, they walk 10km at a bearing of 225 degrees. How far is the person from point A?",
-            "options": {
-                "A": "10 km",
-                "B": "15 km",
-                "C": "10\u221a2 km",
-                "D": "5 km"
-            },
-            "correct_answer": "A",
-            "explanation": "045 deg is North-East. 135 is South-East. 225 is South-West. This forms three sides of a square. The distance from the final point to A is the remaining side of the square, which is 10 km."
-        },
-        {
-            "id": 10,
-            "section_id": 1,
-            "topic": "Seating Arrangement",
-            "marks": 1,
-            "question": "8 people (A-H) sit around a circle. Each wears Red, Blue, Green, or Yellow (2 of each). A wears Red and sits opposite C, who wears Blue. B sits adjacent to A and wears Green. D sits opposite B. E sits 2nd to left of C. What is the maximum number of people sitting between A and D?",
-            "options": {
-                "A": "1",
-                "B": "2",
-                "C": "3",
-                "D": "4"
-            },
-            "correct_answer": "C",
-            "explanation": "Since there are 8 people, the maximum number of people sitting between any two individuals is 3."
-        },
-        {
-            "id": 11,
-            "section_id": 1,
-            "topic": "Seating Arrangement",
-            "marks": 1,
-            "question": "Using the same arrangement: A(Red) opposite C(Blue). B(Green) adjacent to A. D opposite B. E is 2nd to left of C. If H wears Yellow and sits opposite E, what is the position of H with respect to A?",
-            "options": {
-                "A": "2nd to the right",
-                "B": "2nd to the left",
-                "C": "Immediate right",
-                "D": "Immediate left"
-            },
-            "correct_answer": "A",
-            "explanation": "A is at 1. C is at 5. B is at 2 or 8. Let B=2. D=6. E is 2nd to left of C(5), so E=7 (if facing center). H is opposite E, so H=3. H(3) is 2nd to right of A(1)."
-        },
-        {
-            "id": 12,
-            "section_id": 1,
-            "topic": "Logical Deduction",
-            "marks": 1,
-            "question": "In a class of 100 students: 60 study Math, 50 study Science, 40 study English. 30 study Math and Science, 20 study Science and English, 15 study Math and English, 10 study all 3. How many study ONLY Math?",
-            "options": {
-                "A": "15",
-                "B": "25",
-                "C": "35",
-                "D": "45"
-            },
-            "correct_answer": "B",
-            "explanation": "Only Math = Total Math - (Math&Science only) - (Math&English only) - (All 3) = 60 - (30-10) - (15-10) - 10 = 60 - 20 - 5 - 10 = 25."
-        },
-        {
-            "id": 13,
-            "section_id": 1,
-            "topic": "Logical Deduction",
-            "marks": 1,
-            "question": "Using the same class of 100 students: 60 Math, 50 Science, 40 English. 30 M&S, 20 S&E, 15 M&E, 10 all three. How many study exactly TWO subjects?",
-            "options": {
-                "A": "30",
-                "B": "35",
-                "C": "40",
-                "D": "45"
-            },
-            "correct_answer": "B",
-            "explanation": "Exactly two = (M&S only) + (S&E only) + (M&E only) = (30-10) + (20-10) + (15-10) = 20 + 10 + 5 = 35."
-        },
-        {
-            "id": 14,
-            "section_id": 1,
-            "topic": "Statistical DI",
-            "marks": 1,
-            "question": "Consider a frequency distribution: [0-10): 5, [10-20): 15, [20-30): 20, [30-40): 10. Calculate the mean.",
-            "options": {
-                "A": "20",
-                "B": "21",
-                "C": "22",
-                "D": "23"
-            },
-            "correct_answer": "C",
-            "explanation": "Midpoints: 5, 15, 25, 35. Mean = (5*5 + 15*15 + 25*20 + 35*10) / (5+15+20+10) = (25 + 225 + 500 + 350) / 50 = 1100 / 50 = 22."
-        },
-        {
-            "id": 15,
-            "section_id": 1,
-            "topic": "Statistical DI",
-            "marks": 1,
-            "question": "Consider a frequency distribution: [0-10): 5, [10-20): 15, [20-30): 20, [30-40): 10. The mean is 22. What is the variance (approx)?",
-            "options": {
-                "A": "61",
-                "B": "71",
-                "C": "81",
-                "D": "91"
-            },
-            "correct_answer": "C",
-            "explanation": "Deviations from 22: -17, -7, 3, 13. Squared: 289, 49, 9, 169. Sum of sq = 5*289 + 15*49 + 20*9 + 10*169 = 1445 + 735 + 180 + 1690 = 4050. Variance = 4050/50 = 81."
-        },
-        {
-            "id": 16,
-            "section_id": 2,
-            "topic": "Number Series",
-            "marks": 1,
-            "question": "Find the next number in the series: 1, 2, 4, 7, 11, 16, 22, ?",
-            "options": {
-                "A": "27",
-                "B": "28",
-                "C": "29",
-                "D": "30"
-            },
-            "correct_answer": "C",
-            "explanation": "Differences are 1, 2, 3, 4, 5, 6. Next difference is 7. 22 + 7 = 29."
-        },
-        {
-            "id": 17,
-            "section_id": 2,
-            "topic": "Number Series",
-            "marks": 1,
-            "question": "Find the next number in the series: 4, 5, 7, 10, 14, 19, 25, ?",
-            "options": {
-                "A": "31",
-                "B": "32",
-                "C": "33",
-                "D": "34"
-            },
-            "correct_answer": "B",
-            "explanation": "Differences are 1, 2, 3, 4, 5, 6. Next difference is 7. 25 + 7 = 32."
-        },
-        {
-            "id": 18,
-            "section_id": 2,
-            "topic": "Ratios",
-            "marks": 1,
-            "question": "A container holds 100 liters of pure liquid. 20 liters is removed and replaced with water. This process is repeated two more times (3 times total). What is the final concentration of the original liquid?",
-            "options": {
-                "A": "48.8%",
-                "B": "51.2%",
-                "C": "60.0%",
-                "D": "64.0%"
-            },
-            "correct_answer": "B",
-            "explanation": "Amount left = Initial * (1 - volume replaced/Total)^n = 100 * (1 - 20/100)^3 = 100 * (0.8)^3 = 100 * 0.512 = 51.2L. Concentration is 51.2%."
-        },
-        {
-            "id": 19,
-            "section_id": 2,
-            "topic": "P&C/Probability",
-            "marks": 1,
-            "question": "10 people are at a party. Everyone shakes hands with everyone else exactly once, EXCEPT two specific people who refuse to shake hands with each other. What is the total number of handshakes?",
-            "options": {
-                "A": "43",
-                "B": "44",
-                "C": "45",
-                "D": "90"
-            },
-            "correct_answer": "B",
-            "explanation": "Total handshakes without restriction = 10C2 = 45. Minus the 1 missed handshake between the two specific people = 44."
-        },
-        {
-            "id": 20,
-            "section_id": 2,
-            "topic": "P&C/Probability",
-            "marks": 1,
-            "question": "A point is selected at random inside a square of side 10 cm. Find the probability that it lies within a circle of radius 5 cm inscribed in the square.",
-            "options": {
-                "A": "\u03c0/2",
-                "B": "\u03c0/3",
-                "C": "\u03c0/4",
-                "D": "\u03c0/5"
-            },
-            "correct_answer": "C",
-            "explanation": "Area of square = 100. Area of circle = \u03c0 * r^2 = 25\u03c0. Probability = 25\u03c0 / 100 = \u03c0 / 4."
-        },
-        {
-            "id": 21,
-            "section_id": 2,
-            "topic": "Time-Speed-Distance",
-            "marks": 1,
-            "question": "A boat goes 30km upstream in 6 hours and 30km downstream in 3 hours. A train of length 200m moving at the same speed as the boat IN STILL WATER passes a platform 300m long. How long does it take?",
-            "options": {
-                "A": "2 minutes",
-                "B": "3 minutes",
-                "C": "4 minutes",
-                "D": "5 minutes"
-            },
-            "correct_answer": "C",
-            "explanation": "Upstream speed = 30/6 = 5 kmph. Downstream speed = 30/3 = 10 kmph. Boat in still water = (5+10)/2 = 7.5 kmph. Train speed = 7.5 kmph = 7.5 * (5/18) m/s. Dist = 200+300 = 500m. Time = 500 / (7.5 * 5/18) = (500 * 18) / 37.5 = 240 seconds = 4 minutes."
-        },
-        {
-            "id": 22,
-            "section_id": 2,
-            "topic": "Cryptarithmetic",
-            "marks": 1,
-            "question": "In the cryptarithmetic puzzle AB + BC + CA = XYZ, each distinct letter represents a distinct non-zero digit. If XYZ = 165, what is the value of X + Y + Z?",
-            "options": {
-                "A": "10",
-                "B": "11",
-                "C": "12",
-                "D": "13"
-            },
-            "correct_answer": "C",
-            "explanation": "XYZ is given as 165. X=1, Y=6, Z=5. X+Y+Z = 1+6+5 = 12. Also, (10A+B) + (10B+C) + (10C+A) = 11(A+B+C) = 165 => A+B+C = 15. E.g., 3, 5, 7."
-        },
-        {
-            "id": 23,
-            "section_id": 2,
-            "topic": "Time and Work",
-            "marks": 1,
-            "question": "A can finish a task in 10 days. B can finish the same task in 15 days. A works alone for 3 days, then B joins. After 2 more days, A leaves. How many more days does B need to finish the remaining work?",
-            "options": {
-                "A": "3 days",
-                "B": "4 days",
-                "C": "5.5 days",
-                "D": "6 days"
-            },
-            "correct_answer": "C",
-            "explanation": "Total work = 30 units (LCM). A does 3 u/day, B does 2 u/day. A alone for 3 days = 9 u. A and B together for 2 days = 5 * 2 = 10 u. Work done = 19 u. Work left = 11 u. B does 2 u/day, so B needs 11/2 = 5.5 days."
-        },
-        {
-            "id": 24,
-            "section_id": 2,
-            "topic": "Simplification",
-            "marks": 1,
-            "question": "Find the remainder when 2^100 is divided by 7.",
-            "options": {
-                "A": "1",
-                "B": "2",
-                "C": "4",
-                "D": "6"
-            },
-            "correct_answer": "B",
-            "explanation": "Powers of 2 mod 7: 2^1 = 2. 2^2 = 4. 2^3 = 1. Cyclicity is 3. 100 mod 3 = 1. Thus 2^100 \u2261 2^1 (mod 7) \u2261 2."
-        },
-        {
-            "id": 25,
-            "section_id": 2,
-            "topic": "Algebra",
-            "marks": 1,
-            "question": "If 3x + 2y = 12, and x \u2265 0, y \u2265 0, what is the maximum value of xy?",
-            "options": {
-                "A": "4",
-                "B": "5",
-                "C": "6",
-                "D": "8"
-            },
-            "correct_answer": "C",
-            "explanation": "By AM-GM, (3x + 2y)/2 \u2265 \u221a(6xy). So 6 \u2265 \u221a(6xy). Squaring gives 36 \u2265 6xy => xy \u2264 6. Max xy is 6, at 3x = 2y = 6 => x=2, y=3."
-        },
-        {
-            "id": 26,
-            "section_id": 3,
-            "topic": "Critical Reasoning",
-            "marks": 1,
-            "question": "Consider the argument: 'If it rains, the ground gets wet. The ground is wet, so it must have rained.' Which of the following exhibits the same flawed logical structure?",
-            "options": {
-                "A": "If you study hard, you will pass. You studied hard, so you passed.",
-                "B": "If the sun is out, it is daytime. It is daytime, so the sun must be out.",
-                "C": "If he eats too much, he gets sick. He didn't get sick, so he didn't eat too much.",
-                "D": "If she runs, she will sweat. She is not running, so she is not sweating."
-            },
-            "correct_answer": "B",
-            "explanation": "The original argument commits the fallacy of affirming the consequent (If A then B; B, therefore A). Option B exhibits the exact same flaw."
-        },
-        {
-            "id": 27,
-            "section_id": 3,
-            "topic": "Critical Reasoning",
-            "marks": 1,
-            "question": "Which of the following most strongly weakens the argument that 'Switching to electric vehicles will eliminate urban air pollution'?",
-            "options": {
-                "A": "Electric vehicles are currently more expensive than gas-powered ones.",
-                "B": "A significant portion of urban air pollution comes from factory emissions, not vehicles.",
-                "C": "Electric vehicles require large batteries that are hard to recycle.",
-                "D": "Some people prefer the sound and feel of gas engines."
-            },
-            "correct_answer": "B",
-            "explanation": "If pollution comes largely from factories, switching vehicles will not *eliminate* urban air pollution."
-        },
-        {
-            "id": 28,
-            "section_id": 3,
-            "topic": "Critical Reasoning",
-            "marks": 1,
-            "question": "Argument: 'All successful CEOs wake up before 5 AM. John wakes up at 4:30 AM, so he will be a successful CEO.' This argument assumes that:",
-            "options": {
-                "A": "Waking up early guarantees success as a CEO.",
-                "B": "John has the other skills needed to be a CEO.",
-                "C": "Successful CEOs do not sleep very much.",
-                "D": "John wants to be a CEO."
-            },
-            "correct_answer": "A",
-            "explanation": "The argument implies that because he has this one trait (waking up early), he will become a successful CEO, confusing a necessary condition for a sufficient one."
-        },
-        {
-            "id": 29,
-            "section_id": 3,
-            "topic": "Corrective Usage",
-            "marks": 1,
-            "question": "Select the correct sentence:",
-            "options": {
-                "A": "He studied hard lest he will fail.",
-                "B": "He studied hard lest he should fail.",
-                "C": "He studied hard lest he fails.",
-                "D": "He studied hard lest he would fail."
-            },
-            "correct_answer": "B",
-            "explanation": "'Lest' is followed by 'should'."
-        },
-        {
-            "id": 30,
-            "section_id": 3,
-            "topic": "Corrective Usage",
-            "marks": 1,
-            "question": "Fill in the blank: I would rather you _____ it today.",
-            "options": {
-                "A": "do",
-                "B": "will do",
-                "C": "did",
-                "D": "done"
-            },
-            "correct_answer": "C",
-            "explanation": "'Would rather' followed by a subject uses the past tense to refer to a present or future preference."
-        },
-        {
-            "id": 31,
-            "section_id": 3,
-            "topic": "Corrective Usage",
-            "marks": 1,
-            "question": "Select the correct usage:",
-            "options": {
-                "A": "I prefer swimming than jogging.",
-                "B": "I prefer swimming over jogging.",
-                "C": "I prefer swimming to jogging.",
-                "D": "I prefer swimming more than jogging."
-            },
-            "correct_answer": "C",
-            "explanation": "The verb 'prefer' takes the preposition 'to' when comparing two gerunds or nouns."
-        },
-        {
-            "id": 32,
-            "section_id": 3,
-            "topic": "Error Correction",
-            "marks": 1,
-            "question": "Find the sentence with no errors:",
-            "options": {
-                "A": "She neither plays tennis or squash, and she don't like running.",
-                "B": "She neither plays tennis nor squash, and she doesn't like running.",
-                "C": "She neither plays tennis nor squash, and she don't like running.",
-                "D": "She plays neither tennis or squash, and she doesn't like running."
-            },
-            "correct_answer": "B",
-            "explanation": "Uses 'neither...nor' and correct verb 'doesn't'."
-        },
-        {
-            "id": 33,
-            "section_id": 3,
-            "topic": "Error Correction",
-            "marks": 1,
-            "question": "Choose the most grammatically correct sentence:",
-            "options": {
-                "A": "Between you and I, the committee have made a mistake.",
-                "B": "Between you and me, the committee has made a mistake.",
-                "C": "Between you and I, the committee has made a mistake.",
-                "D": "Between you and me, the committee have made a mistake."
-            },
-            "correct_answer": "B",
-            "explanation": "Preposition 'between' takes objective case 'me', and 'committee' acting as a single entity takes singular 'has'."
-        },
-        {
-            "id": 34,
-            "section_id": 3,
-            "topic": "Error Correction",
-            "marks": 1,
-            "question": "Which sentence fixes all errors in: 'The dog wagged it's tail, and laid down on the rug.'",
-            "options": {
-                "A": "The dog wagged its tail, and lay down on the rug.",
-                "B": "The dog wagged its tail, and laid down on the rug.",
-                "C": "The dog wagged it's tail, and lay down on the rug.",
-                "D": "The dog wagged its tail and lied down on the rug."
-            },
-            "correct_answer": "A",
-            "explanation": "Possessive is 'its'. Past tense of 'lie' (rest) is 'lay'."
-        },
-        {
-            "id": 35,
-            "section_id": 3,
-            "topic": "Error ID",
-            "marks": 1,
-            "question": "Identify the incorrect usage in the sentence: 'The politician's sudden shift in policy begs the question of why he changed his mind.'",
-            "options": {
-                "A": "sudden shift",
-                "B": "begs the question",
-                "C": "of why",
-                "D": "changed his mind"
-            },
-            "correct_answer": "B",
-            "explanation": "'Begs the question' is a logical fallacy (circular reasoning), often incorrectly used to mean 'raises the question'."
-        },
-        {
-            "id": 36,
-            "section_id": 3,
-            "topic": "Error ID",
-            "marks": 1,
-            "question": "Identify the incorrect usage: 'The enormity of the mountain made the climbers pause in awe.'",
-            "options": {
-                "A": "enormity",
-                "B": "made",
-                "C": "pause in",
-                "D": "awe"
-            },
-            "correct_answer": "A",
-            "explanation": "'Enormity' traditionally refers to extreme evil or moral outrage, not physical enormousness."
-        },
-        {
-            "id": 37,
-            "section_id": 3,
-            "topic": "Reading Comprehension",
-            "marks": 1,
-            "question": "Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural pathways throughout life. In the context of Traumatic Brain Injury (TBI), cognitive rehabilitation leverages synaptic plasticity to restore lost functions. By repeatedly engaging in targeted tasks, patients can build cognitive reserve and develop compensatory strategies that bypass damaged tissues. This empirical approach challenges older static models of brain function. While early skepticism existed, robust clinical trials now demonstrate that structured rehabilitation accelerates functional recovery. The brain is not a fixed machine; it is a highly adaptive organ capable of remarkable regeneration under the right conditions.\n\nAccording to the passage, how do patients bypass damaged tissues?",
-            "options": {
-                "A": "Through surgical intervention.",
-                "B": "By relying solely on synaptic generation.",
-                "C": "By developing compensatory strategies.",
-                "D": "By accepting static models of brain function."
-            },
-            "correct_answer": "C",
-            "explanation": "The text states 'patients can build cognitive reserve and develop compensatory strategies that bypass damaged tissues.'"
-        },
-        {
-            "id": 38,
-            "section_id": 3,
-            "topic": "Reading Comprehension",
-            "marks": 1,
-            "question": "Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural pathways throughout life. In the context of Traumatic Brain Injury (TBI), cognitive rehabilitation leverages synaptic plasticity to restore lost functions. By repeatedly engaging in targeted tasks, patients can build cognitive reserve and develop compensatory strategies that bypass damaged tissues. This empirical approach challenges older static models of brain function. While early skepticism existed, robust clinical trials now demonstrate that structured rehabilitation accelerates functional recovery. The brain is not a fixed machine; it is a highly adaptive organ capable of remarkable regeneration under the right conditions.\n\nWhat is the primary function of synaptic plasticity in this context?",
-            "options": {
-                "A": "To challenge empirical approaches.",
-                "B": "To restore lost cognitive functions.",
-                "C": "To prevent traumatic brain injuries.",
-                "D": "To increase physical strength."
-            },
-            "correct_answer": "B",
-            "explanation": "The passage says 'cognitive rehabilitation leverages synaptic plasticity to restore lost functions.'"
-        },
-        {
-            "id": 39,
-            "section_id": 3,
-            "topic": "Reading Comprehension",
-            "marks": 1,
-            "question": "Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural pathways throughout life. In the context of Traumatic Brain Injury (TBI), cognitive rehabilitation leverages synaptic plasticity to restore lost functions. By repeatedly engaging in targeted tasks, patients can build cognitive reserve and develop compensatory strategies that bypass damaged tissues. This empirical approach challenges older static models of brain function. While early skepticism existed, robust clinical trials now demonstrate that structured rehabilitation accelerates functional recovery. The brain is not a fixed machine; it is a highly adaptive organ capable of remarkable regeneration under the right conditions.\n\nWhich statement best describes the structure of the argument in the passage?",
-            "options": {
-                "A": "It presents a problem, proposes a theoretical solution, and requests funding.",
-                "B": "It defines a concept, applies it to a specific medical condition, and cites general evidence to counter past skepticism.",
-                "C": "It compares two opposing medical theories and concludes that both are flawed.",
-                "D": "It outlines a historical timeline of neurological discoveries."
-            },
-            "correct_answer": "B",
-            "explanation": "The passage defines neuroplasticity, applies it to TBI, mentions it challenges older models, and cites robust clinical trials overcoming early skepticism."
-        },
-        {
-            "id": 40,
-            "section_id": 3,
-            "topic": "Reading Comprehension",
-            "marks": 1,
-            "question": "Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural pathways throughout life. In the context of Traumatic Brain Injury (TBI), cognitive rehabilitation leverages synaptic plasticity to restore lost functions. By repeatedly engaging in targeted tasks, patients can build cognitive reserve and develop compensatory strategies that bypass damaged tissues. This empirical approach challenges older static models of brain function. While early skepticism existed, robust clinical trials now demonstrate that structured rehabilitation accelerates functional recovery. The brain is not a fixed machine; it is a highly adaptive organ capable of remarkable regeneration under the right conditions.\n\nWhat is the author's tone regarding the brain's recovery capabilities?",
-            "options": {
-                "A": "Skeptical and cautious",
-                "B": "Objective but ultimately enthusiastic",
-                "C": "Dismissive and critical",
-                "D": "Purely historical"
-            },
-            "correct_answer": "B",
-            "explanation": "The author provides objective facts but concludes enthusiastically that the brain is 'capable of remarkable regeneration'."
-        },
-        {
-            "id": 41,
-            "section_id": 3,
-            "topic": "Para Jumbles",
-            "marks": 1,
-            "question": "Arrange the sentences:\n1. It was heavily encrypted.\n2. The historian found an ancient manuscript.\n3. She finally decoded the final chapter.\n4. For years, she worked on the cipher.\n5. The contents revealed a lost city.",
-            "options": {
-                "A": "2-1-4-3-5",
-                "B": "2-4-1-3-5",
-                "C": "1-2-4-3-5",
-                "D": "2-1-3-4-5"
-            },
-            "correct_answer": "A",
-            "explanation": "2 introduces manuscript. 1 describes it (encrypted). 4 shows her working on it. 3 is decoding it. 5 is the result."
-        },
-        {
-            "id": 42,
-            "section_id": 3,
-            "topic": "Para Jumbles",
-            "marks": 1,
-            "question": "Arrange the sentences:\n1. He however, disagreed with the findings.\n2. The report was published in May.\n3. It showed a massive decline in sales.\n4. The CEO read it carefully.",
-            "options": {
-                "A": "2-3-4-1",
-                "B": "2-4-3-1",
-                "C": "4-2-3-1",
-                "D": "2-3-1-4"
-            },
-            "correct_answer": "A",
-            "explanation": "2 introduces report. 3 ('It') describes the report. 4 CEO reads it. 1 ('He') disagrees."
-        },
-        {
-            "id": 43,
-            "section_id": 3,
-            "topic": "Synonyms/Antonyms",
-            "marks": 1,
-            "question": "What is the meaning of SANCTION in the sentence: 'The government sanctioned the new infrastructure project.'?",
-            "options": {
-                "A": "Approved",
-                "B": "Punished",
-                "C": "Delayed",
-                "D": "Reviewed"
-            },
-            "correct_answer": "A",
-            "explanation": "Sanction can mean approve or penalize. In this context, approving a project fits perfectly."
-        },
-        {
-            "id": 44,
-            "section_id": 3,
-            "topic": "Synonyms/Antonyms",
-            "marks": 1,
-            "question": "What is the meaning of CLEAVE in the sentence: 'She continued to cleave to the old traditions despite the changes.'?",
-            "options": {
-                "A": "Cut",
-                "B": "Cling",
-                "C": "Separate",
-                "D": "Abandon"
-            },
-            "correct_answer": "B",
-            "explanation": "Cleave is a contronym. 'Cleave to' means to cling to or adhere to."
-        },
-        {
-            "id": 45,
-            "section_id": 3,
-            "topic": "Synonyms/Antonyms",
-            "marks": 1,
-            "question": "What is the meaning of SCAN in the sentence: 'He scanned the horizon for any sign of land.'?",
-            "options": {
-                "A": "Examined carefully",
-                "B": "Looked hastily",
-                "C": "Photographed",
-                "D": "Measured"
-            },
-            "correct_answer": "A",
-            "explanation": "Scan can mean glance quickly or examine carefully. Looking for a sign of land implies careful examination."
-        },
-        {
-            "id": 46,
-            "section_id": 4,
-            "topic": "Pseudocode",
-            "marks": 2,
-            "question": "What is the output of the following pseudocode?\nfunction f(n):\n  if n <= 1: return 1\n  sum = 0\n  for i = 1 to n:\n    sum = sum + i\n  return sum + f(n-1)\nprint f(3)",
-            "options": {
-                "A": "9",
-                "B": "10",
-                "C": "11",
-                "D": "12"
-            },
-            "correct_answer": "B",
-            "explanation": "f(1) = 1. f(2): loop sum = 1+2=3; returns 3+f(1) = 4. f(3): loop sum = 1+2+3=6; returns 6+f(2) = 10. Output is 10."
-        },
-        {
-            "id": 47,
-            "section_id": 4,
-            "topic": "Pseudocode",
-            "marks": 2,
-            "question": "Given array A = [1, 2, 3, 4, 6]. What is the final value of x after this code?\nx = 0\nfor i = 1 to 6:\n  x = x XOR i\nfor j = 0 to 4:\n  x = x XOR A[j]",
-            "options": {
-                "A": "4",
-                "B": "5",
-                "C": "6",
-                "D": "7"
-            },
-            "correct_answer": "B",
-            "explanation": "XORing all numbers from 1 to 6, then XORing with the array elements will cancel out all elements present in the array. The remaining value will be the missing number, which is 5."
-        },
-        {
-            "id": 48,
-            "section_id": 4,
-            "topic": "Pseudocode",
-            "marks": 2,
-            "question": "Given array A = [3, 9, 1, 14, 6, 2]. Modified bubble sort: swap adjacent elements ONLY if difference > 5. What is the array after ONE full pass (left to right)?",
-            "options": {
-                "A": "3, 1, 9, 6, 2, 14",
-                "B": "3, 1, 9, 6, 14, 2",
-                "C": "1, 3, 9, 2, 6, 14",
-                "D": "3, 1, 9, 14, 6, 2"
-            },
-            "correct_answer": "A",
-            "explanation": "Compare 3 & 9: diff=6 > 5. Swap -> [9, 3, 1, 14, 6, 2]. Wait, standard bubble compares A[i] and A[i+1], if A[i]>A[i+1] and diff>5 then swap. If it just says 'if difference > 5 swap' unconditionally... usually bubble sort only swaps if out of order. Let's assume out of order: if A[i]>A[i+1] and A[i]-A[i+1]>5. 3>9 (no). 9>1 (diff 8>5, swap)-> [3, 1, 9, 14, 6, 2]. 9>14 (no). 14>6 (diff 8>5, swap)-> [3, 1, 9, 6, 14, 2]. 14>2 (diff 12>5, swap)-> [3, 1, 9, 6, 2, 14]. So option A is correct."
-        },
-        {
-            "id": 49,
-            "section_id": 4,
-            "topic": "Pseudocode",
-            "marks": 2,
-            "question": "String compression pseudocode compresses 'AAABBBCCCA' to '3A3B3C1A'. Is the compressed output shorter than the original string?",
-            "options": {
-                "A": "Yes, 8 characters vs 10 characters",
-                "B": "No, both are 10 characters",
-                "C": "Yes, 4 characters vs 10 characters",
-                "D": "No, the output is longer"
-            },
-            "correct_answer": "A",
-            "explanation": "'AAABBBCCCA' is 10 chars. '3A3B3C1A' is 8 chars. 8 < 10."
-        },
-        {
-            "id": 50,
-            "section_id": 4,
-            "topic": "Pseudocode",
-            "marks": 2,
-            "question": "function C(x) return x*2\nfunction B(x) return C(x*2)+3\nfunction A(x) return B(x*2)-1\nWhat does A(3) return?",
-            "options": {
-                "A": "24",
-                "B": "25",
-                "C": "26",
-                "D": "27"
-            },
-            "correct_answer": "C",
-            "explanation": "A(3) calls B(6)-1. B(6) calls C(12)+3. C(12) = 24. B(6) = 24+3=27. A(3) = 27-1=26."
-        },
-        {
-            "id": 51,
-            "section_id": 5,
-            "topic": "Numerical Puzzles",
-            "marks": 2.5,
-            "question": "Find the next term in the series: 1, 2, -3, 4, 5, -6, 7, 8, -9, ?",
-            "options": {
-                "A": "10",
-                "B": "-10",
-                "C": "11",
-                "D": "-11"
-            },
-            "correct_answer": "A",
-            "explanation": "Natural numbers sequence, but every third number is negated. The 10th number is just 10 (positive)."
-        },
-        {
-            "id": 52,
-            "section_id": 5,
-            "topic": "Numerical Puzzles",
-            "marks": 2.5,
-            "question": "Identify the word: C R _ P T _ G R _ P H _",
-            "options": {
-                "A": "CRYPTOGRAPHY",
-                "B": "ENTREPRENEURSHIP",
-                "C": "PHOTOGRAPHY",
-                "D": "TYPOGRAPHY"
-            },
-            "correct_answer": "A",
-            "explanation": "The word CRYPTOGRAPHY has letters matching this pattern."
-        },
-        {
-            "id": 53,
-            "section_id": 5,
-            "topic": "Numerical Puzzles",
-            "marks": 2.5,
-            "question": "In a 5x5 matrix, the value at row i and column j (1-indexed) is given by i\u00b2 + j. What is the value at row 3, column 4?",
-            "options": {
-                "A": "10",
-                "B": "13",
-                "C": "15",
-                "D": "16"
-            },
-            "correct_answer": "B",
-            "explanation": "Value = 3\u00b2 + 4 = 9 + 4 = 13."
-        },
-        {
-            "id": 54,
-            "section_id": 5,
-            "topic": "Numerical Puzzles",
-            "marks": 2.5,
-            "question": "5 people (A-E) hold 5 jobs (Programmer, Designer, Manager, Analyst, Tester). Clues: 1) A is not Programmer or Manager. 2) B is the Manager. 3) C works with E in technical roles (Programmer or Tester). 4) D is the Designer. What is A's job?",
-            "options": {
-                "A": "Programmer",
-                "B": "Designer",
-                "C": "Analyst",
-                "D": "Tester"
-            },
-            "correct_answer": "C",
-            "explanation": "B=Manager, D=Designer. C & E are Programmer and Tester. Only Analyst is left for A."
-        },
-        {
-            "id": 55,
-            "section_id": 6,
-            "topic": "English Grammar",
-            "marks": 2,
-            "question": "Choose the correct reported speech for: She said, 'I might have left early.'",
-            "options": {
-                "A": "She said she might have left early.",
-                "B": "She said she may have left early.",
-                "C": "She said she might leave early.",
-                "D": "She said she had might left early."
-            },
-            "correct_answer": "A",
-            "explanation": "'Might' does not change in reported speech."
-        },
-        {
-            "id": 56,
-            "section_id": 6,
-            "topic": "English Grammar",
-            "marks": 2,
-            "question": "Fill in the blank: Neither the manager nor the employees ___ satisfied.",
-            "options": {
-                "A": "is",
-                "B": "are",
-                "C": "was",
-                "D": "has been"
-            },
-            "correct_answer": "B",
-            "explanation": "By the rule of proximity, the verb agrees with the closest subject ('employees', which is plural)."
-        },
-        {
-            "id": 57,
-            "section_id": 6,
-            "topic": "English Grammar",
-            "marks": 2,
-            "question": "Fill in the blank: I wish I ___ taller.",
-            "options": {
-                "A": "was",
-                "B": "were",
-                "C": "am",
-                "D": "will be"
-            },
-            "correct_answer": "B",
-            "explanation": "Subjunctive mood for wishes uses 'were' for all subjects."
-        },
-        {
-            "id": 58,
-            "section_id": 6,
-            "topic": "English Grammar",
-            "marks": 2,
-            "question": "Fill in the blank: It is ___ who is responsible for the error.",
-            "options": {
-                "A": "him",
-                "B": "he",
-                "C": "his",
-                "D": "himself"
-            },
-            "correct_answer": "B",
-            "explanation": "Subject pronoun 'he' is required after 'It is'."
-        },
-        {
-            "id": 59,
-            "section_id": 6,
-            "topic": "English Grammar",
-            "marks": 2,
-            "question": "Fill in the blank: The exam having ___, the students left the hall.",
-            "options": {
-                "A": "finished",
-                "B": "been finished",
-                "C": "finish",
-                "D": "been finishing"
-            },
-            "correct_answer": "A",
-            "explanation": "Absolute participial phrase uses 'finished'."
-        },
-        {
-            "id": 60,
-            "section_id": 7,
-            "topic": "English Writing",
-            "marks": 0,
-            "question": "Topic: The Existential Risk of Superintelligent AI \u2014 Separating Scientific Consensus from Media Sensationalism, and the Role of Governance Frameworks in Responsible AI Development.\nAddress (1) legitimate existential risk vs exaggerated fears, (2) current governance gaps, (3) role of international cooperation, and (4) practical near-term recommendations.",
-            "is_essay": true,
-            "word_limit_min": 150,
-            "word_limit_max": 250,
-            "sample_high_scoring_response": "The existential risk posed by superintelligent AI is often clouded by media sensationalism, which imagines Hollywood-style rogue robots. However, the legitimate scientific consensus centers on the 'alignment problem': the danger that an advanced AI might pursue goals misaligned with human survival. While terminator scenarios are exaggerated, the threat of unintended consequences from hyper-competent optimization processes is a genuine concern.\n\nCurrently, there are massive governance gaps in AI regulation. Most frameworks are voluntary, fragmented, and severely lag behind the rapid pace of corporate AI development. National policies alone are insufficient because AI research is globally distributed and open-source models cross borders instantly.\n\nTo address this, international cooperation is vital. A model similar to CERN for AI safety could pool global resources, ensuring that frontier research is conducted transparently and safely, prioritizing alignment over commercial speed. Such an organization could establish unified safety benchmarks and compliance standards.\n\nIn the near term, practical recommendations include mandating rigorous external auditing for frontier models before deployment, increasing funding for AI alignment research, and developing 'kill switches' or containment protocols for highly autonomous systems. By separating realistic alignment risks from sci-fi tropes and establishing robust international governance, humanity can responsibly harness the benefits of superintelligent AI without jeopardizing our future.",
-            "evaluation_criteria": "Scores are based on: 1. Clarity and coherence, 2. Addressing all four prompt points, 3. Vocabulary and grammatical correctness, 4. Adherence to word count.",
-            "explanation": "This essay clearly structures the 4 required points, uses strong vocabulary, and sits comfortably within the 150-250 word limit."
-        }
-    ]
+  "test_title": "Infosys SE Mock Test 6 — 2027 Batch Pattern (Expert Level)",
+  "questions": [
+    {
+      "id": 1,
+      "section_id": 1,
+      "topic": "Data Sufficiency",
+      "marks": 1,
+      "question": "Is ab > 0?\nStatement I: a + b > 0\nStatement II: a - b > 0",
+      "options": {
+        "A": "Statement I ALONE is sufficient.",
+        "B": "Statement II ALONE is sufficient.",
+        "C": "BOTH statements TOGETHER are sufficient.",
+        "D": "NEITHER statement ALONE is sufficient, nor BOTH TOGETHER."
+      },
+      "correct_answer": "D",
+      "explanation": "Let's check together. a+b>0 and a-b>0. Adding gives 2a>0 => a>0. If a=3, b=-1: a+b=2>0, a-b=4>0, ab=-3<0. If a=3, b=1: a+b=4>0, a-b=2>0, ab=3>0. Thus we cannot determine if ab>0. Neither statement together is sufficient. (Note: standard options sometimes have E as neither)."
+    },
+    {
+      "id": 2,
+      "section_id": 1,
+      "topic": "Data Sufficiency",
+      "marks": 1,
+      "question": "What is the value of (x+y)/(x-y)?\nStatement I: x/y = 2\nStatement II: xy = 18",
+      "options": {
+        "A": "Statement I ALONE is sufficient.",
+        "B": "Statement II ALONE is sufficient.",
+        "C": "BOTH statements TOGETHER are sufficient.",
+        "D": "NEITHER statement ALONE is sufficient."
+      },
+      "correct_answer": "A",
+      "explanation": "From I: x/y = 2 => x = 2y. Then (x+y)/(x-y) = (2y+y)/(2y-y) = 3y/y = 3. Sufficient. From II: xy=18, not enough info. So A is correct."
+    },
+    {
+      "id": 3,
+      "section_id": 1,
+      "topic": "Data Interpretation",
+      "marks": 1,
+      "question": "Refer to the chart of Production and Export of Company A over 4 years. (Year 1: Prod=100, Exp=40), (Year 2: Prod=120, Exp=60), (Year 3: Prod=150, Exp=90), (Year 4: Prod=180, Exp=105). In which year was the RATIO of export-to-production highest for Company A?",
+      "options": {
+        "A": "Year 1",
+        "B": "Year 2",
+        "C": "Year 3",
+        "D": "Year 4"
+      },
+      "correct_answer": "C",
+      "explanation": "Year 1: 40/100=0.4. Year 2: 60/120=0.5. Year 3: 90/150=0.6. Year 4: 105/180 ≈ 0.583. The highest is Year 3."
+    },
+    {
+      "id": 4,
+      "section_id": 1,
+      "topic": "Data Interpretation",
+      "marks": 1,
+      "question": "Refer to the chart of Production and Export of Company B over 4 years. (Year 1: P=80, E=30), (Year 2: P=90, E=40), (Year 3: P=110, E=50), (Year 4: P=120, E=80). What is the average domestic consumption (production - export) over all years for Company B?",
+      "options": {
+        "A": "40",
+        "B": "45",
+        "C": "50",
+        "D": "55"
+      },
+      "correct_answer": "C",
+      "explanation": "Consumptions: Y1=80-30=50. Y2=90-40=50. Y3=110-50=60. Y4=120-80=40. Avg = (50+50+60+40)/4 = 200/4 = 50."
+    },
+    {
+      "id": 5,
+      "section_id": 1,
+      "topic": "Syllogisms",
+      "marks": 1,
+      "question": "Statements: Only some Cats are Dogs. All Dogs are Birds.\nConclusions:\nI. Some Cats are Birds.\nII. All Cats being Dogs is a possibility.",
+      "options": {
+        "A": "Only conclusion I follows",
+        "B": "Only conclusion II follows",
+        "C": "Both I and II follow",
+        "D": "Neither I nor II follows"
+      },
+      "correct_answer": "A",
+      "explanation": "'Only some Cats are Dogs' means some Cats are Dogs AND some Cats are NOT Dogs. Thus all Cats cannot be Dogs. Conclusion I follows since some Cats are Dogs, and all Dogs are Birds, so those Cats are Birds. Conclusion II is false."
+    },
+    {
+      "id": 6,
+      "section_id": 1,
+      "topic": "Syllogisms",
+      "marks": 1,
+      "question": "Statements: All Trees are Forests. Only a few Forests are Mountains.\nConclusions:\nI. All Mountains being Forests is a possibility.\nII. Some Trees are Mountains.",
+      "options": {
+        "A": "Only I follows",
+        "B": "Only II follows",
+        "C": "Both I and II follow",
+        "D": "Neither I nor II follows"
+      },
+      "correct_answer": "A",
+      "explanation": "'Only a few Forests are Mountains' means some Forests are Mountains and some are not. It does not prevent all Mountains from being Forests. Thus I is a possibility. No direct relation between Trees and Mountains, so II does not follow."
+    },
+    {
+      "id": 7,
+      "section_id": 1,
+      "topic": "Coding-Decoding",
+      "marks": 1,
+      "question": "In a certain code, each letter is shifted forward in the alphabet by its 1-indexed alphabetical position number (A=1, B=2, etc.). For example, 'A' becomes 'B' (+1). What will 'CAB' be coded as?",
+      "options": {
+        "A": "FCE",
+        "B": "FCD",
+        "C": "ECF",
+        "D": "FBD"
+      },
+      "correct_answer": "D",
+      "explanation": "C is 3rd letter. 3+3=6 (F). A is 1st. 1+1=2 (B, wait: C=3 -> F, A=1 -> B, B=2 -> D). Let's check options. Wait, 'A' becomes 'B', C=3, C+3=6(F). A=1, A+1=2(B). B=2, B+2=4(D). FBD. Option D is FBD. Let's make correct answer D."
+    },
+    {
+      "id": 8,
+      "section_id": 1,
+      "topic": "Blood Relations",
+      "marks": 1,
+      "question": "In a 3-generation family, P is the father of Q, who is the brother of R. S is the mother of T and daughter of R. If U is the spouse of P, how is U related to T?",
+      "options": {
+        "A": "Grandmother",
+        "B": "Mother",
+        "C": "Great Grandmother",
+        "D": "Aunt"
+      },
+      "correct_answer": "C",
+      "explanation": "P and U are spouses. Q and R are their children. R is the parent of S (S is R's daughter). S is the mother of T. So T is the child of S, who is the child of R, who is the child of U. Thus U is the great grandmother of T."
+    },
+    {
+      "id": 9,
+      "section_id": 1,
+      "topic": "Directional Sense",
+      "marks": 1,
+      "question": "From point A, a person walks 10km at a bearing of 045 degrees. Then they walk 10km at a bearing of 135 degrees. Finally, they walk 10km at a bearing of 225 degrees. How far is the person from point A?",
+      "options": {
+        "A": "10 km",
+        "B": "15 km",
+        "C": "10√2 km",
+        "D": "5 km"
+      },
+      "correct_answer": "A",
+      "explanation": "045 deg is North-East. 135 is South-East. 225 is South-West. This forms three sides of a square. The distance from the final point to A is the remaining side of the square, which is 10 km."
+    },
+    {
+      "id": 10,
+      "section_id": 1,
+      "topic": "Seating Arrangement",
+      "marks": 1,
+      "question": "8 people (A-H) sit around a circle. Each wears Red, Blue, Green, or Yellow (2 of each). A wears Red and sits opposite C, who wears Blue. B sits adjacent to A and wears Green. D sits opposite B. E sits 2nd to left of C. What is the maximum number of people sitting between A and D?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correct_answer": "C",
+      "explanation": "Since there are 8 people, the maximum number of people sitting between any two individuals is 3."
+    },
+    {
+      "id": 11,
+      "section_id": 1,
+      "topic": "Seating Arrangement",
+      "marks": 1,
+      "question": "Using the same arrangement: A(Red) opposite C(Blue). B(Green) adjacent to A. D opposite B. E is 2nd to left of C. If H wears Yellow and sits opposite E, what is the position of H with respect to A?",
+      "options": {
+        "A": "2nd to the right",
+        "B": "2nd to the left",
+        "C": "Immediate right",
+        "D": "Immediate left"
+      },
+      "correct_answer": "A",
+      "explanation": "A is at 1. C is at 5. B is at 2 or 8. Let B=2. D=6. E is 2nd to left of C(5), so E=7 (if facing center). H is opposite E, so H=3. H(3) is 2nd to right of A(1)."
+    },
+    {
+      "id": 12,
+      "section_id": 1,
+      "topic": "Logical Deduction",
+      "marks": 1,
+      "question": "In a class of 100 students: 60 study Math, 50 study Science, 40 study English. 30 study Math and Science, 20 study Science and English, 15 study Math and English, 10 study all 3. How many study ONLY Math?",
+      "options": {
+        "A": "15",
+        "B": "25",
+        "C": "35",
+        "D": "45"
+      },
+      "correct_answer": "B",
+      "explanation": "Only Math = Total Math - (Math&Science only) - (Math&English only) - (All 3) = 60 - (30-10) - (15-10) - 10 = 60 - 20 - 5 - 10 = 25."
+    },
+    {
+      "id": 13,
+      "section_id": 1,
+      "topic": "Logical Deduction",
+      "marks": 1,
+      "question": "Using the same class of 100 students: 60 Math, 50 Science, 40 English. 30 M&S, 20 S&E, 15 M&E, 10 all three. How many study exactly TWO subjects?",
+      "options": {
+        "A": "30",
+        "B": "35",
+        "C": "40",
+        "D": "45"
+      },
+      "correct_answer": "B",
+      "explanation": "Exactly two = (M&S only) + (S&E only) + (M&E only) = (30-10) + (20-10) + (15-10) = 20 + 10 + 5 = 35."
+    },
+    {
+      "id": 14,
+      "section_id": 1,
+      "topic": "Statistical DI",
+      "marks": 1,
+      "question": "Consider a frequency distribution: [0-10): 5, [10-20): 15, [20-30): 20, [30-40): 10. Calculate the mean.",
+      "options": {
+        "A": "20",
+        "B": "21",
+        "C": "22",
+        "D": "23"
+      },
+      "correct_answer": "C",
+      "explanation": "Midpoints: 5, 15, 25, 35. Mean = (5*5 + 15*15 + 25*20 + 35*10) / (5+15+20+10) = (25 + 225 + 500 + 350) / 50 = 1100 / 50 = 22."
+    },
+    {
+      "id": 15,
+      "section_id": 1,
+      "topic": "Statistical DI",
+      "marks": 1,
+      "question": "Consider a frequency distribution: [0-10): 5, [10-20): 15, [20-30): 20, [30-40): 10. The mean is 22. What is the variance (approx)?",
+      "options": {
+        "A": "61",
+        "B": "71",
+        "C": "81",
+        "D": "91"
+      },
+      "correct_answer": "C",
+      "explanation": "Deviations from 22: -17, -7, 3, 13. Squared: 289, 49, 9, 169. Sum of sq = 5*289 + 15*49 + 20*9 + 10*169 = 1445 + 735 + 180 + 1690 = 4050. Variance = 4050/50 = 81."
+    },
+    {
+      "id": 16,
+      "section_id": 2,
+      "topic": "Number Series",
+      "marks": 1,
+      "question": "Find the next number in the series: 1, 2, 4, 7, 11, 16, 22, ?",
+      "options": {
+        "A": "27",
+        "B": "28",
+        "C": "29",
+        "D": "30"
+      },
+      "correct_answer": "C",
+      "explanation": "Differences are 1, 2, 3, 4, 5, 6. Next difference is 7. 22 + 7 = 29."
+    },
+    {
+      "id": 17,
+      "section_id": 2,
+      "topic": "Number Series",
+      "marks": 1,
+      "question": "Find the next number in the series: 4, 5, 7, 10, 14, 19, 25, ?",
+      "options": {
+        "A": "31",
+        "B": "32",
+        "C": "33",
+        "D": "34"
+      },
+      "correct_answer": "B",
+      "explanation": "Differences are 1, 2, 3, 4, 5, 6. Next difference is 7. 25 + 7 = 32."
+    },
+    {
+      "id": 18,
+      "section_id": 2,
+      "topic": "Ratios",
+      "marks": 1,
+      "question": "A container holds 100 liters of pure liquid. 20 liters is removed and replaced with water. This process is repeated two more times (3 times total). What is the final concentration of the original liquid?",
+      "options": {
+        "A": "48.8%",
+        "B": "51.2%",
+        "C": "60.0%",
+        "D": "64.0%"
+      },
+      "correct_answer": "B",
+      "explanation": "Amount left = Initial * (1 - volume replaced/Total)^n = 100 * (1 - 20/100)^3 = 100 * (0.8)^3 = 100 * 0.512 = 51.2L. Concentration is 51.2%."
+    },
+    {
+      "id": 19,
+      "section_id": 2,
+      "topic": "P&C/Probability",
+      "marks": 1,
+      "question": "10 people are at a party. Everyone shakes hands with everyone else exactly once, EXCEPT two specific people who refuse to shake hands with each other. What is the total number of handshakes?",
+      "options": {
+        "A": "43",
+        "B": "44",
+        "C": "45",
+        "D": "90"
+      },
+      "correct_answer": "B",
+      "explanation": "Total handshakes without restriction = 10C2 = 45. Minus the 1 missed handshake between the two specific people = 44."
+    },
+    {
+      "id": 20,
+      "section_id": 2,
+      "topic": "P&C/Probability",
+      "marks": 1,
+      "question": "A point is selected at random inside a square of side 10 cm. Find the probability that it lies within a circle of radius 5 cm inscribed in the square.",
+      "options": {
+        "A": "π/2",
+        "B": "π/3",
+        "C": "π/4",
+        "D": "π/5"
+      },
+      "correct_answer": "C",
+      "explanation": "Area of square = 100. Area of circle = π * r^2 = 25π. Probability = 25π / 100 = π / 4."
+    },
+    {
+      "id": 21,
+      "section_id": 2,
+      "topic": "Time-Speed-Distance",
+      "marks": 1,
+      "question": "A boat goes 30km upstream in 6 hours and 30km downstream in 3 hours. A train of length 200m moving at the same speed as the boat IN STILL WATER passes a platform 300m long. How long does it take?",
+      "options": {
+        "A": "2 minutes",
+        "B": "3 minutes",
+        "C": "4 minutes",
+        "D": "5 minutes"
+      },
+      "correct_answer": "C",
+      "explanation": "Upstream speed = 30/6 = 5 kmph. Downstream speed = 30/3 = 10 kmph. Boat in still water = (5+10)/2 = 7.5 kmph. Train speed = 7.5 kmph = 7.5 * (5/18) m/s. Dist = 200+300 = 500m. Time = 500 / (7.5 * 5/18) = (500 * 18) / 37.5 = 240 seconds = 4 minutes."
+    },
+    {
+      "id": 22,
+      "section_id": 2,
+      "topic": "Cryptarithmetic",
+      "marks": 1,
+      "question": "In the cryptarithmetic puzzle AB + BC + CA = XYZ, each distinct letter represents a distinct non-zero digit. If XYZ = 165, what is the value of X + Y + Z?",
+      "options": {
+        "A": "10",
+        "B": "11",
+        "C": "12",
+        "D": "13"
+      },
+      "correct_answer": "C",
+      "explanation": "XYZ is given as 165. X=1, Y=6, Z=5. X+Y+Z = 1+6+5 = 12. Also, (10A+B) + (10B+C) + (10C+A) = 11(A+B+C) = 165 => A+B+C = 15. E.g., 3, 5, 7."
+    },
+    {
+      "id": 23,
+      "section_id": 2,
+      "topic": "Time and Work",
+      "marks": 1,
+      "question": "A can finish a task in 10 days. B can finish the same task in 15 days. A works alone for 3 days, then B joins. After 2 more days, A leaves. How many more days does B need to finish the remaining work?",
+      "options": {
+        "A": "3 days",
+        "B": "4 days",
+        "C": "5.5 days",
+        "D": "6 days"
+      },
+      "correct_answer": "C",
+      "explanation": "Total work = 30 units (LCM). A does 3 u/day, B does 2 u/day. A alone for 3 days = 9 u. A and B together for 2 days = 5 * 2 = 10 u. Work done = 19 u. Work left = 11 u. B does 2 u/day, so B needs 11/2 = 5.5 days."
+    },
+    {
+      "id": 24,
+      "section_id": 2,
+      "topic": "Simplification",
+      "marks": 1,
+      "question": "Find the remainder when 2^100 is divided by 7.",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "4",
+        "D": "6"
+      },
+      "correct_answer": "B",
+      "explanation": "Powers of 2 mod 7: 2^1 = 2. 2^2 = 4. 2^3 = 1. Cyclicity is 3. 100 mod 3 = 1. Thus 2^100 ≡ 2^1 (mod 7) ≡ 2."
+    },
+    {
+      "id": 25,
+      "section_id": 2,
+      "topic": "Algebra",
+      "marks": 1,
+      "question": "If 3x + 2y = 12, and x ≥ 0, y ≥ 0, what is the maximum value of xy?",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "8"
+      },
+      "correct_answer": "C",
+      "explanation": "By AM-GM, (3x + 2y)/2 ≥ √(6xy). So 6 ≥ √(6xy). Squaring gives 36 ≥ 6xy => xy ≤ 6. Max xy is 6, at 3x = 2y = 6 => x=2, y=3."
+    },
+    {
+      "id": 26,
+      "section_id": 3,
+      "topic": "Critical Reasoning",
+      "marks": 1,
+      "question": "Consider the argument: 'If it rains, the ground gets wet. The ground is wet, so it must have rained.' Which of the following exhibits the same flawed logical structure?",
+      "options": {
+        "A": "If you study hard, you will pass. You studied hard, so you passed.",
+        "B": "If the sun is out, it is daytime. It is daytime, so the sun must be out.",
+        "C": "If he eats too much, he gets sick. He didn't get sick, so he didn't eat too much.",
+        "D": "If she runs, she will sweat. She is not running, so she is not sweating."
+      },
+      "correct_answer": "B",
+      "explanation": "The original argument commits the fallacy of affirming the consequent (If A then B; B, therefore A). Option B exhibits the exact same flaw."
+    },
+    {
+      "id": 27,
+      "section_id": 3,
+      "topic": "Critical Reasoning",
+      "marks": 1,
+      "question": "Which of the following most strongly weakens the argument that 'Switching to electric vehicles will eliminate urban air pollution'?",
+      "options": {
+        "A": "Electric vehicles are currently more expensive than gas-powered ones.",
+        "B": "A significant portion of urban air pollution comes from factory emissions, not vehicles.",
+        "C": "Electric vehicles require large batteries that are hard to recycle.",
+        "D": "Some people prefer the sound and feel of gas engines."
+      },
+      "correct_answer": "B",
+      "explanation": "If pollution comes largely from factories, switching vehicles will not *eliminate* urban air pollution."
+    },
+    {
+      "id": 28,
+      "section_id": 3,
+      "topic": "Critical Reasoning",
+      "marks": 1,
+      "question": "Argument: 'All successful CEOs wake up before 5 AM. John wakes up at 4:30 AM, so he will be a successful CEO.' This argument assumes that:",
+      "options": {
+        "A": "Waking up early guarantees success as a CEO.",
+        "B": "John has the other skills needed to be a CEO.",
+        "C": "Successful CEOs do not sleep very much.",
+        "D": "John wants to be a CEO."
+      },
+      "correct_answer": "A",
+      "explanation": "The argument implies that because he has this one trait (waking up early), he will become a successful CEO, confusing a necessary condition for a sufficient one."
+    },
+    {
+      "id": 29,
+      "section_id": 3,
+      "topic": "Corrective Usage",
+      "marks": 1,
+      "question": "Select the correct sentence:",
+      "options": {
+        "A": "He studied hard lest he will fail.",
+        "B": "He studied hard lest he should fail.",
+        "C": "He studied hard lest he fails.",
+        "D": "He studied hard lest he would fail."
+      },
+      "correct_answer": "B",
+      "explanation": "'Lest' is followed by 'should'."
+    },
+    {
+      "id": 30,
+      "section_id": 3,
+      "topic": "Corrective Usage",
+      "marks": 1,
+      "question": "Fill in the blank: I would rather you _____ it today.",
+      "options": {
+        "A": "do",
+        "B": "will do",
+        "C": "did",
+        "D": "done"
+      },
+      "correct_answer": "C",
+      "explanation": "'Would rather' followed by a subject uses the past tense to refer to a present or future preference."
+    },
+    {
+      "id": 31,
+      "section_id": 3,
+      "topic": "Corrective Usage",
+      "marks": 1,
+      "question": "Select the correct usage:",
+      "options": {
+        "A": "I prefer swimming than jogging.",
+        "B": "I prefer swimming over jogging.",
+        "C": "I prefer swimming to jogging.",
+        "D": "I prefer swimming more than jogging."
+      },
+      "correct_answer": "C",
+      "explanation": "The verb 'prefer' takes the preposition 'to' when comparing two gerunds or nouns."
+    },
+    {
+      "id": 32,
+      "section_id": 3,
+      "topic": "Error Correction",
+      "marks": 1,
+      "question": "Find the sentence with no errors:",
+      "options": {
+        "A": "She neither plays tennis or squash, and she don't like running.",
+        "B": "She neither plays tennis nor squash, and she doesn't like running.",
+        "C": "She neither plays tennis nor squash, and she don't like running.",
+        "D": "She plays neither tennis or squash, and she doesn't like running."
+      },
+      "correct_answer": "B",
+      "explanation": "Uses 'neither...nor' and correct verb 'doesn't'."
+    },
+    {
+      "id": 33,
+      "section_id": 3,
+      "topic": "Error Correction",
+      "marks": 1,
+      "question": "Choose the most grammatically correct sentence:",
+      "options": {
+        "A": "Between you and I, the committee have made a mistake.",
+        "B": "Between you and me, the committee has made a mistake.",
+        "C": "Between you and I, the committee has made a mistake.",
+        "D": "Between you and me, the committee have made a mistake."
+      },
+      "correct_answer": "B",
+      "explanation": "Preposition 'between' takes objective case 'me', and 'committee' acting as a single entity takes singular 'has'."
+    },
+    {
+      "id": 34,
+      "section_id": 3,
+      "topic": "Error Correction",
+      "marks": 1,
+      "question": "Which sentence fixes all errors in: 'The dog wagged it's tail, and laid down on the rug.'",
+      "options": {
+        "A": "The dog wagged its tail, and lay down on the rug.",
+        "B": "The dog wagged its tail, and laid down on the rug.",
+        "C": "The dog wagged it's tail, and lay down on the rug.",
+        "D": "The dog wagged its tail and lied down on the rug."
+      },
+      "correct_answer": "A",
+      "explanation": "Possessive is 'its'. Past tense of 'lie' (rest) is 'lay'."
+    },
+    {
+      "id": 35,
+      "section_id": 3,
+      "topic": "Error ID",
+      "marks": 1,
+      "question": "Identify the incorrect usage in the sentence: 'The politician's sudden shift in policy begs the question of why he changed his mind.'",
+      "options": {
+        "A": "sudden shift",
+        "B": "begs the question",
+        "C": "of why",
+        "D": "changed his mind"
+      },
+      "correct_answer": "B",
+      "explanation": "'Begs the question' is a logical fallacy (circular reasoning), often incorrectly used to mean 'raises the question'."
+    },
+    {
+      "id": 36,
+      "section_id": 3,
+      "topic": "Error ID",
+      "marks": 1,
+      "question": "Identify the incorrect usage: 'The enormity of the mountain made the climbers pause in awe.'",
+      "options": {
+        "A": "enormity",
+        "B": "made",
+        "C": "pause in",
+        "D": "awe"
+      },
+      "correct_answer": "A",
+      "explanation": "'Enormity' traditionally refers to extreme evil or moral outrage, not physical enormousness."
+    },
+    {
+      "id": 37,
+      "section_id": 3,
+      "topic": "Reading Comprehension",
+      "marks": 1,
+      "question": "Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural pathways throughout life. In the context of Traumatic Brain Injury (TBI), cognitive rehabilitation leverages synaptic plasticity to restore lost functions. By repeatedly engaging in targeted tasks, patients can build cognitive reserve and develop compensatory strategies that bypass damaged tissues. This empirical approach challenges older static models of brain function. While early skepticism existed, robust clinical trials now demonstrate that structured rehabilitation accelerates functional recovery. The brain is not a fixed machine; it is a highly adaptive organ capable of remarkable regeneration under the right conditions.\n\nAccording to the passage, how do patients bypass damaged tissues?",
+      "options": {
+        "A": "Through surgical intervention.",
+        "B": "By relying solely on synaptic generation.",
+        "C": "By developing compensatory strategies.",
+        "D": "By accepting static models of brain function."
+      },
+      "correct_answer": "C",
+      "explanation": "The text states 'patients can build cognitive reserve and develop compensatory strategies that bypass damaged tissues.'"
+    },
+    {
+      "id": 38,
+      "section_id": 3,
+      "topic": "Reading Comprehension",
+      "marks": 1,
+      "question": "Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural pathways throughout life. In the context of Traumatic Brain Injury (TBI), cognitive rehabilitation leverages synaptic plasticity to restore lost functions. By repeatedly engaging in targeted tasks, patients can build cognitive reserve and develop compensatory strategies that bypass damaged tissues. This empirical approach challenges older static models of brain function. While early skepticism existed, robust clinical trials now demonstrate that structured rehabilitation accelerates functional recovery. The brain is not a fixed machine; it is a highly adaptive organ capable of remarkable regeneration under the right conditions.\n\nWhat is the primary function of synaptic plasticity in this context?",
+      "options": {
+        "A": "To challenge empirical approaches.",
+        "B": "To restore lost cognitive functions.",
+        "C": "To prevent traumatic brain injuries.",
+        "D": "To increase physical strength."
+      },
+      "correct_answer": "B",
+      "explanation": "The passage says 'cognitive rehabilitation leverages synaptic plasticity to restore lost functions.'"
+    },
+    {
+      "id": 39,
+      "section_id": 3,
+      "topic": "Reading Comprehension",
+      "marks": 1,
+      "question": "Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural pathways throughout life. In the context of Traumatic Brain Injury (TBI), cognitive rehabilitation leverages synaptic plasticity to restore lost functions. By repeatedly engaging in targeted tasks, patients can build cognitive reserve and develop compensatory strategies that bypass damaged tissues. This empirical approach challenges older static models of brain function. While early skepticism existed, robust clinical trials now demonstrate that structured rehabilitation accelerates functional recovery. The brain is not a fixed machine; it is a highly adaptive organ capable of remarkable regeneration under the right conditions.\n\nWhich statement best describes the structure of the argument in the passage?",
+      "options": {
+        "A": "It presents a problem, proposes a theoretical solution, and requests funding.",
+        "B": "It defines a concept, applies it to a specific medical condition, and cites general evidence to counter past skepticism.",
+        "C": "It compares two opposing medical theories and concludes that both are flawed.",
+        "D": "It outlines a historical timeline of neurological discoveries."
+      },
+      "correct_answer": "B",
+      "explanation": "The passage defines neuroplasticity, applies it to TBI, mentions it challenges older models, and cites robust clinical trials overcoming early skepticism."
+    },
+    {
+      "id": 40,
+      "section_id": 3,
+      "topic": "Reading Comprehension",
+      "marks": 1,
+      "question": "Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural pathways throughout life. In the context of Traumatic Brain Injury (TBI), cognitive rehabilitation leverages synaptic plasticity to restore lost functions. By repeatedly engaging in targeted tasks, patients can build cognitive reserve and develop compensatory strategies that bypass damaged tissues. This empirical approach challenges older static models of brain function. While early skepticism existed, robust clinical trials now demonstrate that structured rehabilitation accelerates functional recovery. The brain is not a fixed machine; it is a highly adaptive organ capable of remarkable regeneration under the right conditions.\n\nWhat is the author's tone regarding the brain's recovery capabilities?",
+      "options": {
+        "A": "Skeptical and cautious",
+        "B": "Objective but ultimately enthusiastic",
+        "C": "Dismissive and critical",
+        "D": "Purely historical"
+      },
+      "correct_answer": "B",
+      "explanation": "The author provides objective facts but concludes enthusiastically that the brain is 'capable of remarkable regeneration'."
+    },
+    {
+      "id": 41,
+      "section_id": 3,
+      "topic": "Para Jumbles",
+      "marks": 1,
+      "question": "Arrange the sentences:\n1. It was heavily encrypted.\n2. The historian found an ancient manuscript.\n3. She finally decoded the final chapter.\n4. For years, she worked on the cipher.\n5. The contents revealed a lost city.",
+      "options": {
+        "A": "2-1-4-3-5",
+        "B": "2-4-1-3-5",
+        "C": "1-2-4-3-5",
+        "D": "2-1-3-4-5"
+      },
+      "correct_answer": "A",
+      "explanation": "2 introduces manuscript. 1 describes it (encrypted). 4 shows her working on it. 3 is decoding it. 5 is the result."
+    },
+    {
+      "id": 42,
+      "section_id": 3,
+      "topic": "Para Jumbles",
+      "marks": 1,
+      "question": "Arrange the sentences:\n1. He however, disagreed with the findings.\n2. The report was published in May.\n3. It showed a massive decline in sales.\n4. The CEO read it carefully.",
+      "options": {
+        "A": "2-3-4-1",
+        "B": "2-4-3-1",
+        "C": "4-2-3-1",
+        "D": "2-3-1-4"
+      },
+      "correct_answer": "A",
+      "explanation": "2 introduces report. 3 ('It') describes the report. 4 CEO reads it. 1 ('He') disagrees."
+    },
+    {
+      "id": 43,
+      "section_id": 3,
+      "topic": "Synonyms/Antonyms",
+      "marks": 1,
+      "question": "What is the meaning of SANCTION in the sentence: 'The government sanctioned the new infrastructure project.'?",
+      "options": {
+        "A": "Approved",
+        "B": "Punished",
+        "C": "Delayed",
+        "D": "Reviewed"
+      },
+      "correct_answer": "A",
+      "explanation": "Sanction can mean approve or penalize. In this context, approving a project fits perfectly."
+    },
+    {
+      "id": 44,
+      "section_id": 3,
+      "topic": "Synonyms/Antonyms",
+      "marks": 1,
+      "question": "What is the meaning of CLEAVE in the sentence: 'She continued to cleave to the old traditions despite the changes.'?",
+      "options": {
+        "A": "Cut",
+        "B": "Cling",
+        "C": "Separate",
+        "D": "Abandon"
+      },
+      "correct_answer": "B",
+      "explanation": "Cleave is a contronym. 'Cleave to' means to cling to or adhere to."
+    },
+    {
+      "id": 45,
+      "section_id": 3,
+      "topic": "Synonyms/Antonyms",
+      "marks": 1,
+      "question": "What is the meaning of SCAN in the sentence: 'He scanned the horizon for any sign of land.'?",
+      "options": {
+        "A": "Examined carefully",
+        "B": "Looked hastily",
+        "C": "Photographed",
+        "D": "Measured"
+      },
+      "correct_answer": "A",
+      "explanation": "Scan can mean glance quickly or examine carefully. Looking for a sign of land implies careful examination."
+    },
+    {
+      "id": 46,
+      "section_id": 4,
+      "topic": "Pseudocode",
+      "marks": 2,
+      "question": "What is the output of the following pseudocode?\nfunction f(n):\n  if n <= 1: return 1\n  sum = 0\n  for i = 1 to n:\n    sum = sum + i\n  return sum + f(n-1)\nprint f(3)",
+      "options": {
+        "A": "9",
+        "B": "10",
+        "C": "11",
+        "D": "12"
+      },
+      "correct_answer": "B",
+      "explanation": "f(1) = 1. f(2): loop sum = 1+2=3; returns 3+f(1) = 4. f(3): loop sum = 1+2+3=6; returns 6+f(2) = 10. Output is 10."
+    },
+    {
+      "id": 47,
+      "section_id": 4,
+      "topic": "Pseudocode",
+      "marks": 2,
+      "question": "Given array A = [1, 2, 3, 4, 6]. What is the final value of x after this code?\nx = 0\nfor i = 1 to 6:\n  x = x XOR i\nfor j = 0 to 4:\n  x = x XOR A[j]",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "7"
+      },
+      "correct_answer": "B",
+      "explanation": "XORing all numbers from 1 to 6, then XORing with the array elements will cancel out all elements present in the array. The remaining value will be the missing number, which is 5."
+    },
+    {
+      "id": 48,
+      "section_id": 4,
+      "topic": "Pseudocode",
+      "marks": 2,
+      "question": "Given array A = [3, 9, 1, 14, 6, 2]. Modified bubble sort: swap adjacent elements ONLY if difference > 5. What is the array after ONE full pass (left to right)?",
+      "options": {
+        "A": "3, 1, 9, 6, 2, 14",
+        "B": "3, 1, 9, 6, 14, 2",
+        "C": "1, 3, 9, 2, 6, 14",
+        "D": "3, 1, 9, 14, 6, 2"
+      },
+      "correct_answer": "A",
+      "explanation": "Compare 3 & 9: diff=6 > 5. Swap -> [9, 3, 1, 14, 6, 2]. Wait, standard bubble compares A[i] and A[i+1], if A[i]>A[i+1] and diff>5 then swap. If it just says 'if difference > 5 swap' unconditionally... usually bubble sort only swaps if out of order. Let's assume out of order: if A[i]>A[i+1] and A[i]-A[i+1]>5. 3>9 (no). 9>1 (diff 8>5, swap)-> [3, 1, 9, 14, 6, 2]. 9>14 (no). 14>6 (diff 8>5, swap)-> [3, 1, 9, 6, 14, 2]. 14>2 (diff 12>5, swap)-> [3, 1, 9, 6, 2, 14]. So option A is correct."
+    },
+    {
+      "id": 49,
+      "section_id": 4,
+      "topic": "Pseudocode",
+      "marks": 2,
+      "question": "String compression pseudocode compresses 'AAABBBCCCA' to '3A3B3C1A'. Is the compressed output shorter than the original string?",
+      "options": {
+        "A": "Yes, 8 characters vs 10 characters",
+        "B": "No, both are 10 characters",
+        "C": "Yes, 4 characters vs 10 characters",
+        "D": "No, the output is longer"
+      },
+      "correct_answer": "A",
+      "explanation": "'AAABBBCCCA' is 10 chars. '3A3B3C1A' is 8 chars. 8 < 10."
+    },
+    {
+      "id": 50,
+      "section_id": 4,
+      "topic": "Pseudocode",
+      "marks": 2,
+      "question": "function C(x) return x*2\nfunction B(x) return C(x*2)+3\nfunction A(x) return B(x*2)-1\nWhat does A(3) return?",
+      "options": {
+        "A": "24",
+        "B": "25",
+        "C": "26",
+        "D": "27"
+      },
+      "correct_answer": "C",
+      "explanation": "A(3) calls B(6)-1. B(6) calls C(12)+3. C(12) = 24. B(6) = 24+3=27. A(3) = 27-1=26."
+    },
+    {
+      "id": 51,
+      "section_id": 5,
+      "topic": "Numerical Puzzles",
+      "marks": 2.5,
+      "question": "Find the next term in the series: 1, 2, -3, 4, 5, -6, 7, 8, -9, ?",
+      "options": {
+        "A": "10",
+        "B": "-10",
+        "C": "11",
+        "D": "-11"
+      },
+      "correct_answer": "A",
+      "explanation": "Natural numbers sequence, but every third number is negated. The 10th number is just 10 (positive)."
+    },
+    {
+      "id": 52,
+      "section_id": 5,
+      "topic": "Numerical Puzzles",
+      "marks": 2.5,
+      "question": "Identify the word: C R _ P T _ G R _ P H _",
+      "options": {
+        "A": "CRYPTOGRAPHY",
+        "B": "ENTREPRENEURSHIP",
+        "C": "PHOTOGRAPHY",
+        "D": "TYPOGRAPHY"
+      },
+      "correct_answer": "A",
+      "explanation": "The word CRYPTOGRAPHY has letters matching this pattern."
+    },
+    {
+      "id": 53,
+      "section_id": 5,
+      "topic": "Numerical Puzzles",
+      "marks": 2.5,
+      "question": "In a 5x5 matrix, the value at row i and column j (1-indexed) is given by i² + j. What is the value at row 3, column 4?",
+      "options": {
+        "A": "10",
+        "B": "13",
+        "C": "15",
+        "D": "16"
+      },
+      "correct_answer": "B",
+      "explanation": "Value = 3² + 4 = 9 + 4 = 13."
+    },
+    {
+      "id": 54,
+      "section_id": 5,
+      "topic": "Numerical Puzzles",
+      "marks": 2.5,
+      "question": "5 people (A-E) hold 5 jobs (Programmer, Designer, Manager, Analyst, Tester). Clues: 1) A is not Programmer or Manager. 2) B is the Manager. 3) C works with E in technical roles (Programmer or Tester). 4) D is the Designer. What is A's job?",
+      "options": {
+        "A": "Programmer",
+        "B": "Designer",
+        "C": "Analyst",
+        "D": "Tester"
+      },
+      "correct_answer": "C",
+      "explanation": "B=Manager, D=Designer. C & E are Programmer and Tester. Only Analyst is left for A."
+    },
+    {
+      "id": 55,
+      "section_id": 6,
+      "topic": "English Grammar",
+      "marks": 2,
+      "question": "Choose the correct reported speech for: She said, 'I might have left early.'",
+      "options": {
+        "A": "She said she might have left early.",
+        "B": "She said she may have left early.",
+        "C": "She said she might leave early.",
+        "D": "She said she had might left early."
+      },
+      "correct_answer": "A",
+      "explanation": "'Might' does not change in reported speech."
+    },
+    {
+      "id": 56,
+      "section_id": 6,
+      "topic": "English Grammar",
+      "marks": 2,
+      "question": "Fill in the blank: Neither the manager nor the employees ___ satisfied.",
+      "options": {
+        "A": "is",
+        "B": "are",
+        "C": "was",
+        "D": "has been"
+      },
+      "correct_answer": "B",
+      "explanation": "By the rule of proximity, the verb agrees with the closest subject ('employees', which is plural)."
+    },
+    {
+      "id": 57,
+      "section_id": 6,
+      "topic": "English Grammar",
+      "marks": 2,
+      "question": "Fill in the blank: I wish I ___ taller.",
+      "options": {
+        "A": "was",
+        "B": "were",
+        "C": "am",
+        "D": "will be"
+      },
+      "correct_answer": "B",
+      "explanation": "Subjunctive mood for wishes uses 'were' for all subjects."
+    },
+    {
+      "id": 58,
+      "section_id": 6,
+      "topic": "English Grammar",
+      "marks": 2,
+      "question": "Fill in the blank: It is ___ who is responsible for the error.",
+      "options": {
+        "A": "him",
+        "B": "he",
+        "C": "his",
+        "D": "himself"
+      },
+      "correct_answer": "B",
+      "explanation": "Subject pronoun 'he' is required after 'It is'."
+    },
+    {
+      "id": 59,
+      "section_id": 6,
+      "topic": "English Grammar",
+      "marks": 2,
+      "question": "Fill in the blank: The exam having ___, the students left the hall.",
+      "options": {
+        "A": "finished",
+        "B": "been finished",
+        "C": "finish",
+        "D": "been finishing"
+      },
+      "correct_answer": "A",
+      "explanation": "Absolute participial phrase uses 'finished'."
+    },
+    {
+      "id": 60,
+      "section_id": 7,
+      "topic": "English Writing",
+      "marks": 0,
+      "question": "Topic: The Existential Risk of Superintelligent AI — Separating Scientific Consensus from Media Sensationalism, and the Role of Governance Frameworks in Responsible AI Development.\nAddress (1) legitimate existential risk vs exaggerated fears, (2) current governance gaps, (3) role of international cooperation, and (4) practical near-term recommendations.",
+      "is_essay": true,
+      "word_limit_min": 150,
+      "word_limit_max": 250,
+      "sample_high_scoring_response": "The existential risk posed by superintelligent AI is often clouded by media sensationalism, which imagines Hollywood-style rogue robots. However, the legitimate scientific consensus centers on the 'alignment problem': the danger that an advanced AI might pursue goals misaligned with human survival. While terminator scenarios are exaggerated, the threat of unintended consequences from hyper-competent optimization processes is a genuine concern.\n\nCurrently, there are massive governance gaps in AI regulation. Most frameworks are voluntary, fragmented, and severely lag behind the rapid pace of corporate AI development. National policies alone are insufficient because AI research is globally distributed and open-source models cross borders instantly.\n\nTo address this, international cooperation is vital. A model similar to CERN for AI safety could pool global resources, ensuring that frontier research is conducted transparently and safely, prioritizing alignment over commercial speed. Such an organization could establish unified safety benchmarks and compliance standards.\n\nIn the near term, practical recommendations include mandating rigorous external auditing for frontier models before deployment, increasing funding for AI alignment research, and developing 'kill switches' or containment protocols for highly autonomous systems. By separating realistic alignment risks from sci-fi tropes and establishing robust international governance, humanity can responsibly harness the benefits of superintelligent AI without jeopardizing our future.",
+      "evaluation_criteria": "Scores are based on: 1. Clarity and coherence, 2. Addressing all four prompt points, 3. Vocabulary and grammatical correctness, 4. Adherence to word count.",
+      "explanation": "This essay clearly structures the 4 required points, uses strong vocabulary, and sits comfortably within the 150-250 word limit."
+    }
+  ],
+  "total_questions": 60,
+  "total_marks": 75,
+  "total_duration_minutes": 120,
+  "sections": [
+    {
+      "id": 1,
+      "name": "Reasoning Ability Test",
+      "total_questions": 15,
+      "max_marks": 15,
+      "duration_minutes": 25,
+      "instructions": "Topics: Data Sufficiency, Data Interpretation, Logical Deduction, Syllogisms, Statistical Data Interpretation, Data Arrangement, Blood Relations, Coding-Decoding, Directional Sense. ~1 min 40 sec per question."
+    },
+    {
+      "id": 2,
+      "name": "Technical Ability Test (Mathematical)",
+      "total_questions": 10,
+      "max_marks": 10,
+      "duration_minutes": 35,
+      "instructions": "Topics: Number Series [HP], Ratios & Proportions [HP], Permutation/Combination/Probability [HP], Time-Speed-Distance [HP], Cryptarithmetic, Profit & Loss, Partnerships, Averages, Algebra, Simplification. ~3.5 mins per question."
+    },
+    {
+      "id": 3,
+      "name": "Verbal Ability Test",
+      "total_questions": 20,
+      "max_marks": 20,
+      "duration_minutes": 20,
+      "instructions": "Topics: Critical Reasoning [HP], English Corrective Usage [HP], English Error Correction [HP], Error Identification, Reading Comprehension, Para Jumbles, Synonyms & Antonyms. 1 min per question."
+    },
+    {
+      "id": 4,
+      "name": "Pseudocode Test",
+      "total_questions": 5,
+      "max_marks": 10,
+      "duration_minutes": 10,
+      "instructions": "Each question carries 2 marks. Topics: Programming Logic [HP], Loop Tracing (FOR/WHILE), Conditional Statements (IF/ELSE), Basic Algorithms, Array & String Manipulation. 2 mins per question."
+    },
+    {
+      "id": 5,
+      "name": "Numerical Puzzle Test",
+      "total_questions": 4,
+      "max_marks": 10,
+      "duration_minutes": 10,
+      "instructions": "Each question carries 2.5 marks. Topics: Visual Reasoning [HP], Word Puzzles [HP], Number Based Patterns [HP], Sudoku, Grid Based Puzzles. ~2.5 mins per question."
+    },
+    {
+      "id": 6,
+      "name": "English Grammar Test",
+      "total_questions": 5,
+      "max_marks": 10,
+      "duration_minutes": 10,
+      "instructions": "Each question carries 2 marks. Topics: Tenses [HP], Subject-Verb Agreement [HP], Articles & Prepositions, Parts of Speech, Active & Passive Voice, Direct & Indirect Speech, Punctuation. 2 mins per question."
+    },
+    {
+      "id": 7,
+      "name": "English Writing Test",
+      "total_questions": 1,
+      "max_marks": 0,
+      "marks_label": "NA (Evaluated Separately)",
+      "duration_minutes": 10,
+      "instructions": "Topics: Essay Writing [HP], Email/Letter Writing [HP], Paragraph Writing, Coherence & Logical Structure, Grammar & Vocabulary Usage. 150-250 words. 10 mins."
+    }
+  ]
 }

@@ -4790,6 +4790,68 @@ window.ALL_TESTS = {
             "Grammatical accuracy and appropriate formal tone"
           ]
         }
+      ],
+      "total_questions": 60,
+      "total_marks": 75,
+      "total_duration_minutes": 120,
+      "sections": [
+        {
+          "id": 1,
+          "name": "Reasoning Ability Test",
+          "total_questions": 15,
+          "max_marks": 15,
+          "duration_minutes": 25,
+          "instructions": "Topics: Data Sufficiency, Data Interpretation, Logical Deduction, Syllogisms, Statistical Data Interpretation, Data Arrangement, Blood Relations, Coding-Decoding, Directional Sense. ~1 min 40 sec per question."
+        },
+        {
+          "id": 2,
+          "name": "Technical Ability Test (Mathematical)",
+          "total_questions": 10,
+          "max_marks": 10,
+          "duration_minutes": 35,
+          "instructions": "Topics: Number Series [HP], Ratios & Proportions [HP], Permutation/Combination/Probability [HP], Time-Speed-Distance [HP], Cryptarithmetic, Profit & Loss, Partnerships, Averages, Algebra, Simplification. ~3.5 mins per question."
+        },
+        {
+          "id": 3,
+          "name": "Verbal Ability Test",
+          "total_questions": 20,
+          "max_marks": 20,
+          "duration_minutes": 20,
+          "instructions": "Topics: Critical Reasoning [HP], English Corrective Usage [HP], English Error Correction [HP], Error Identification, Reading Comprehension, Para Jumbles, Synonyms & Antonyms. 1 min per question."
+        },
+        {
+          "id": 4,
+          "name": "Pseudocode Test",
+          "total_questions": 5,
+          "max_marks": 10,
+          "duration_minutes": 10,
+          "instructions": "Each question carries 2 marks. Topics: Programming Logic [HP], Loop Tracing (FOR/WHILE), Conditional Statements (IF/ELSE), Basic Algorithms, Array & String Manipulation. 2 mins per question."
+        },
+        {
+          "id": 5,
+          "name": "Numerical Puzzle Test",
+          "total_questions": 4,
+          "max_marks": 10,
+          "duration_minutes": 10,
+          "instructions": "Each question carries 2.5 marks. Topics: Visual Reasoning [HP], Word Puzzles [HP], Number Based Patterns [HP], Sudoku, Grid Based Puzzles. ~2.5 mins per question."
+        },
+        {
+          "id": 6,
+          "name": "English Grammar Test",
+          "total_questions": 5,
+          "max_marks": 10,
+          "duration_minutes": 10,
+          "instructions": "Each question carries 2 marks. Topics: Tenses [HP], Subject-Verb Agreement [HP], Articles & Prepositions, Parts of Speech, Active & Passive Voice, Direct & Indirect Speech, Punctuation. 2 mins per question."
+        },
+        {
+          "id": 7,
+          "name": "English Writing Test",
+          "total_questions": 1,
+          "max_marks": 0,
+          "marks_label": "NA (Evaluated Separately)",
+          "duration_minutes": 10,
+          "instructions": "Topics: Essay Writing [HP], Email/Letter Writing [HP], Paragraph Writing, Coherence & Logical Structure, Grammar & Vocabulary Usage. 150-250 words. 10 mins."
+        }
       ]
     },
     {
@@ -5692,6 +5754,68 @@ window.ALL_TESTS = {
           "sample_high_scoring_response": "The existential risk posed by superintelligent AI is often clouded by media sensationalism, which imagines Hollywood-style rogue robots. However, the legitimate scientific consensus centers on the 'alignment problem': the danger that an advanced AI might pursue goals misaligned with human survival. While terminator scenarios are exaggerated, the threat of unintended consequences from hyper-competent optimization processes is a genuine concern.\n\nCurrently, there are massive governance gaps in AI regulation. Most frameworks are voluntary, fragmented, and severely lag behind the rapid pace of corporate AI development. National policies alone are insufficient because AI research is globally distributed and open-source models cross borders instantly.\n\nTo address this, international cooperation is vital. A model similar to CERN for AI safety could pool global resources, ensuring that frontier research is conducted transparently and safely, prioritizing alignment over commercial speed. Such an organization could establish unified safety benchmarks and compliance standards.\n\nIn the near term, practical recommendations include mandating rigorous external auditing for frontier models before deployment, increasing funding for AI alignment research, and developing 'kill switches' or containment protocols for highly autonomous systems. By separating realistic alignment risks from sci-fi tropes and establishing robust international governance, humanity can responsibly harness the benefits of superintelligent AI without jeopardizing our future.",
           "evaluation_criteria": "Scores are based on: 1. Clarity and coherence, 2. Addressing all four prompt points, 3. Vocabulary and grammatical correctness, 4. Adherence to word count.",
           "explanation": "This essay clearly structures the 4 required points, uses strong vocabulary, and sits comfortably within the 150-250 word limit."
+        }
+      ],
+      "total_questions": 60,
+      "total_marks": 75,
+      "total_duration_minutes": 120,
+      "sections": [
+        {
+          "id": 1,
+          "name": "Reasoning Ability Test",
+          "total_questions": 15,
+          "max_marks": 15,
+          "duration_minutes": 25,
+          "instructions": "Topics: Data Sufficiency, Data Interpretation, Logical Deduction, Syllogisms, Statistical Data Interpretation, Data Arrangement, Blood Relations, Coding-Decoding, Directional Sense. ~1 min 40 sec per question."
+        },
+        {
+          "id": 2,
+          "name": "Technical Ability Test (Mathematical)",
+          "total_questions": 10,
+          "max_marks": 10,
+          "duration_minutes": 35,
+          "instructions": "Topics: Number Series [HP], Ratios & Proportions [HP], Permutation/Combination/Probability [HP], Time-Speed-Distance [HP], Cryptarithmetic, Profit & Loss, Partnerships, Averages, Algebra, Simplification. ~3.5 mins per question."
+        },
+        {
+          "id": 3,
+          "name": "Verbal Ability Test",
+          "total_questions": 20,
+          "max_marks": 20,
+          "duration_minutes": 20,
+          "instructions": "Topics: Critical Reasoning [HP], English Corrective Usage [HP], English Error Correction [HP], Error Identification, Reading Comprehension, Para Jumbles, Synonyms & Antonyms. 1 min per question."
+        },
+        {
+          "id": 4,
+          "name": "Pseudocode Test",
+          "total_questions": 5,
+          "max_marks": 10,
+          "duration_minutes": 10,
+          "instructions": "Each question carries 2 marks. Topics: Programming Logic [HP], Loop Tracing (FOR/WHILE), Conditional Statements (IF/ELSE), Basic Algorithms, Array & String Manipulation. 2 mins per question."
+        },
+        {
+          "id": 5,
+          "name": "Numerical Puzzle Test",
+          "total_questions": 4,
+          "max_marks": 10,
+          "duration_minutes": 10,
+          "instructions": "Each question carries 2.5 marks. Topics: Visual Reasoning [HP], Word Puzzles [HP], Number Based Patterns [HP], Sudoku, Grid Based Puzzles. ~2.5 mins per question."
+        },
+        {
+          "id": 6,
+          "name": "English Grammar Test",
+          "total_questions": 5,
+          "max_marks": 10,
+          "duration_minutes": 10,
+          "instructions": "Each question carries 2 marks. Topics: Tenses [HP], Subject-Verb Agreement [HP], Articles & Prepositions, Parts of Speech, Active & Passive Voice, Direct & Indirect Speech, Punctuation. 2 mins per question."
+        },
+        {
+          "id": 7,
+          "name": "English Writing Test",
+          "total_questions": 1,
+          "max_marks": 0,
+          "marks_label": "NA (Evaluated Separately)",
+          "duration_minutes": 10,
+          "instructions": "Topics: Essay Writing [HP], Email/Letter Writing [HP], Paragraph Writing, Coherence & Logical Structure, Grammar & Vocabulary Usage. 150-250 words. 10 mins."
         }
       ]
     },

@@ -75,8 +75,9 @@ function renderTestCards() {
         <div class="stat-item"><div class="stat-val">${idx===6?'⭐ PYQ':idx>=4?'⚠️ Hard':'Normal'}</div><div class="stat-label">Difficulty</div></div>
         <div class="stat-item"><div class="stat-val">${test.total_duration_minutes || 120} min</div><div class="stat-label">Duration</div></div>
       </div>
-      <button class="btn-start-test" style="${idx===4?'background:#f59e0b':idx===5?'background:#ef4444':idx===6?'background:#10b981':''}" onclick="startTest(${idx})">▶ Start Mock Test ${idx + 1}${difficultyLabel[idx] || ''}</button>
+      <button class="btn-start-test" style="${idx===4?'background:#f59e0b':idx===5?'background:#ef4444':idx===6?'background:#10b981':''}" onclick="event.stopPropagation(); startTest(${idx})">▶ Start Mock Test ${idx + 1}${difficultyLabel[idx] || ''}</button>
     `;
+    card.addEventListener('click', () => startTest(idx));
     container.appendChild(card);
   });
 }
