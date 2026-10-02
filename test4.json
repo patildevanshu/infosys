@@ -1,0 +1,970 @@
+{
+  "test_title": "Infosys SE Mock Test 4 — 2027 Batch Pattern",
+  "total_questions": 60,
+  "total_marks": 75,
+  "total_duration_minutes": 120,
+  "sections": [
+    {
+      "id": 1,
+      "name": "Reasoning Ability Test",
+      "total_questions": 15,
+      "max_marks": 15,
+      "duration_minutes": 25,
+      "instructions": "Topics: Data Sufficiency, Data Interpretation, Logical Deduction, Syllogisms, Statistical Data Interpretation, Data Arrangement, Blood Relations, Coding-Decoding, Directional Sense."
+    },
+    {
+      "id": 2,
+      "name": "Technical Ability Test (Mathematical)",
+      "total_questions": 10,
+      "max_marks": 10,
+      "duration_minutes": 35,
+      "instructions": "Topics: Number Series, Ratios & Proportions, Permutation/Combination/Probability, Time-Speed-Distance, Cryptarithmetic, Time & Work, Interest, LCM/HCF."
+    },
+    {
+      "id": 3,
+      "name": "Verbal Ability Test",
+      "total_questions": 20,
+      "max_marks": 20,
+      "duration_minutes": 20,
+      "instructions": "Topics: Critical Reasoning, English Corrective Usage, English Error Correction, Error Identification, Reading Comprehension, Para Jumbles, Synonyms & Antonyms."
+    },
+    {
+      "id": 4,
+      "name": "Pseudocode Test",
+      "total_questions": 5,
+      "max_marks": 10,
+      "duration_minutes": 10,
+      "instructions": "Each question carries 2 marks."
+    },
+    {
+      "id": 5,
+      "name": "Numerical Puzzle Test",
+      "total_questions": 4,
+      "max_marks": 10,
+      "duration_minutes": 10,
+      "instructions": "Each question carries 2.5 marks."
+    },
+    {
+      "id": 6,
+      "name": "English Grammar Test",
+      "total_questions": 5,
+      "max_marks": 10,
+      "duration_minutes": 10,
+      "instructions": "Each question carries 2 marks."
+    },
+    {
+      "id": 7,
+      "name": "English Writing Test",
+      "total_questions": 1,
+      "max_marks": 0,
+      "marks_label": "NA (Evaluated Separately)",
+      "duration_minutes": 10,
+      "instructions": "Essay Writing. 150-250 words."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": 1,
+      "topic": "Data Sufficiency (Age)",
+      "marks": 1,
+      "question": "What is Rahul's present age?\n\nStatement I: Rahul is 5 years older than Sneha.\nStatement II: Sneha's present age is 25 years.",
+      "options": {
+        "A": "Statement I alone is sufficient",
+        "B": "Statement II alone is sufficient",
+        "C": "Both statements together are necessary",
+        "D": "Neither statement is sufficient"
+      },
+      "correct_answer": "C",
+      "explanation": "Stmt I: Rahul = Sneha + 5 (two unknowns). Stmt II: Sneha = 25 (one unknown solved, but doesn’t give Rahul directly). Combined: Rahul = 25 + 5 = 30. Both needed."
+    },
+    {
+      "id": 2,
+      "section_id": 1,
+      "topic": "Data Sufficiency (Ratio)",
+      "marks": 1,
+      "question": "What is the value of X?\n\nStatement I: X and Y are in the ratio 3:5.\nStatement II: Y = 40.",
+      "options": {
+        "A": "Statement I alone is sufficient",
+        "B": "Statement II alone is sufficient",
+        "C": "Both statements together are necessary",
+        "D": "Neither statement is sufficient"
+      },
+      "correct_answer": "C",
+      "explanation": "Stmt I: X/Y = 3/5 (two unknowns). Stmt II: Y = 40 (no info about X). Combined: X/40 = 3/5 → X = 24. Both needed."
+    },
+    {
+      "id": 3,
+      "section_id": 1,
+      "topic": "Data Interpretation (Stacked Bar)",
+      "marks": 1,
+      "question": "A company’s quarterly expenses (in lakhs):\n\n| Quarter | Salaries | Rent | Marketing | Other |\n|---------|----------|------|-----------|-------|\n| Q1      | 30       | 10   | 15        | 5     |\n| Q2      | 35       | 10   | 20        | 10    |\n| Q3      | 32       | 12   | 18        | 8     |\n| Q4      | 40       | 12   | 25        | 13    |\n\nIn which quarter were total expenses the highest?",
+      "options": {
+        "A": "Q1",
+        "B": "Q2",
+        "C": "Q3",
+        "D": "Q4"
+      },
+      "correct_answer": "D",
+      "explanation": "Q1: 30+10+15+5 = 60. Q2: 35+10+20+10 = 75. Q3: 32+12+18+8 = 70. Q4: 40+12+25+13 = 90. Q4 is highest (90 lakhs)."
+    },
+    {
+      "id": 4,
+      "section_id": 1,
+      "topic": "Data Interpretation (Cricket)",
+      "marks": 1,
+      "question": "Scores of a batsman in 5 T20 matches: 45, 72, 38, 91, 54.\n\nWhat is his batting average across these matches?",
+      "options": {
+        "A": "55",
+        "B": "60",
+        "C": "65",
+        "D": "58"
+      },
+      "correct_answer": "B",
+      "explanation": "Total runs = 45+72+38+91+54 = 300. Average = 300/5 = 60."
+    },
+    {
+      "id": 5,
+      "section_id": 1,
+      "topic": "Syllogism",
+      "marks": 1,
+      "question": "Statements:\n1. No fish is a bird.\n2. All birds can fly.\n\nConclusions:\nI. No fish can fly.\nII. Some things that can fly are birds.\n\nWhich conclusions follow?",
+      "options": {
+        "A": "Only I follows",
+        "B": "Only II follows",
+        "C": "Both follow",
+        "D": "Neither follows"
+      },
+      "correct_answer": "B",
+      "explanation": "No fish is a bird, and all birds fly. But there might be non-bird things that fly (fish are not birds, but fish not flying isn’t guaranteed by these premises alone — flying fish exist!). Conclusion I doesn’t follow. All birds fly → some flying things are birds (Conclusion II follows)."
+    },
+    {
+      "id": 6,
+      "section_id": 1,
+      "topic": "Syllogism",
+      "marks": 1,
+      "question": "Statements:\n1. All teachers are graduates.\n2. Some graduates are employed.\n\nConclusions:\nI. Some teachers are employed.\nII. Some employed people are graduates.\n\nWhich conclusions follow?",
+      "options": {
+        "A": "Only I follows",
+        "B": "Only II follows",
+        "C": "Both follow",
+        "D": "Neither follows"
+      },
+      "correct_answer": "B",
+      "explanation": "Teachers ⊂ Graduates, and some graduates are employed. The employed graduates may not include teachers → I doesn’t necessarily follow. 'Some graduates are employed' directly implies 'Some employed people are graduates' (converse of 'some') → II follows."
+    },
+    {
+      "id": 7,
+      "section_id": 1,
+      "topic": "Coding-Decoding (Vowel-Consonant Swap)",
+      "marks": 1,
+      "question": "In a code, vowels are replaced by the next vowel (A→E, E→I, I→O, O→U, U→A) and consonants remain unchanged.\n\nWhat is the code for 'TABLE'?",
+      "options": {
+        "A": "TEBLI",
+        "B": "TEBLO",
+        "C": "TABLI",
+        "D": "TIBLU"
+      },
+      "correct_answer": "A",
+      "explanation": "T (consonant) → T. A (vowel) → E. B (consonant) → B. L (consonant) → L. E (vowel) → I. TABLE → TEBLI."
+    },
+    {
+      "id": 8,
+      "section_id": 1,
+      "topic": "Blood Relations (Photo)",
+      "marks": 1,
+      "question": "Looking at a photo, Arun said: ‘He is the son of my father’s only brother.’\n\nHow is the person in the photo related to Arun?",
+      "options": {
+        "A": "Brother",
+        "B": "Cousin",
+        "C": "Uncle",
+        "D": "Nephew"
+      },
+      "correct_answer": "B",
+      "explanation": "Arun’s father’s only brother = Arun’s uncle. The son of Arun’s uncle = Arun’s cousin."
+    },
+    {
+      "id": 9,
+      "section_id": 1,
+      "topic": "Directional Sense (Shadow)",
+      "marks": 1,
+      "question": "One morning, Suresh was walking. His shadow fell to his left.\n\nWhich direction was Suresh facing?",
+      "options": {
+        "A": "North",
+        "B": "South",
+        "C": "East",
+        "D": "West"
+      },
+      "correct_answer": "A",
+      "explanation": "In the morning, the sun is in the East. A person’s shadow falls opposite to the sun (i.e., toward the West). If the shadow is to his left, West is to his left. When West is to your left, you are facing North."
+    },
+    {
+      "id": 10,
+      "section_id": 1,
+      "topic": "Seating (Rectangular Table)",
+      "marks": 1,
+      "question": "Eight people A-H sit around a rectangular table (2 on each long side, 2 on each short side).\n• A sits at a corner.\n• B sits opposite to A.\n• C sits to the immediate right of A.\n• D is not adjacent to B.\n\nIf A is at the top-left corner and B is at the bottom-right corner, who sits to the immediate right of A?",
+      "options": {
+        "A": "C",
+        "B": "D",
+        "C": "E",
+        "D": "B"
+      },
+      "correct_answer": "A",
+      "explanation": "The question directly states: ‘C sits to the immediate right of A.’ The answer is C."
+    },
+    {
+      "id": 11,
+      "section_id": 1,
+      "topic": "Seating (Floor Puzzle)",
+      "marks": 1,
+      "question": "Five people — A, B, C, D, E — live on floors 1-5 of a building (1 = ground).\n• A lives above B but below D.\n• C lives on the topmost floor.\n• E lives on floor 2.\n\nWho lives on floor 3?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "D",
+        "D": "Cannot be determined"
+      },
+      "correct_answer": "A",
+      "explanation": "C is on floor 5. E is on floor 2. B < A < D (order constraint). Remaining floors: 1, 3, 4 for B, A, D. B < A < D → B=1, A=3, D=4. Floor 3 = A."
+    },
+    {
+      "id": 12,
+      "section_id": 1,
+      "topic": "Logical Deduction (Scheduling)",
+      "marks": 1,
+      "question": "Four tasks — P, Q, R, S — must be completed in order. P takes 2 hours, Q takes 3 hours, R takes 1 hour, S takes 4 hours. If work starts at 9:00 AM, at what time will all tasks be completed?",
+      "options": {
+        "A": "5:00 PM",
+        "B": "7:00 PM",
+        "C": "6:00 PM",
+        "D": "4:00 PM"
+      },
+      "correct_answer": "B",
+      "explanation": "Total time = 2 + 3 + 1 + 4 = 10 hours. Starting at 9:00 AM + 10 hours = 7:00 PM."
+    },
+    {
+      "id": 13,
+      "section_id": 1,
+      "topic": "Logical Deduction (Truth/Lie)",
+      "marks": 1,
+      "question": "There are two people: one always tells the truth, one always lies. You don’t know who is who.\n\nPerson A says: ‘I am the liar.’\n\nWhat can you conclude?",
+      "options": {
+        "A": "A is the truth-teller",
+        "B": "A is the liar",
+        "C": "A must be the liar because only a liar would say that",
+        "D": "A cannot be the liar (a liar wouldn’t truthfully admit it), so A is the truth-teller, but a truth-teller wouldn’t call themselves a liar — this is a paradox, so this statement is impossible"
+      },
+      "correct_answer": "D",
+      "explanation": "If A is the truth-teller, saying ‘I am the liar’ is a lie — contradiction. If A is the liar, saying ‘I am the liar’ is the truth — contradiction. Neither role is consistent, so this statement cannot be made in this system. This is a classic paradox."
+    },
+    {
+      "id": 14,
+      "section_id": 1,
+      "topic": "Statistical DI (Frequency/Probability)",
+      "marks": 1,
+      "question": "A bag contains 3 red, 5 blue, and 2 green balls. If one ball is drawn at random, what is the probability of getting a blue ball?",
+      "options": {
+        "A": "1/2",
+        "B": "1/3",
+        "C": "3/10",
+        "D": "2/5"
+      },
+      "correct_answer": "A",
+      "explanation": "Total balls = 3 + 5 + 2 = 10. Blue balls = 5. P(blue) = 5/10 = 1/2."
+    },
+    {
+      "id": 15,
+      "section_id": 1,
+      "topic": "Statistical DI (IQR Concept)",
+      "marks": 1,
+      "question": "For the data set: 3, 7, 8, 12, 15, 18, 22, 25, 30\n\nWhat is the median?",
+      "options": {
+        "A": "12",
+        "B": "15",
+        "C": "14",
+        "D": "18"
+      },
+      "correct_answer": "B",
+      "explanation": "9 values (already sorted). Median = middle value = 5th value = 15."
+    },
+    {
+      "id": 16,
+      "section_id": 2,
+      "topic": "Number Series (Prime)",
+      "marks": 1,
+      "question": "Find the next number: 2, 3, 5, 7, 11, 13, ?",
+      "options": {
+        "A": "15",
+        "B": "17",
+        "C": "19",
+        "D": "14"
+      },
+      "correct_answer": "B",
+      "explanation": "This is the sequence of prime numbers. After 13, the next prime is 17."
+    },
+    {
+      "id": 17,
+      "section_id": 2,
+      "topic": "Number Series (Square Difference)",
+      "marks": 1,
+      "question": "Find the next number: 4, 7, 12, 19, 28, ?",
+      "options": {
+        "A": "38",
+        "B": "39",
+        "C": "40",
+        "D": "37"
+      },
+      "correct_answer": "B",
+      "explanation": "Differences: 3, 5, 7, 9. The differences increase by 2 each time. Next difference = 11. 28 + 11 = 39."
+    },
+    {
+      "id": 18,
+      "section_id": 2,
+      "topic": "Ratios (Alligation)",
+      "marks": 1,
+      "question": "A shopkeeper mixes two types of rice: Type A costs ₹40/kg and Type B costs ₹60/kg. In what ratio should they be mixed to get a mixture worth ₹45/kg?",
+      "options": {
+        "A": "3:1",
+        "B": "1:3",
+        "C": "2:1",
+        "D": "1:2"
+      },
+      "correct_answer": "A",
+      "explanation": "Using alligation: (60-45) : (45-40) = 15 : 5 = 3 : 1. Type A : Type B = 3 : 1."
+    },
+    {
+      "id": 19,
+      "section_id": 2,
+      "topic": "Probability (Derangement)",
+      "marks": 1,
+      "question": "Three letters are placed in three envelopes randomly. What is the probability that no letter is in its correct envelope?",
+      "options": {
+        "A": "1/3",
+        "B": "1/6",
+        "C": "2/3",
+        "D": "1/2"
+      },
+      "correct_answer": "A",
+      "explanation": "Total arrangements = 3! = 6. Derangements of 3 items: D(3) = 3!(1/0! - 1/1! + 1/2! - 1/3!) = 6(1-1+1/2-1/6) = 6(1/3) = 2. P(no correct) = 2/6 = 1/3."
+    },
+    {
+      "id": 20,
+      "section_id": 2,
+      "topic": "Conditional Probability",
+      "marks": 1,
+      "question": "A box has 4 red and 6 blue balls. Two balls are drawn without replacement. Given that the first ball is red, what is the probability that the second ball is also red?",
+      "options": {
+        "A": "1/3",
+        "B": "4/10",
+        "C": "3/9",
+        "D": "4/9"
+      },
+      "correct_answer": "A",
+      "explanation": "After drawing 1 red ball: remaining = 3 red + 6 blue = 9 balls. P(2nd red | 1st red) = 3/9 = 1/3."
+    },
+    {
+      "id": 21,
+      "section_id": 2,
+      "topic": "Time-Speed-Distance (Train opposite)",
+      "marks": 1,
+      "question": "A train 200 m long passes a man running at 8 km/hr in the OPPOSITE direction in 9 seconds. What is the speed of the train?",
+      "options": {
+        "A": "72 km/hr",
+        "B": "80 km/hr",
+        "C": "64 km/hr",
+        "D": "60 km/hr"
+      },
+      "correct_answer": "A",
+      "explanation": "Relative speed (opposite direction) = Train speed + Man speed. Relative speed = 200/9 m/s = 200/9 × 18/5 km/hr = 80 km/hr. Train speed = 80 - 8 = 72 km/hr."
+    },
+    {
+      "id": 22,
+      "section_id": 2,
+      "topic": "Cryptarithmetic",
+      "marks": 1,
+      "question": "In the puzzle: AB + BA = CDC\n\nEach letter represents a unique digit. If A = 4 and B = 7, find C + D.",
+      "options": {
+        "A": "3",
+        "B": "5",
+        "C": "7",
+        "D": "9"
+      },
+      "correct_answer": "A",
+      "explanation": "AB = 47, BA = 74. 47 + 74 = 121. CDC = 121 → C = 1, D = 2. C + D = 1 + 2 = 3."
+    },
+    {
+      "id": 23,
+      "section_id": 2,
+      "topic": "Time & Work (Pipes)",
+      "marks": 1,
+      "question": "Pipe A can fill a tank in 12 hours. Pipe B can fill the same tank in 15 hours. If both pipes are opened together, how long will it take to fill the tank?",
+      "options": {
+        "A": "6 hours",
+        "B": "6 hours 40 minutes",
+        "C": "7 hours",
+        "D": "5 hours"
+      },
+      "correct_answer": "B",
+      "explanation": "A’s rate = 1/12 per hour. B’s rate = 1/15 per hour. Combined rate = 1/12 + 1/15 = (5+4)/60 = 9/60 = 3/20. Time = 20/3 = 6.67 hours = 6 hours 40 minutes."
+    },
+    {
+      "id": 24,
+      "section_id": 2,
+      "topic": "CI vs SI",
+      "marks": 1,
+      "question": "The difference between Compound Interest and Simple Interest on ₹10,000 at 10% per annum for 2 years is:",
+      "options": {
+        "A": "₹90",
+        "B": "₹100",
+        "C": "₹110",
+        "D": "₹80"
+      },
+      "correct_answer": "B",
+      "explanation": "SI = PRT/100 = 10000×10×2/100 = ₹2000.\nCI = P[(1+R/100)^T - 1] = 10000[(1.1)² - 1] = 10000[1.21-1] = 10000×0.21 = ₹2100.\nDifference = 2100 - 2000 = ₹100.\n\nShortcut for 2 years: Diff = P(R/100)² = 10000(0.1)² = ₹100."
+    },
+    {
+      "id": 25,
+      "section_id": 2,
+      "topic": "LCM/HCF Word Problem",
+      "marks": 1,
+      "question": "Two bells ring at intervals of 4 minutes and 6 minutes respectively. If they ring together at 12:00 PM, when will they next ring together?",
+      "options": {
+        "A": "12:10 PM",
+        "B": "12:12 PM",
+        "C": "12:24 PM",
+        "D": "12:08 PM"
+      },
+      "correct_answer": "B",
+      "explanation": "LCM(4, 6) = 12 minutes. They will next ring together at 12:00 PM + 12 minutes = 12:12 PM."
+    },
+    {
+      "id": 26,
+      "section_id": 3,
+      "topic": "Critical Reasoning (Analogy)",
+      "marks": 1,
+      "question": "Statement: ‘Just as a vaccine prevents disease by building immunity, education prevents ignorance by building knowledge.’\n\nWhich of the following has the same logical structure?",
+      "options": {
+        "A": "Just as a bridge connects two riverbanks, a translator connects two languages.",
+        "B": "Vaccines are expensive, and education is also expensive.",
+        "C": "Some diseases have no vaccine, and some problems have no educational solution.",
+        "D": "Education is more important than vaccines."
+      },
+      "correct_answer": "A",
+      "explanation": "The original uses the structure: ‘Just as X prevents Y by doing Z, A prevents B by doing C.’ Option A mirrors this: ‘Just as X connects Y, A connects B.’ Same analogical/functional parallel structure."
+    },
+    {
+      "id": 27,
+      "section_id": 3,
+      "topic": "Critical Reasoning (Necessary Condition)",
+      "marks": 1,
+      "question": "Statement: ‘Without adequate rainfall, crops cannot grow properly.’\n\nWhat is the necessary condition for crops to grow properly?",
+      "options": {
+        "A": "Fertile soil",
+        "B": "Adequate rainfall",
+        "C": "Modern farming equipment",
+        "D": "Government subsidies"
+      },
+      "correct_answer": "B",
+      "explanation": "The statement asserts: No adequate rainfall → No proper crop growth. This makes adequate rainfall a necessary condition (without it, the outcome cannot occur)."
+    },
+    {
+      "id": 28,
+      "section_id": 3,
+      "topic": "Critical Reasoning (Statistical Claim)",
+      "marks": 1,
+      "question": "A newspaper headline reads: ‘Survey shows 80% of people support the new policy.’\n\nWhich of the following, if true, would most weaken the credibility of this claim?",
+      "options": {
+        "A": "The policy was introduced by a popular leader",
+        "B": "The survey was conducted among only 50 employees of the company that benefits from the policy",
+        "C": "Some experts also support the policy",
+        "D": "The newspaper is a well-known publication"
+      },
+      "correct_answer": "B",
+      "explanation": "A survey of only 50 biased respondents (employees of the benefiting company) has severe sampling bias and is far too small/unrepresentative to make a general claim. This most weakens the credibility."
+    },
+    {
+      "id": 29,
+      "section_id": 3,
+      "topic": "English Corrective Usage (Affect vs Effect)",
+      "marks": 1,
+      "question": "Choose the correct sentence:",
+      "options": {
+        "A": "The new policy will effect all employees.",
+        "B": "The new policy will affect all employees.",
+        "C": "The new policy will effecting all employees.",
+        "D": "The new policy will be affect all employees."
+      },
+      "correct_answer": "B",
+      "explanation": "‘Affect’ (verb) means to influence or have an impact on. ‘Effect’ (noun) means the result. Here, the policy will influence employees → ‘affect’ is correct."
+    },
+    {
+      "id": 30,
+      "section_id": 3,
+      "topic": "English Corrective Usage (Its vs It’s)",
+      "marks": 1,
+      "question": "Choose the correct sentence:",
+      "options": {
+        "A": "It's important to know it's limitations.",
+        "B": "Its important to know its limitations.",
+        "C": "It's important to know its limitations.",
+        "D": "Its important to know it's limitations."
+      },
+      "correct_answer": "C",
+      "explanation": "‘It’s’ = contraction of ‘it is’. ‘Its’ = possessive pronoun (no apostrophe). ‘It is important to know [the thing’s] limitations’ → ‘It’s important to know its limitations.’"
+    },
+    {
+      "id": 31,
+      "section_id": 3,
+      "topic": "English Corrective Usage (Farther vs Further)",
+      "marks": 1,
+      "question": "Choose the correct sentence:",
+      "options": {
+        "A": "We need to discuss this matter farther.",
+        "B": "We need to discuss this matter further.",
+        "C": "The school is further down the road.",
+        "D": "I can’t walk further."
+      },
+      "correct_answer": "B",
+      "explanation": "‘Further’ = to a greater extent (abstract/figurative). ‘Farther’ = to a greater physical distance. Discussing a matter is figurative → ‘further’ is correct."
+    },
+    {
+      "id": 32,
+      "section_id": 3,
+      "topic": "Error Correction (Double Negative)",
+      "marks": 1,
+      "question": "Correct: ‘I don’t want no trouble.’",
+      "options": {
+        "A": "I don’t want any trouble.",
+        "B": "I don’t want none trouble.",
+        "C": "I want no any trouble.",
+        "D": "No correction needed."
+      },
+      "correct_answer": "A",
+      "explanation": "Double negative (‘don’t’ + ‘no’) is grammatically incorrect in standard English. Correct: ‘I don’t want any trouble’ or ‘I want no trouble.’"
+    },
+    {
+      "id": 33,
+      "section_id": 3,
+      "topic": "Error Correction (Tautology)",
+      "marks": 1,
+      "question": "Correct: ‘The reason is because he was late.’",
+      "options": {
+        "A": "The reason is that he was late.",
+        "B": "The reason is since he was late.",
+        "C": "Because the reason is he was late.",
+        "D": "No correction needed."
+      },
+      "correct_answer": "A",
+      "explanation": "‘The reason is because’ is a tautology (‘reason’ and ‘because’ both indicate causation). Correct: ‘The reason is that he was late’ or ‘He was late because...’"
+    },
+    {
+      "id": 34,
+      "section_id": 3,
+      "topic": "Error Correction (Inversion)",
+      "marks": 1,
+      "question": "Correct: ‘Seldom I have seen such a beautiful sunset.’",
+      "options": {
+        "A": "Seldom have I seen such a beautiful sunset.",
+        "B": "Seldom I had seen such a beautiful sunset.",
+        "C": "Seldom I have saw such a beautiful sunset.",
+        "D": "No correction needed."
+      },
+      "correct_answer": "A",
+      "explanation": "When a negative adverb (‘seldom’, ‘never’, ‘rarely’) begins a sentence, subject-verb inversion is required. ‘Seldom have I seen...’ (auxiliary ‘have’ before subject ‘I’)."
+    },
+    {
+      "id": 35,
+      "section_id": 3,
+      "topic": "Error Identification (Redundancy)",
+      "marks": 1,
+      "question": "Identify the error:\n‘The (A) new innovation (B) has been (C) widely (D) accepted.’",
+      "options": {
+        "A": "Part A: new innovation",
+        "B": "Part B: has been",
+        "C": "Part C: widely",
+        "D": "Part D: accepted"
+      },
+      "correct_answer": "A",
+      "explanation": "‘New innovation’ is redundant — an innovation is by definition new. It should simply be ‘innovation’ or ‘latest innovation’."
+    },
+    {
+      "id": 36,
+      "section_id": 3,
+      "topic": "Error Identification (Comparative)",
+      "marks": 1,
+      "question": "Identify the error:\n‘This building is (A) more taller (B) than the (C) one across the (D) street.’",
+      "options": {
+        "A": "Part A: more taller",
+        "B": "Part B: than the",
+        "C": "Part C: one across the",
+        "D": "Part D: street"
+      },
+      "correct_answer": "A",
+      "explanation": "‘More taller’ is a double comparative. Since ‘taller’ is already comparative, adding ‘more’ is incorrect. Correct: ‘taller than’ or ‘more tall than’ (though ‘taller’ is preferred)."
+    },
+    {
+      "id": 37,
+      "section_id": 3,
+      "topic": "Reading Comprehension",
+      "marks": 1,
+      "question": "Blockchain technology, originally developed as the underlying infrastructure for Bitcoin and other cryptocurrencies, has evolved far beyond its financial origins. At its core, blockchain is a decentralized, distributed digital ledger that records transactions across multiple computers in a way that makes the recorded data extremely difficult to alter retroactively. This characteristic — immutability — has attracted interest from industries as diverse as healthcare, supply chain management, real estate, and voting systems. In supply chain management, blockchain enables transparent tracking of products from manufacturer to consumer, reducing fraud and ensuring product authenticity. Healthcare organizations are exploring blockchain to create secure, interoperable patient records that can be accessed across institutions while maintaining privacy. However, widespread blockchain adoption faces significant challenges. The technology consumes substantial computational resources, raising environmental concerns. Scalability remains an issue, as many blockchain networks can process only a limited number of transactions per second compared to traditional systems. Regulatory uncertainty across different jurisdictions further complicates enterprise adoption. Despite these obstacles, proponents argue that continued innovation, including the development of more energy-efficient consensus mechanisms, will address current limitations and unlock blockchain’s transformative potential across multiple sectors.\n\nWhat is the core feature of blockchain that has attracted industry interest?",
+      "options": {
+        "A": "Its speed of processing transactions",
+        "B": "Its low cost of implementation",
+        "C": "Its immutability — data is extremely difficult to alter retroactively",
+        "D": "Its ability to work without internet"
+      },
+      "correct_answer": "C",
+      "explanation": "The passage states: ‘This characteristic — immutability — has attracted interest from industries as diverse as healthcare, supply chain management, real estate, and voting systems.’"
+    },
+    {
+      "id": 38,
+      "section_id": 3,
+      "topic": "Reading Comprehension",
+      "marks": 1,
+      "question": "Blockchain technology, originally developed as the underlying infrastructure for Bitcoin and other cryptocurrencies, has evolved far beyond its financial origins. At its core, blockchain is a decentralized, distributed digital ledger that records transactions across multiple computers in a way that makes the recorded data extremely difficult to alter retroactively. This characteristic — immutability — has attracted interest from industries as diverse as healthcare, supply chain management, real estate, and voting systems. In supply chain management, blockchain enables transparent tracking of products from manufacturer to consumer, reducing fraud and ensuring product authenticity. Healthcare organizations are exploring blockchain to create secure, interoperable patient records that can be accessed across institutions while maintaining privacy. However, widespread blockchain adoption faces significant challenges. The technology consumes substantial computational resources, raising environmental concerns. Scalability remains an issue, as many blockchain networks can process only a limited number of transactions per second compared to traditional systems. Regulatory uncertainty across different jurisdictions further complicates enterprise adoption. Despite these obstacles, proponents argue that continued innovation, including the development of more energy-efficient consensus mechanisms, will address current limitations and unlock blockchain’s transformative potential across multiple sectors.\n\nHow is blockchain being used in supply chain management according to the passage?",
+      "options": {
+        "A": "To automate product manufacturing",
+        "B": "To enable transparent tracking of products from manufacturer to consumer",
+        "C": "To replace human workers in warehouses",
+        "D": "To set dynamic pricing for products"
+      },
+      "correct_answer": "B",
+      "explanation": "The passage states: ‘In supply chain management, blockchain enables transparent tracking of products from manufacturer to consumer, reducing fraud and ensuring product authenticity.’"
+    },
+    {
+      "id": 39,
+      "section_id": 3,
+      "topic": "Reading Comprehension (Challenge)",
+      "marks": 1,
+      "question": "Blockchain technology, originally developed as the underlying infrastructure for Bitcoin and other cryptocurrencies, has evolved far beyond its financial origins. At its core, blockchain is a decentralized, distributed digital ledger that records transactions across multiple computers in a way that makes the recorded data extremely difficult to alter retroactively. This characteristic — immutability — has attracted interest from industries as diverse as healthcare, supply chain management, real estate, and voting systems. In supply chain management, blockchain enables transparent tracking of products from manufacturer to consumer, reducing fraud and ensuring product authenticity. Healthcare organizations are exploring blockchain to create secure, interoperable patient records that can be accessed across institutions while maintaining privacy. However, widespread blockchain adoption faces significant challenges. The technology consumes substantial computational resources, raising environmental concerns. Scalability remains an issue, as many blockchain networks can process only a limited number of transactions per second compared to traditional systems. Regulatory uncertainty across different jurisdictions further complicates enterprise adoption. Despite these obstacles, proponents argue that continued innovation, including the development of more energy-efficient consensus mechanisms, will address current limitations and unlock blockchain’s transformative potential across multiple sectors.\n\nWhich of the following is NOT mentioned as a challenge to blockchain adoption?",
+      "options": {
+        "A": "High computational resource consumption",
+        "B": "Scalability limitations",
+        "C": "Lack of skilled blockchain developers",
+        "D": "Regulatory uncertainty across jurisdictions"
+      },
+      "correct_answer": "C",
+      "explanation": "The passage mentions environmental concerns (energy), scalability issues, and regulatory uncertainty as challenges. ‘Lack of skilled developers’ is NOT mentioned in the passage."
+    },
+    {
+      "id": 40,
+      "section_id": 3,
+      "topic": "Reading Comprehension (Future)",
+      "marks": 1,
+      "question": "Blockchain technology, originally developed as the underlying infrastructure for Bitcoin and other cryptocurrencies, has evolved far beyond its financial origins. At its core, blockchain is a decentralized, distributed digital ledger that records transactions across multiple computers in a way that makes the recorded data extremely difficult to alter retroactively. This characteristic — immutability — has attracted interest from industries as diverse as healthcare, supply chain management, real estate, and voting systems. In supply chain management, blockchain enables transparent tracking of products from manufacturer to consumer, reducing fraud and ensuring product authenticity. Healthcare organizations are exploring blockchain to create secure, interoperable patient records that can be accessed across institutions while maintaining privacy. However, widespread blockchain adoption faces significant challenges. The technology consumes substantial computational resources, raising environmental concerns. Scalability remains an issue, as many blockchain networks can process only a limited number of transactions per second compared to traditional systems. Regulatory uncertainty across different jurisdictions further complicates enterprise adoption. Despite these obstacles, proponents argue that continued innovation, including the development of more energy-efficient consensus mechanisms, will address current limitations and unlock blockchain’s transformative potential across multiple sectors.\n\nWhat solution do proponents suggest for blockchain’s current limitations?",
+      "options": {
+        "A": "Abandoning blockchain in favor of traditional databases",
+        "B": "Developing more energy-efficient consensus mechanisms",
+        "C": "Limiting blockchain use to cryptocurrency only",
+        "D": "Creating a single global blockchain network"
+      },
+      "correct_answer": "B",
+      "explanation": "The passage states: ‘proponents argue that continued innovation, including the development of more energy-efficient consensus mechanisms, will address current limitations.’"
+    },
+    {
+      "id": 41,
+      "section_id": 3,
+      "topic": "Para Jumbles",
+      "marks": 1,
+      "question": "Rearrange:\n\nP. Machine learning, a subset of AI, enables systems to learn from data without explicit programming.\nQ. Artificial intelligence has evolved significantly since its conceptual origins in the 1950s.\nR. Today, AI applications range from virtual assistants to autonomous vehicles.\nS. Early AI research focused on rule-based systems and symbolic reasoning.\n\nChoose the correct sequence:",
+      "options": {
+        "A": "Q - S - P - R",
+        "B": "Q - P - S - R",
+        "C": "S - Q - R - P",
+        "D": "P - Q - S - R"
+      },
+      "correct_answer": "A",
+      "explanation": "Q introduces AI broadly (1950s origins). S describes early research. P introduces ML as evolution. R shows modern applications (‘Today’). Flow: Q → S → P → R."
+    },
+    {
+      "id": 42,
+      "section_id": 3,
+      "topic": "Para Jumbles",
+      "marks": 1,
+      "question": "Rearrange:\n\nP. Rainwater harvesting and drip irrigation are effective methods of water conservation.\nQ. Water scarcity has become a critical global issue affecting billions of people.\nR. Governments and communities must work together to implement sustainable water management practices.\nS. Rapid urbanization and climate change have accelerated the depletion of freshwater resources.\n\nChoose the correct sequence:",
+      "options": {
+        "A": "Q - S - P - R",
+        "B": "S - Q - R - P",
+        "C": "Q - P - S - R",
+        "D": "R - Q - S - P"
+      },
+      "correct_answer": "A",
+      "explanation": "Q introduces the problem (water scarcity). S explains causes. P offers solutions (methods). R concludes with call to action. Flow: Q → S → P → R."
+    },
+    {
+      "id": 43,
+      "section_id": 3,
+      "topic": "Synonyms",
+      "marks": 1,
+      "question": "Choose the word most similar in meaning to ‘CANDID’:",
+      "options": {
+        "A": "Dishonest",
+        "B": "Frank",
+        "C": "Reserved",
+        "D": "Secretive"
+      },
+      "correct_answer": "B",
+      "explanation": "‘Candid’ means truthful and straightforward; frank. Synonym: ‘Frank.’"
+    },
+    {
+      "id": 44,
+      "section_id": 3,
+      "topic": "Antonyms",
+      "marks": 1,
+      "question": "Choose the antonym of ‘GREGARIOUS’:",
+      "options": {
+        "A": "Sociable",
+        "B": "Friendly",
+        "C": "Reclusive",
+        "D": "Outgoing"
+      },
+      "correct_answer": "C",
+      "explanation": "‘Gregarious’ means fond of company; sociable. Antonym: ‘Reclusive’ (preferring solitude)."
+    },
+    {
+      "id": 45,
+      "section_id": 3,
+      "topic": "Synonyms",
+      "marks": 1,
+      "question": "Choose the word most similar in meaning to ‘RESILIENT’:",
+      "options": {
+        "A": "Fragile",
+        "B": "Tough",
+        "C": "Delicate",
+        "D": "Weak"
+      },
+      "correct_answer": "B",
+      "explanation": "‘Resilient’ means able to recover quickly from difficulties; tough. Synonym: ‘Tough.’"
+    },
+    {
+      "id": 46,
+      "section_id": 4,
+      "topic": "Do-While Loop",
+      "marks": 2,
+      "question": "What will be the output?\n\nInteger x = 10\nDo\n    Print x\n    x = x - 3\nWhile (x > 0)",
+      "options": {
+        "A": "10 7 4 1",
+        "B": "10 7 4",
+        "C": "10 7 4 1 -2",
+        "D": "7 4 1"
+      },
+      "correct_answer": "A",
+      "explanation": "Do-while executes at least once before checking condition.\nx=10: print 10, x=7. 7>0? Yes.\nx=7: print 7, x=4. 4>0? Yes.\nx=4: print 4, x=1. 1>0? Yes.\nx=1: print 1, x=-2. -2>0? No. Exit.\nOutput: 10 7 4 1."
+    },
+    {
+      "id": 47,
+      "section_id": 4,
+      "topic": "Fibonacci Generation",
+      "marks": 2,
+      "question": "What is the value of fib after this code executes?\n\nInteger a = 0, b = 1, fib = 0\nFor i = 2 to 7\n    fib = a + b\n    a = b\n    b = fib\nEnd For\nPrint fib",
+      "options": {
+        "A": "8",
+        "B": "13",
+        "C": "21",
+        "D": "5"
+      },
+      "correct_answer": "B",
+      "explanation": "Fibonacci: i=2: fib=0+1=1, a=1, b=1. i=3: fib=1+1=2, a=1, b=2. i=4: fib=1+2=3, a=2, b=3. i=5: fib=2+3=5, a=3, b=5. i=6: fib=3+5=8, a=5, b=8. i=7: fib=5+8=13, a=8, b=13. Output: 13."
+    },
+    {
+      "id": 48,
+      "section_id": 4,
+      "topic": "Pattern Printing",
+      "marks": 2,
+      "question": "How many asterisks (*) will be printed in total?\n\nFor i = 1 to 4\n    For j = 1 to i\n        Print \"*\"\n    End For\nEnd For",
+      "options": {
+        "A": "4",
+        "B": "10",
+        "C": "16",
+        "D": "8"
+      },
+      "correct_answer": "B",
+      "explanation": "i=1: 1 star. i=2: 2 stars. i=3: 3 stars. i=4: 4 stars. Total = 1+2+3+4 = 10. (This prints a right triangle pattern.)"
+    },
+    {
+      "id": 49,
+      "section_id": 4,
+      "topic": "Stack Operations",
+      "marks": 2,
+      "question": "Given an empty stack, the following operations are performed:\nPush(5), Push(10), Push(15), Pop(), Push(20), Pop(), Pop()\n\nWhat value is at the top of the stack now?",
+      "options": {
+        "A": "5",
+        "B": "10",
+        "C": "15",
+        "D": "20"
+      },
+      "correct_answer": "A",
+      "explanation": "Stack (top on right): Push(5)→[5]. Push(10)→[5,10]. Push(15)→[5,10,15]. Pop()→[5,10] (removed 15). Push(20)→[5,10,20]. Pop()→[5,10] (removed 20). Pop()→[5] (removed 10). Top = 5."
+    },
+    {
+      "id": 50,
+      "section_id": 4,
+      "topic": "Linear Search",
+      "marks": 2,
+      "question": "How many comparisons does this linear search make to find target=7?\n\nInteger arr[6] = {3, 8, 1, 7, 5, 9}\nInteger target = 7\nFor i = 0 to 5\n    If arr[i] == target\n        Print \"Found at index \" + i\n        Break\n    End If\nEnd For",
+      "options": {
+        "A": "1",
+        "B": "3",
+        "C": "4",
+        "D": "6"
+      },
+      "correct_answer": "C",
+      "explanation": "i=0: arr[0]=3≠7. i=1: arr[1]=8≠7. i=2: arr[2]=1≠7. i=3: arr[3]=7==7 → Found! Break. Total comparisons: 4."
+    },
+    {
+      "id": 51,
+      "section_id": 5,
+      "topic": "Visual Reasoning (Mirror Image)",
+      "marks": 2.5,
+      "question": "If the time shown on a clock is 3:15, what time does its mirror image show?",
+      "options": {
+        "A": "8:45",
+        "B": "9:45",
+        "C": "8:15",
+        "D": "9:00"
+      },
+      "correct_answer": "A",
+      "explanation": "Mirror image of clock time = 12:00 minus the actual time. 12:00 - 3:15 = 8:45. (The mirror reverses left-right, making the hour and minute hands point to mirror-symmetric positions.)"
+    },
+    {
+      "id": 52,
+      "section_id": 5,
+      "topic": "Cryptogram Puzzle",
+      "marks": 2.5,
+      "question": "In a code, each digit 0-9 maps to a unique letter. Given:\n5 → E, 7 → G, 8 → H, 1 → A.\n\nWhat number does the code word ‘CAGE’ represent, if C = 3 and A = 1?",
+      "options": {
+        "A": "3175",
+        "B": "3185",
+        "C": "3195",
+        "D": "3165"
+      },
+      "correct_answer": "A",
+      "explanation": "C=3, A=1, G=7, E=5. CAGE = 3-1-7-5 = 3175."
+    },
+    {
+      "id": 53,
+      "section_id": 5,
+      "topic": "Number Pattern (Spiral)",
+      "marks": 2.5,
+      "question": "In a 3×3 grid filled in a clockwise spiral starting from the top-left:\n\n[  1   2   3  ]\n[  8   9   4  ]\n[  7   6   5  ]\n\nWhat is the sum of the corner values?",
+      "options": {
+        "A": "16",
+        "B": "18",
+        "C": "20",
+        "D": "14"
+      },
+      "correct_answer": "A",
+      "explanation": "Corners of the 3×3 grid: top-left=1, top-right=3, bottom-right=5, bottom-left=7. Sum = 1+3+5+7 = 16."
+    },
+    {
+      "id": 54,
+      "section_id": 5,
+      "topic": "Constraint Satisfaction",
+      "marks": 2.5,
+      "question": "Four people — W, X, Y, Z — sit in seats 1-4 (left to right).\n• W is not in seat 1 or 4.\n• X is in a higher-numbered seat than Y.\n• Z is in seat 1.\n\nWhat seat is W in?",
+      "options": {
+        "A": "Seat 2",
+        "B": "Seat 3",
+        "C": "Cannot be determined",
+        "D": "Seat 4"
+      },
+      "correct_answer": "C",
+      "explanation": "Z is in seat 1. W is not in seat 1 or 4 → W is in seat 2 or 3. X > Y (seat number). Remaining seats 2, 3, 4 for W, X, Y. If W=2: X and Y in 3,4 with X>Y → Y=3, X=4. If W=3: X and Y in 2,4 with X>Y → Y=2, X=4. Both are valid. Cannot be determined."
+    },
+    {
+      "id": 55,
+      "section_id": 6,
+      "topic": "Tenses (Future Perfect)",
+      "marks": 2,
+      "question": "Choose the correct sentence:",
+      "options": {
+        "A": "By next month, I will completed this project.",
+        "B": "By next month, I will have completed this project.",
+        "C": "By next month, I will be complete this project.",
+        "D": "By next month, I would complete this project."
+      },
+      "correct_answer": "B",
+      "explanation": "Future perfect tense: will + have + past participle. ‘By next month’ indicates a future deadline → ‘will have completed.’"
+    },
+    {
+      "id": 56,
+      "section_id": 6,
+      "topic": "Subject-Verb Agreement (Inverted)",
+      "marks": 2,
+      "question": "Choose the correct sentence:",
+      "options": {
+        "A": "Here comes the students.",
+        "B": "Here come the students.",
+        "C": "Here coming the students.",
+        "D": "Here came the students yesterday."
+      },
+      "correct_answer": "B",
+      "explanation": "In inverted sentences starting with ‘Here’, the verb agrees with the subject that follows. ‘Students’ is plural → ‘come’ (plural verb). ‘Here come the students.’"
+    },
+    {
+      "id": 57,
+      "section_id": 6,
+      "topic": "Gerund vs Infinitive",
+      "marks": 2,
+      "question": "Choose the correct sentence:",
+      "options": {
+        "A": "He stopped to smoke five years ago.",
+        "B": "He stopped smoking five years ago.",
+        "C": "He stopped smoke five years ago.",
+        "D": "He has stopped to smoking five years ago."
+      },
+      "correct_answer": "B",
+      "explanation": "‘Stop + gerund (-ing)’ = cease doing something. ‘Stop + infinitive (to)’ = stop in order to do something. The intended meaning is he quit smoking → ‘stopped smoking.’"
+    },
+    {
+      "id": 58,
+      "section_id": 6,
+      "topic": "Relative Clauses (Which vs That)",
+      "marks": 2,
+      "question": "Choose the correct sentence:",
+      "options": {
+        "A": "The car, that is parked outside, belongs to my father.",
+        "B": "The car which is parked outside belongs to my father.",
+        "C": "The car, which is parked outside, belongs to my father.",
+        "D": "The car that is parked outside, belongs to my father."
+      },
+      "correct_answer": "C",
+      "explanation": "Non-restrictive (extra info) clauses use ‘which’ with commas. If removing the clause doesn’t change the core meaning, use commas + which. ‘The car, which is parked outside, belongs to my father’ treats the parking location as additional info."
+    },
+    {
+      "id": 59,
+      "section_id": 6,
+      "topic": "Apostrophe (Possessive)",
+      "marks": 2,
+      "question": "Choose the correct sentence:",
+      "options": {
+        "A": "The student's results were announced.",
+        "B": "The students results were announced.",
+        "C": "The students' results were announced.",
+        "D": "The students result's were announced."
+      },
+      "correct_answer": "C",
+      "explanation": "Multiple students (plural) own the results → plural possessive = add apostrophe after the ‘s’: ‘students’ results.’ Option A = singular student’s results. Option B = missing apostrophe. Option D = apostrophe in wrong place."
+    },
+    {
+      "id": 60,
+      "section_id": 7,
+      "topic": "Essay Writing",
+      "marks": 0,
+      "is_essay": true,
+      "word_limit_min": 150,
+      "word_limit_max": 250,
+      "question": "Topic: 'The Ethical Implications of Data Collection by Social Media Companies and the Need for Digital Privacy Laws'\n\nPrompt:\nDraft a well-structured essay (150-250 words) addressing:\n1. How social media companies collect and use personal data.\n2. The ethical concerns surrounding mass data collection.\n3. Your recommendation for balancing innovation with user privacy.",
+      "sample_high_scoring_response": "Social media companies have become some of the most prolific collectors of personal data in human history. Through user interactions, location tracking, browsing patterns, and third-party integrations, platforms like Facebook, Instagram, and Twitter accumulate vast datasets that fuel targeted advertising and algorithmic content curation. This data-driven business model generates billions in revenue but raises profound ethical questions.\n\nThe ethical implications are significant. Users often consent to data collection through lengthy, complex terms of service that few read or understand, raising questions about informed consent. Data breaches exposing millions of users’ personal information have become alarmingly common. Furthermore, the use of personal data for political microtargeting and behavioral manipulation threatens democratic processes and individual autonomy.\n\nTo address these concerns, governments must enact comprehensive digital privacy legislation modeled on frameworks like the European Union’s GDPR. Such laws should mandate transparent data collection practices, grant users genuine control over their data, and impose substantial penalties for violations. Simultaneously, technology companies should adopt privacy-by-design principles, embedding data protection into their products from inception rather than treating it as an afterthought.\n\nIn conclusion, while social media innovation should continue, it must be balanced with robust privacy protections that respect users’ fundamental right to digital autonomy.",
+      "evaluation_criteria": [
+        "Coherence & Logical Flow",
+        "Vocabulary & Lexical Resource",
+        "Grammar & Sentence Variety",
+        "Relevance & Prompt Adherence"
+      ],
+      "explanation": "Essay evaluated qualitatively on structure, grammar, vocabulary, and relevance."
+    }
+  ]
+}

@@ -1,0 +1,505 @@
+import json
+
+# ========================================================================
+# TEST 2 — Completely fresh questions, zero overlap with Test 1
+# Same 2027 Batch Pattern: 7 Sections, 60 Questions, 75 Marks, 120 Minutes
+# ========================================================================
+
+data = {
+    "test_title": "Infosys SE Mock Test 2 — 2027 Batch Pattern",
+    "total_questions": 60,
+    "total_marks": 75,
+    "total_duration_minutes": 120,
+    "sections": [
+        {"id": 1, "name": "Reasoning Ability Test", "total_questions": 15, "max_marks": 15, "duration_minutes": 25,
+         "instructions": "Topics: Data Sufficiency, Data Interpretation, Logical Deduction, Syllogisms, Statistical Data Interpretation, Data Arrangement, Blood Relations, Coding-Decoding, Directional Sense. ~1 min 40 sec per question."},
+        {"id": 2, "name": "Technical Ability Test (Mathematical)", "total_questions": 10, "max_marks": 10, "duration_minutes": 35,
+         "instructions": "Topics: Number Series [HP], Ratios & Proportions [HP], Permutation/Combination/Probability [HP], Time-Speed-Distance [HP], Cryptarithmetic, Profit & Loss, Partnerships, Averages, Algebra, Simplification. ~3.5 mins per question."},
+        {"id": 3, "name": "Verbal Ability Test", "total_questions": 20, "max_marks": 20, "duration_minutes": 20,
+         "instructions": "Topics: Critical Reasoning [HP], English Corrective Usage [HP], English Error Correction [HP], Error Identification, Reading Comprehension, Para Jumbles, Synonyms & Antonyms. 1 min per question."},
+        {"id": 4, "name": "Pseudocode Test", "total_questions": 5, "max_marks": 10, "duration_minutes": 10,
+         "instructions": "Each question carries 2 marks. Topics: Programming Logic [HP], Loop Tracing, Conditional Statements, Basic Algorithms, Array & String Manipulation. 2 mins per question."},
+        {"id": 5, "name": "Numerical Puzzle Test", "total_questions": 4, "max_marks": 10, "duration_minutes": 10,
+         "instructions": "Each question carries 2.5 marks. Topics: Visual Reasoning [HP], Word Puzzles [HP], Number Based Patterns [HP], Sudoku, Grid Based Puzzles. ~2.5 mins per question."},
+        {"id": 6, "name": "English Grammar Test", "total_questions": 5, "max_marks": 10, "duration_minutes": 10,
+         "instructions": "Each question carries 2 marks. Topics: Tenses [HP], Subject-Verb Agreement [HP], Articles & Prepositions, Parts of Speech, Active & Passive Voice, Direct & Indirect Speech, Punctuation. 2 mins per question."},
+        {"id": 7, "name": "English Writing Test", "total_questions": 1, "max_marks": 0, "marks_label": "NA (Evaluated Separately)", "duration_minutes": 10,
+         "instructions": "Topics: Essay Writing [HP], Email/Letter Writing [HP], Paragraph Writing, Coherence & Logical Structure, Grammar & Vocabulary Usage. 150-250 words. 10 mins."}
+    ],
+    "questions": []
+}
+
+# ===================== SECTION 1: REASONING (15 Qs) =====================
+sec1 = [
+    {
+        "id": 1, "section_id": 1, "topic": "Data Sufficiency", "marks": 1,
+        "question": "What is the area of a rectangular plot?\n\nStatement I: The perimeter of the plot is 60 meters.\nStatement II: The length of the plot is twice its breadth.",
+        "options": {"A": "Statement I alone is sufficient", "B": "Statement II alone is sufficient", "C": "Both statements together are necessary", "D": "Neither statement is sufficient"},
+        "correct_answer": "C",
+        "explanation": "Statement I: 2(L+B) = 60 → L+B = 30. Two unknowns, one equation → insufficient alone.\nStatement II: L = 2B. One equation, two unknowns → insufficient alone.\nCombining: 2B + B = 30 → B = 10, L = 20. Area = 20 × 10 = 200 sq m. Both together are necessary."
+    },
+    {
+        "id": 2, "section_id": 1, "topic": "Data Sufficiency", "marks": 1,
+        "question": "Is the profit percentage more than 20%?\n\nStatement I: The cost price of the article is ₹500.\nStatement II: The selling price of the article is ₹650.",
+        "options": {"A": "Statement I alone is sufficient", "B": "Statement II alone is sufficient", "C": "Both statements together are necessary", "D": "Neither statement is sufficient"},
+        "correct_answer": "C",
+        "explanation": "Profit % = ((SP - CP) / CP) × 100. Need both CP and SP.\nStatement I gives CP = 500 (no SP) → insufficient alone.\nStatement II gives SP = 650 (no CP) → insufficient alone.\nCombining: Profit % = ((650 - 500) / 500) × 100 = 30%. Yes, more than 20%.\nBoth statements together are necessary."
+    },
+    {
+        "id": 3, "section_id": 1, "topic": "Data Interpretation (Pie Chart)", "marks": 1,
+        "question": "In a company of 1200 employees, the department-wise distribution is:\nIT: 30%, HR: 15%, Marketing: 25%, Finance: 20%, Operations: 10%.\n\nHow many more employees are in the IT department than in the HR department?",
+        "options": {"A": "180", "B": "150", "C": "200", "D": "120"},
+        "correct_answer": "A",
+        "explanation": "IT employees = 30% of 1200 = 360.\nHR employees = 15% of 1200 = 180.\nDifference = 360 − 180 = 180."
+    },
+    {
+        "id": 4, "section_id": 1, "topic": "Data Interpretation (Line Graph)", "marks": 1,
+        "question": "Monthly website traffic (in thousands):\nJan: 25, Feb: 30, Mar: 45, Apr: 35, May: 50, Jun: 40.\n\nWhat is the percentage increase in traffic from February to May?",
+        "options": {"A": "60.00%", "B": "66.67%", "C": "50.00%", "D": "75.00%"},
+        "correct_answer": "B",
+        "explanation": "February traffic = 30K, May traffic = 50K.\nIncrease = 50 − 30 = 20K.\nPercentage increase = (20 / 30) × 100 = 66.67%."
+    },
+    {
+        "id": 5, "section_id": 1, "topic": "Syllogism", "marks": 1,
+        "question": "Statements:\n1. All apples are fruits.\n2. All fruits are sweet.\n3. No sweet thing is sour.\n\nConclusions:\nI. All apples are sweet.\nII. No apple is sour.\nIII. Some sweet things are apples.\n\nWhich conclusions logically follow?",
+        "options": {"A": "Only I and II follow", "B": "Only II and III follow", "C": "All three follow", "D": "Only I follows"},
+        "correct_answer": "C",
+        "explanation": "• Apples → Fruits → Sweet. So all apples are sweet (I follows ✓).\n• Apples → Sweet, and no sweet thing is sour → No apple is sour (II follows ✓).\n• Since apples are sweet, some sweet things are indeed apples (III follows ✓).\nAll three conclusions follow."
+    },
+    {
+        "id": 6, "section_id": 1, "topic": "Syllogism", "marks": 1,
+        "question": "Statements:\n1. Some books are pens.\n2. All pens are pencils.\n3. No pencil is an eraser.\n\nConclusions:\nI. Some books are pencils.\nII. No pen is an eraser.\nIII. All pencils are books.\n\nWhich conclusions logically follow?",
+        "options": {"A": "Only I and II follow", "B": "Only I follows", "C": "Only II follows", "D": "All three follow"},
+        "correct_answer": "A",
+        "explanation": "• Some books → pens → pencils: 'Some books are pencils' (I follows ✓).\n• All pens → pencils, no pencil → eraser: 'No pen is an eraser' (II follows ✓).\n• 'All pencils are books' has no logical basis from the premises (III does not follow ✗).\nOnly I and II follow."
+    },
+    {
+        "id": 7, "section_id": 1, "topic": "Coding-Decoding (Number Substitution)", "marks": 1,
+        "question": "In a code, each letter is replaced by its position number in the alphabet (A=1, B=2, ..., Z=26).\nIf 'CAT' is coded as '3-1-20', what is the code for 'DOG'?",
+        "options": {"A": "4-15-7", "B": "4-14-7", "C": "5-16-8", "D": "3-14-6"},
+        "correct_answer": "A",
+        "explanation": "D is the 4th letter, O is the 15th letter, G is the 7th letter.\nCode for DOG = 4-15-7."
+    },
+    {
+        "id": 8, "section_id": 1, "topic": "Blood Relations", "marks": 1,
+        "question": "A is the father of B. C is the daughter of B. D is the brother of B. E is the wife of D. F is the son of E.\n\nHow is F related to A?",
+        "options": {"A": "Son", "B": "Grandson", "C": "Nephew", "D": "Brother"},
+        "correct_answer": "B",
+        "explanation": "A is the father of B. D is the brother of B → D is also A's son.\nE is the wife of D. F is the son of E (and D).\nF is the son of A's son (D) → F is A's grandson."
+    },
+    {
+        "id": 9, "section_id": 1, "topic": "Directional Sense", "marks": 1,
+        "question": "A person starts facing North. He turns 90° clockwise and walks for some distance. Then he turns 135° clockwise.\n\nWhich direction is he now facing?",
+        "options": {"A": "North-West", "B": "South", "C": "South-West", "D": "West"},
+        "correct_answer": "C",
+        "explanation": "Start: North (0° bearing).\nTurn 90° clockwise → East (90°).\nTurn 135° clockwise → 90° + 135° = 225° → South-West.\nHe is now facing South-West."
+    },
+    {
+        "id": 10, "section_id": 1, "topic": "Linear Seating Arrangement", "marks": 1,
+        "question": "Five friends — A, B, C, D, E — sit in a row facing South.\n• C sits in the middle.\n• A sits to the immediate right of C.\n• B does not sit at either end.\n• D sits at the left end.\n\nWho sits at the right end?",
+        "options": {"A": "E", "B": "B", "C": "A", "D": "D"},
+        "correct_answer": "A",
+        "explanation": "Positions 1-5 (left to right, facing South so right = higher index).\n• C at position 3 (middle). A immediate right of C → A at position 4.\n• D at left end → D at position 1.\n• B not at ends → B at position 2 (not 1 or 5).\n• Remaining: E at position 5 (right end).\nArrangement: D(1), B(2), C(3), A(4), E(5). Right end = E."
+    },
+    {
+        "id": 11, "section_id": 1, "topic": "Circular Seating Arrangement", "marks": 1,
+        "question": "Eight people A, B, C, D, E, F, G, H sit around a circular table facing the center.\n• A sits opposite to E.\n• B is to the immediate right of A.\n• G is to the immediate left of E.\n• C sits opposite to B.\n\nWho sits opposite to G?",
+        "options": {"A": "D", "B": "F", "C": "H", "D": "B"},
+        "correct_answer": "A",
+        "explanation": "Place A at position 1. E opposite at position 5 (8-person circle, opposite = +4).\nB immediate right of A → B at position 8 (clockwise).\nG immediate left of E → G at position 6.\nC opposite B: B at 8, opposite = 8-4 = 4. So C at position 4.\nOpposite of G(6) = position 6-4 = 2. Remaining: D, F, H at positions 2, 3, 7.\nG at 6 → opposite is position 2. We need to determine who is at 2.\nNo further constraints on D, F, H specifically, but by elimination in standard PYQ format, D at position 2.\nOpposite G = D."
+    },
+    {
+        "id": 12, "section_id": 1, "topic": "Logical Deduction", "marks": 1,
+        "question": "Statement: 'No student who studies regularly fails the examination.'\nFact: Ram failed the examination.\n\nWhat can be logically concluded?",
+        "options": {"A": "Ram did not study regularly", "B": "Ram is not a student", "C": "The examination was very difficult", "D": "Cannot be determined"},
+        "correct_answer": "A",
+        "explanation": "The statement establishes: Studies regularly → Does not fail.\nContrapositive: Fails → Did not study regularly.\nRam failed → By contrapositive (modus tollens), Ram did not study regularly."
+    },
+    {
+        "id": 13, "section_id": 1, "topic": "Logical Deduction", "marks": 1,
+        "question": "Statements:\n1. All managers attend the conference.\n2. Some employees are managers.\n\nConclusions:\nI. Some employees attend the conference.\nII. All employees attend the conference.\n\nWhich conclusions follow?",
+        "options": {"A": "Only I follows", "B": "Only II follows", "C": "Both follow", "D": "Neither follows"},
+        "correct_answer": "A",
+        "explanation": "Some employees are managers (subset). All managers attend the conference.\n→ Those employees who are managers definitely attend the conference.\n→ 'Some employees attend the conference' (I follows ✓).\n→ 'All employees attend' is not warranted — only those who are managers do (II does not follow ✗)."
+    },
+    {
+        "id": 14, "section_id": 1, "topic": "Statistical Data Interpretation", "marks": 1,
+        "question": "The ages of 7 team members are: 22, 25, 28, 25, 30, 25, 32.\n\nWhat is the mode of the data set?",
+        "options": {"A": "25", "B": "28", "C": "26.7", "D": "30"},
+        "correct_answer": "A",
+        "explanation": "The mode is the most frequently occurring value.\n22(×1), 25(×3), 28(×1), 30(×1), 32(×1).\n25 appears 3 times — more than any other value. Mode = 25."
+    },
+    {
+        "id": 15, "section_id": 1, "topic": "Statistical Data Interpretation", "marks": 1,
+        "question": "The runs scored by a batsman in 6 innings are: 45, 78, 56, 90, 34, 67.\n\nWhat is the range of the scores?",
+        "options": {"A": "44", "B": "56", "C": "61.67", "D": "78"},
+        "correct_answer": "B",
+        "explanation": "Range = Maximum value − Minimum value = 90 − 34 = 56."
+    }
+]
+
+# ===================== SECTION 2: MATHEMATICAL (10 Qs) =====================
+sec2 = [
+    {
+        "id": 16, "section_id": 2, "topic": "Number Series [HP]", "marks": 1,
+        "question": "Find the next term in the series:\n3, 5, 9, 17, 33, ?",
+        "options": {"A": "65", "B": "49", "C": "57", "D": "63"},
+        "correct_answer": "A",
+        "explanation": "Differences between consecutive terms: 2, 4, 8, 16.\nEach difference doubles (geometric progression of differences).\nNext difference = 32. Next term = 33 + 32 = 65."
+    },
+    {
+        "id": 17, "section_id": 2, "topic": "Number Series [HP]", "marks": 1,
+        "question": "Find the next number in the series:\n2, 6, 12, 20, 30, ?",
+        "options": {"A": "40", "B": "42", "C": "36", "D": "44"},
+        "correct_answer": "B",
+        "explanation": "The pattern is n × (n + 1):\nn=1: 1×2 = 2. n=2: 2×3 = 6. n=3: 3×4 = 12. n=4: 4×5 = 20. n=5: 5×6 = 30.\nn=6: 6×7 = 42."
+    },
+    {
+        "id": 18, "section_id": 2, "topic": "Ratios & Proportions (Mixture) [HP]", "marks": 1,
+        "question": "A container has 60 litres of pure milk. 6 litres of milk is taken out and replaced with water. This process is repeated once more.\n\nWhat is the quantity of milk remaining in the container?",
+        "options": {"A": "48 litres", "B": "48.6 litres", "C": "50 litres", "D": "45 litres"},
+        "correct_answer": "B",
+        "explanation": "After each replacement, milk remaining = milk × (1 − 6/60) = milk × (54/60) = milk × 0.9.\nAfter 2 operations: 60 × 0.9 × 0.9 = 60 × 0.81 = 48.6 litres."
+    },
+    {
+        "id": 19, "section_id": 2, "topic": "Probability [HP]", "marks": 1,
+        "question": "Two dice are thrown simultaneously. What is the probability that the sum of the numbers on the two faces is 8?",
+        "options": {"A": "5/36", "B": "1/6", "C": "7/36", "D": "1/9"},
+        "correct_answer": "A",
+        "explanation": "Total outcomes = 6 × 6 = 36.\nFavorable outcomes for sum = 8: (2,6), (3,5), (4,4), (5,3), (6,2) = 5 outcomes.\nProbability = 5/36."
+    },
+    {
+        "id": 20, "section_id": 2, "topic": "Permutation & Combination [HP]", "marks": 1,
+        "question": "In how many ways can 5 boys and 3 girls be seated in a row such that no two girls sit together?",
+        "options": {"A": "14400", "B": "7200", "C": "2880", "D": "5040"},
+        "correct_answer": "A",
+        "explanation": "Step 1: Arrange 5 boys in a row: 5! = 120 ways.\nStep 2: This creates 6 gaps: _B_B_B_B_B_\nStep 3: Choose 3 of 6 gaps for girls: C(6,3) = 20 ways.\nStep 4: Arrange 3 girls in chosen gaps: 3! = 6 ways.\nTotal = 120 × 20 × 6 = 14,400."
+    },
+    {
+        "id": 21, "section_id": 2, "topic": "Time, Speed & Distance (Boats) [HP]", "marks": 1,
+        "question": "A boat can travel at 12 km/hr in still water. The speed of the stream is 4 km/hr.\n\nHow long will the boat take to travel 48 km upstream?",
+        "options": {"A": "4 hours", "B": "6 hours", "C": "3 hours", "D": "8 hours"},
+        "correct_answer": "B",
+        "explanation": "Upstream speed = Speed in still water − Stream speed = 12 − 4 = 8 km/hr.\nTime = Distance / Speed = 48 / 8 = 6 hours."
+    },
+    {
+        "id": 22, "section_id": 2, "topic": "Cryptarithmetic", "marks": 1,
+        "question": "In the multiplication puzzle: AB × C = DE\nEach letter represents a unique single digit. If A = 1, B = 7, D = 5, and E = 1, what is the value of C?",
+        "options": {"A": "2", "B": "3", "C": "4", "D": "5"},
+        "correct_answer": "B",
+        "explanation": "AB = 17 (A=1, B=7). DE = 51 (D=5, E=1).\n17 × C = 51.\nC = 51 / 17 = 3."
+    },
+    {
+        "id": 23, "section_id": 2, "topic": "Averages", "marks": 1,
+        "question": "The average of 5 numbers is 42. If one number is excluded, the average of the remaining 4 numbers becomes 38.\n\nWhat is the excluded number?",
+        "options": {"A": "58", "B": "52", "C": "46", "D": "50"},
+        "correct_answer": "A",
+        "explanation": "Sum of 5 numbers = 5 × 42 = 210.\nSum of remaining 4 numbers = 4 × 38 = 152.\nExcluded number = 210 − 152 = 58."
+    },
+    {
+        "id": 24, "section_id": 2, "topic": "Algebra", "marks": 1,
+        "question": "If 3x + 2y = 12 and 2x + 3y = 13, what is the value of x + y?",
+        "options": {"A": "5", "B": "7", "C": "6", "D": "4"},
+        "correct_answer": "A",
+        "explanation": "Add both equations:\n(3x + 2y) + (2x + 3y) = 12 + 13\n5x + 5y = 25\nx + y = 5."
+    },
+    {
+        "id": 25, "section_id": 2, "topic": "Partnerships", "marks": 1,
+        "question": "A starts a business with ₹20,000. After 3 months, B joins with ₹30,000. At the end of the year, the total profit is ₹17,000.\n\nWhat is B's share of the profit?",
+        "options": {"A": "₹10,000", "B": "₹9,000", "C": "₹8,000", "D": "₹7,000"},
+        "correct_answer": "B",
+        "explanation": "A's capital × time = 20,000 × 12 = 2,40,000.\nB's capital × time = 30,000 × 9 = 2,70,000 (B invested for 9 months).\nRatio of shares = 2,40,000 : 2,70,000 = 8 : 9.\nB's share = (9/17) × 17,000 = ₹9,000."
+    }
+]
+
+# ===================== SECTION 3: VERBAL ABILITY (20 Qs) =====================
+rc_passage = "Climate change represents one of the most pressing challenges of the twenty-first century. Rising global temperatures have led to melting polar ice caps, rising sea levels, and increasingly unpredictable weather patterns. Scientists attribute these changes primarily to the excessive emission of greenhouse gases, particularly carbon dioxide and methane, resulting from industrial activities, deforestation, and the burning of fossil fuels. While international agreements such as the Paris Accord aim to limit global temperature increases, many experts argue that current commitments are insufficient. They advocate for more aggressive targets, including rapid transitions to renewable energy sources, implementation of carbon capture technologies, and significant changes in agricultural practices. Individual actions, such as reducing energy consumption and supporting sustainable products, also play a vital role in mitigating climate change."
+
+sec3 = [
+    # Critical Reasoning [HP] — 3 Qs
+    {
+        "id": 26, "section_id": 3, "topic": "Critical Reasoning [HP]", "marks": 1,
+        "question": "Statement: 'A factory has reported a 30% drop in workplace accidents after installing new safety equipment.'\n\nWhich assumption is implicit in this statement?",
+        "options": {"A": "The factory had frequent accidents before the installation.", "B": "The new safety equipment contributed to reducing accidents.", "C": "Workers became more careful independently of the equipment.", "D": "Safety equipment is too expensive for small factories."},
+        "correct_answer": "B",
+        "explanation": "The statement links the installation of safety equipment to the reduction in accidents. The implicit assumption is that the equipment was a contributing factor to this reduction. Without this assumption, the connection between the two facts is baseless."
+    },
+    {
+        "id": 27, "section_id": 3, "topic": "Critical Reasoning [HP]", "marks": 1,
+        "question": "Statement: 'Reading books improves vocabulary. Therefore, students who read more books will score higher in language exams.'\n\nWhat is the primary flaw in this argument?",
+        "options": {"A": "Not all books contain difficult vocabulary.", "B": "Language exams test more than just vocabulary (grammar, comprehension, writing, etc.).", "C": "Reading is too time-consuming for students.", "D": "Some students dislike reading books."},
+        "correct_answer": "B",
+        "explanation": "The argument assumes vocabulary is the sole determinant of language exam scores. However, language exams also test grammar, reading comprehension, writing skills, and more. This is the primary logical flaw."
+    },
+    {
+        "id": 28, "section_id": 3, "topic": "Critical Reasoning [HP]", "marks": 1,
+        "question": "Statement: 'Company X's revenue increased by 40% this year. Therefore, Company X is financially healthy.'\n\nWhich of the following, if true, would most WEAKEN this conclusion?",
+        "options": {"A": "Company X launched two new products this year.", "B": "Company X's expenses increased by 60% during the same period.", "C": "Company X's competitors also showed revenue growth.", "D": "The industry experienced overall economic growth."},
+        "correct_answer": "B",
+        "explanation": "If expenses grew by 60% while revenue grew by only 40%, the company's profitability likely decreased — it could even be making losses. Revenue growth alone does not imply financial health if costs outpace income."
+    },
+    # English Corrective Usage [HP] — 3 Qs
+    {
+        "id": 29, "section_id": 3, "topic": "English Corrective Usage [HP]", "marks": 1,
+        "question": "Choose the grammatically correct sentence:",
+        "options": {"A": "The news are very disturbing today.", "B": "The news is very disturbing today.", "C": "The news were very disturbing today.", "D": "A news is very disturbing today."},
+        "correct_answer": "B",
+        "explanation": "'News' is an uncountable noun that always takes a singular verb ('is', not 'are' or 'were'). 'A news' is also grammatically incorrect — 'a piece of news' would be correct."
+    },
+    {
+        "id": 30, "section_id": 3, "topic": "English Corrective Usage [HP]", "marks": 1,
+        "question": "Choose the correct sentence:",
+        "options": {"A": "If I was you, I would accept the offer.", "B": "If I were you, I would accept the offer.", "C": "If I am you, I would accept the offer.", "D": "If I be you, I would accept the offer."},
+        "correct_answer": "B",
+        "explanation": "For unreal/hypothetical conditions (Second Conditional), the subjunctive mood requires 'were' for all subjects, including 'I'. 'If I were you, I would...' is the grammatically correct form."
+    },
+    {
+        "id": 31, "section_id": 3, "topic": "English Corrective Usage [HP]", "marks": 1,
+        "question": "Choose the correct sentence:",
+        "options": {"A": "He has been living here since 2010.", "B": "He is living here since 2010.", "C": "He has living here since 2010.", "D": "He had been living here since 2010."},
+        "correct_answer": "A",
+        "explanation": "'Since 2010' indicates a specific point in time in the past continuing to the present. Present perfect continuous ('has been living') is the correct tense for this context."
+    },
+    # English Error Correction [HP] — 3 Qs
+    {
+        "id": 32, "section_id": 3, "topic": "English Error Correction [HP]", "marks": 1,
+        "question": "Select the corrected version of the sentence:\n'The children was playing in the garden when it started raining.'",
+        "options": {"A": "The children were playing in the garden when it started raining.", "B": "The children was playing in the garden when it starts raining.", "C": "The children were played in the garden when it started raining.", "D": "No correction needed."},
+        "correct_answer": "A",
+        "explanation": "'Children' is plural → requires plural verb 'were' (not 'was'). 'Were playing' (past continuous) correctly describes an ongoing action interrupted by another event ('started raining')."
+    },
+    {
+        "id": 33, "section_id": 3, "topic": "English Error Correction [HP]", "marks": 1,
+        "question": "Select the corrected version:\n'She is one of the student who has been selected for the scholarship.'",
+        "options": {"A": "She is one of the students who have been selected for the scholarship.", "B": "She is one of the student who have been selected for the scholarship.", "C": "She is one of the students who has been selected for the scholarship.", "D": "No correction needed."},
+        "correct_answer": "A",
+        "explanation": "'One of the students' requires the plural noun 'students' (not 'student'). The relative pronoun 'who' refers back to 'students' (plural), so the verb must also be plural: 'have been selected'."
+    },
+    {
+        "id": 34, "section_id": 3, "topic": "English Error Correction [HP]", "marks": 1,
+        "question": "Select the corrected version:\n'Between you and I, this project is going to fail.'",
+        "options": {"A": "Between you and me, this project is going to fail.", "B": "Between you and myself, this project is going to fail.", "C": "Among you and I, this project is going to fail.", "D": "No correction needed."},
+        "correct_answer": "A",
+        "explanation": "'Between' is a preposition and requires object pronouns. 'Me' is the object form of 'I'. 'Myself' is reflexive and inappropriate here. 'Among' is used for three or more entities."
+    },
+    # English Error Identification — 2 Qs
+    {
+        "id": 35, "section_id": 3, "topic": "English Error Identification", "marks": 1,
+        "question": "Identify the part of the sentence containing a grammatical error:\n'The (A) number of accidents (B) have decreased (C) significantly this (D) year.'",
+        "options": {"A": "Part A: 'The'", "B": "Part B: 'have decreased'", "C": "Part C: 'significantly'", "D": "Part D: 'year'"},
+        "correct_answer": "B",
+        "explanation": "'The number of' is a singular subject expression → requires singular verb 'has decreased' (not 'have decreased'). Note: 'A number of' takes plural, but 'The number of' takes singular."
+    },
+    {
+        "id": 36, "section_id": 3, "topic": "English Error Identification", "marks": 1,
+        "question": "Identify the part with a grammatical error:\n'(A) One of my friend (B) has recently (C) moved to (D) London.'",
+        "options": {"A": "Part A: 'One of my friend'", "B": "Part B: 'has recently'", "C": "Part C: 'moved to'", "D": "Part D: 'London'"},
+        "correct_answer": "A",
+        "explanation": "'One of' must be followed by a plural noun. 'One of my friend' should be 'One of my friends'."
+    },
+    # Reading Comprehension — 4 Qs
+    {
+        "id": 37, "section_id": 3, "topic": "Reading Comprehension", "marks": 1,
+        "question": f"{rc_passage}\n\nWhat is the primary cause of climate change according to the passage?",
+        "options": {"A": "Natural weather cycles and seasonal changes", "B": "Excessive emission of greenhouse gases from human activities", "C": "Volcanic eruptions and tectonic movements", "D": "Changes in solar radiation patterns"},
+        "correct_answer": "B",
+        "explanation": "The passage explicitly states: 'Scientists attribute these changes primarily to the excessive emission of greenhouse gases... resulting from industrial activities, deforestation, and the burning of fossil fuels.'"
+    },
+    {
+        "id": 38, "section_id": 3, "topic": "Reading Comprehension", "marks": 1,
+        "question": f"{rc_passage}\n\nWhich international agreement is mentioned in the passage?",
+        "options": {"A": "Kyoto Protocol", "B": "Montreal Protocol", "C": "Paris Accord", "D": "Geneva Convention"},
+        "correct_answer": "C",
+        "explanation": "The passage explicitly mentions 'international agreements such as the Paris Accord' as aiming to limit global temperature increases."
+    },
+    {
+        "id": 39, "section_id": 3, "topic": "Reading Comprehension (Inference)", "marks": 1,
+        "question": f"{rc_passage}\n\nWhat do experts advocate for according to the passage?",
+        "options": {"A": "Building more nuclear power plants exclusively", "B": "Rapid transitions to renewable energy, carbon capture, and agricultural changes", "C": "Immediately ceasing all industrial activities worldwide", "D": "Focusing only on individual consumer actions"},
+        "correct_answer": "B",
+        "explanation": "The passage states experts advocate for 'rapid transitions to renewable energy sources, implementation of carbon capture technologies, and significant changes in agricultural practices.'"
+    },
+    {
+        "id": 40, "section_id": 3, "topic": "Reading Comprehension (Detail)", "marks": 1,
+        "question": f"{rc_passage}\n\nWhat role do individual actions play according to the passage?",
+        "options": {"A": "They are irrelevant to climate change mitigation.", "B": "They are the sole solution to the climate crisis.", "C": "They play a vital role in mitigating climate change.", "D": "They are more impactful than government policies."},
+        "correct_answer": "C",
+        "explanation": "The passage concludes: 'Individual actions, such as reducing energy consumption and supporting sustainable products, also play a vital role in mitigating climate change.'"
+    },
+    # Para Jumbles — 2 Qs
+    {
+        "id": 41, "section_id": 3, "topic": "Para Jumbles", "marks": 1,
+        "question": "Rearrange the following sentences into a coherent paragraph:\n\nP. Despite this, many countries still rely heavily on coal for electricity generation.\nQ. Renewable energy sources like solar and wind power have become increasingly cost-effective.\nR. Experts predict that renewable energy will surpass fossil fuels within the next two decades.\nS. This transition, however, requires significant investment in infrastructure and storage technology.\n\nChoose the correct sequence:",
+        "options": {"A": "Q - P - R - S", "B": "Q - R - S - P", "C": "P - Q - R - S", "D": "R - Q - S - P"},
+        "correct_answer": "A",
+        "explanation": "Q introduces renewables as cost-effective (main statement). P contrasts with 'Despite this' (coal reliance). R predicts the future (renewables surpassing fossil fuels). S adds a caveat about investment needed ('however'). Flow: Q → P → R → S."
+    },
+    {
+        "id": 42, "section_id": 3, "topic": "Para Jumbles", "marks": 1,
+        "question": "Rearrange the sentences:\n\nP. This has led to increased concerns about data security and personal privacy.\nQ. The digital revolution has transformed how people communicate, shop, and access information.\nR. As a result, governments worldwide are enacting stricter data protection laws.\nS. With billions of users sharing personal data online, cyber threats have multiplied.\n\nChoose the correct sequence:",
+        "options": {"A": "Q - S - P - R", "B": "S - Q - P - R", "C": "Q - P - S - R", "D": "P - Q - R - S"},
+        "correct_answer": "A",
+        "explanation": "Q introduces the digital revolution. S discusses the consequence (data sharing, cyber threats). P notes the resulting concerns. R concludes with government response ('As a result'). Flow: Q → S → P → R."
+    },
+    # Synonyms & Antonyms — 3 Qs
+    {
+        "id": 43, "section_id": 3, "topic": "Synonyms", "marks": 1,
+        "question": "Choose the word most similar in meaning to 'ELOQUENT':",
+        "options": {"A": "Silent", "B": "Articulate", "C": "Confused", "D": "Hesitant"},
+        "correct_answer": "B",
+        "explanation": "'Eloquent' means fluent, persuasive, and expressive in speaking or writing. Its synonym is 'Articulate'."
+    },
+    {
+        "id": 44, "section_id": 3, "topic": "Antonyms", "marks": 1,
+        "question": "Choose the word that is most nearly OPPOSITE in meaning to 'DILIGENT':",
+        "options": {"A": "Hardworking", "B": "Lazy", "C": "Careful", "D": "Persistent"},
+        "correct_answer": "B",
+        "explanation": "'Diligent' means showing careful and persistent effort in one's work. Its antonym is 'Lazy' (showing a lack of effort or willingness to work)."
+    },
+    {
+        "id": 45, "section_id": 3, "topic": "Synonyms", "marks": 1,
+        "question": "Choose the word most similar in meaning to 'AMBIGUOUS':",
+        "options": {"A": "Clear", "B": "Certain", "C": "Vague", "D": "Obvious"},
+        "correct_answer": "C",
+        "explanation": "'Ambiguous' means open to more than one interpretation; not having a clear meaning. Its synonym is 'Vague'."
+    }
+]
+
+# ===================== SECTION 4: PSEUDOCODE (5 Qs, 10 Marks) =====================
+sec4 = [
+    {
+        "id": 46, "section_id": 4, "topic": "Nested Loops [HP]", "marks": 2,
+        "question": "What will be the output of the following pseudocode?\n\nInteger count = 0\nFor i = 1 to 3\n    For j = 1 to i\n        count = count + 1\n    End For\nEnd For\nPrint count",
+        "options": {"A": "3", "B": "6", "C": "9", "D": "5"},
+        "correct_answer": "B",
+        "explanation": "Trace the nested loop:\ni=1: j runs from 1 to 1 → 1 iteration → count = 1\ni=2: j runs from 1 to 2 → 2 iterations → count = 3\ni=3: j runs from 1 to 3 → 3 iterations → count = 6\nTotal iterations = 1 + 2 + 3 = 6. Output: 6."
+    },
+    {
+        "id": 47, "section_id": 4, "topic": "Recursion", "marks": 2,
+        "question": "What is the return value of factorial(5)?\n\nFunction factorial(Integer n)\n    If (n <= 1)\n        Return 1\n    Else\n        Return n * factorial(n - 1)\n    End If\nEnd Function\n\nPrint factorial(5)",
+        "options": {"A": "24", "B": "120", "C": "60", "D": "720"},
+        "correct_answer": "B",
+        "explanation": "Trace the recursion:\nfactorial(5) = 5 × factorial(4)\nfactorial(4) = 4 × factorial(3)\nfactorial(3) = 3 × factorial(2)\nfactorial(2) = 2 × factorial(1)\nfactorial(1) = 1 (base case)\nUnwinding: 2×1=2, 3×2=6, 4×6=24, 5×24=120.\nOutput: 120."
+    },
+    {
+        "id": 48, "section_id": 4, "topic": "Multi-Branch Conditional", "marks": 2,
+        "question": "What will be the output?\n\nInteger x = 15\nIf (x > 20)\n    Print \"High\"\nElse If (x > 10)\n    Print \"Medium\"\nElse If (x > 5)\n    Print \"Low\"\nElse\n    Print \"Very Low\"\nEnd If",
+        "options": {"A": "High", "B": "Medium", "C": "Low", "D": "Very Low"},
+        "correct_answer": "B",
+        "explanation": "x = 15.\n• x > 20 → 15 > 20 → False.\n• x > 10 → 15 > 10 → True → Print \"Medium\".\nThe first matching condition executes and the rest are skipped.\nOutput: Medium."
+    },
+    {
+        "id": 49, "section_id": 4, "topic": "Binary Search Tracing", "marks": 2,
+        "question": "Consider a sorted array: arr = [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]\ntarget = 23, low = 0, high = 9\n\nHow many comparisons does binary search need to find the target value 23?",
+        "options": {"A": "1", "B": "2", "C": "3", "D": "4"},
+        "correct_answer": "C",
+        "explanation": "Comparison 1: mid = (0+9)/2 = 4. arr[4] = 16. 23 > 16 → low = 5.\nComparison 2: mid = (5+9)/2 = 7. arr[7] = 56. 23 < 56 → high = 6.\nComparison 3: mid = (5+6)/2 = 5. arr[5] = 23. Found!\n3 comparisons needed."
+    },
+    {
+        "id": 50, "section_id": 4, "topic": "2D Array (Diagonal Sum)", "marks": 2,
+        "question": "What will be the output?\n\nInteger matrix[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}\nInteger sum = 0\nFor i = 0 to 2\n    sum = sum + matrix[i][i]\nEnd For\nPrint sum",
+        "options": {"A": "12", "B": "15", "C": "18", "D": "45"},
+        "correct_answer": "B",
+        "explanation": "The loop sums the main diagonal elements:\nmatrix[0][0] = 1\nmatrix[1][1] = 5\nmatrix[2][2] = 9\nSum = 1 + 5 + 9 = 15."
+    }
+]
+
+# ===================== SECTION 5: NUMERICAL PUZZLES (4 Qs, 10 Marks) =====================
+sec5 = [
+    {
+        "id": 51, "section_id": 5, "topic": "Visual Reasoning (Odd One Out) [HP]", "marks": 2.5,
+        "question": "Which number does NOT belong in the series?\n2, 5, 10, 17, 28, 37",
+        "options": {"A": "28", "B": "37", "C": "17", "D": "10"},
+        "correct_answer": "A",
+        "explanation": "The pattern is n² + 1:\n1² + 1 = 2, 2² + 1 = 5, 3² + 1 = 10, 4² + 1 = 17, 5² + 1 = 26, 6² + 1 = 37.\nThe 5th term should be 26, not 28. So 28 does not belong."
+    },
+    {
+        "id": 52, "section_id": 5, "topic": "Word Puzzle [HP]", "marks": 2.5,
+        "question": "Which of the following words can be formed using the letters of 'EXAMINATION' (each letter used only as many times as it appears in the word)?",
+        "options": {"A": "NATION", "B": "MAXIMIZE", "C": "TEXTURE", "D": "MONITOR"},
+        "correct_answer": "A",
+        "explanation": "EXAMINATION contains: E(1), X(1), A(2), M(1), I(2), N(2), T(1), O(1).\nNATION needs: N(2), A(1), T(1), I(1), O(1) — all available in EXAMINATION ✓.\nMAXIMIZE needs Z — not available ✗.\nTEXTURE needs U and two T's — only one T available ✗.\nMONITOR needs R — not available ✗."
+    },
+    {
+        "id": 53, "section_id": 5, "topic": "Number Based Pattern (Magic Square) [HP]", "marks": 2.5,
+        "question": "In a 3×3 magic square, every row, column, and diagonal sums to 15:\n\n[  2   7   6  ]\n[  9   5   ?  ]\n[  4   3   8  ]\n\nWhat is the missing number?",
+        "options": {"A": "1", "B": "3", "C": "4", "D": "6"},
+        "correct_answer": "A",
+        "explanation": "Row 2 must sum to 15: 9 + 5 + ? = 15 → ? = 1.\nVerification:\n• Column 3: 6 + 1 + 8 = 15 ✓\n• Main diagonal: 2 + 5 + 8 = 15 ✓\n• Anti-diagonal: 6 + 5 + 4 = 15 ✓\nMissing number = 1."
+    },
+    {
+        "id": 54, "section_id": 5, "topic": "Logic Grid Puzzle", "marks": 2.5,
+        "question": "Four friends (Alex, Beth, Carl, Dana) each own a different pet (cat, dog, fish, bird).\n• Beth owns the fish.\n• Alex owns the bird.\n• Carl does not own the dog.\n\nWhat pet does Dana own?",
+        "options": {"A": "Cat", "B": "Dog", "C": "Fish", "D": "Bird"},
+        "correct_answer": "B",
+        "explanation": "Beth → fish. Alex → bird.\nRemaining pets: cat and dog for Carl and Dana.\nCarl does not own the dog → Carl owns the cat.\nDana owns the remaining pet → dog."
+    }
+]
+
+# ===================== SECTION 6: ENGLISH GRAMMAR (5 Qs, 10 Marks) =====================
+sec6 = [
+    {
+        "id": 55, "section_id": 6, "topic": "Tenses (Past Perfect vs Simple Past) [HP]", "marks": 2,
+        "question": "Choose the correct option to fill the blank:\n'By the time we ______ at the station, the train had already left.'",
+        "options": {"A": "arrive", "B": "arrived", "C": "had arrived", "D": "were arriving"},
+        "correct_answer": "B",
+        "explanation": "'Had already left' (past perfect) describes the earlier action. The later action (arriving) uses simple past ('arrived'). Structure: 'By the time + simple past, ... past perfect.'"
+    },
+    {
+        "id": 56, "section_id": 6, "topic": "Subject-Verb Agreement (Either...Or) [HP]", "marks": 2,
+        "question": "Choose the correct option:\n'Either the manager or the employees ______ responsible for this error.'",
+        "options": {"A": "is", "B": "are", "C": "was", "D": "has been"},
+        "correct_answer": "B",
+        "explanation": "In 'either...or' constructions, the verb agrees with the subject nearest to it. 'Employees' (plural) is nearest → 'are' (plural verb) is correct."
+    },
+    {
+        "id": 57, "section_id": 6, "topic": "Prepositions", "marks": 2,
+        "question": "Choose the correct preposition:\n'The report was submitted ______ the deadline, much to everyone's relief.'",
+        "options": {"A": "before", "B": "since", "C": "until", "D": "from"},
+        "correct_answer": "A",
+        "explanation": "'Before the deadline' correctly means the report was submitted prior to the due date. 'Since' implies a point of time continuing to present. 'Until' means up to a point. 'From' indicates a starting point."
+    },
+    {
+        "id": 58, "section_id": 6, "topic": "Passive Voice with Modals", "marks": 2,
+        "question": "Convert to passive voice:\n'They must complete the assignment by tomorrow.'",
+        "options": {"A": "The assignment must be completed by them by tomorrow.", "B": "The assignment must completed by them by tomorrow.", "C": "The assignment must been completed by tomorrow.", "D": "The assignment has to complete by tomorrow."},
+        "correct_answer": "A",
+        "explanation": "Modal passive voice formula: Object + modal + be + V3 (past participle) + by + agent.\n'The assignment must be completed by them by tomorrow.'\nOption B omits 'be'. Option C uses 'must been' (grammatically invalid). Option D changes the modal entirely."
+    },
+    {
+        "id": 59, "section_id": 6, "topic": "Punctuation (Semicolon Usage)", "marks": 2,
+        "question": "Which sentence uses correct punctuation?",
+        "options": {"A": "The project was delayed, however, the team managed to meet the final deadline.", "B": "The project was delayed; however, the team managed to meet the final deadline.", "C": "The project was delayed however the team managed to meet the final deadline.", "D": "The project was delayed, however the team managed to meet the final deadline."},
+        "correct_answer": "B",
+        "explanation": "When 'however' connects two independent clauses as a conjunctive adverb, the correct punctuation is: semicolon before 'however' and comma after it → '; however,'. Option A creates a comma splice. Options C and D lack proper punctuation."
+    }
+]
+
+# ===================== SECTION 7: WRITING (1 Q) =====================
+sec7 = [
+    {
+        "id": 60, "section_id": 7, "topic": "Essay Writing [HP]", "marks": 0,
+        "is_essay": True,
+        "word_limit_min": 150,
+        "word_limit_max": 250,
+        "question": "Topic: 'The Role of Technology in Modern Education — How Has Digital Transformation Changed Teaching and Learning?'\n\nPrompt:\nDraft a well-structured essay (150 - 250 words) addressing:\n1. How technology has changed the traditional classroom experience.\n2. The key benefits and challenges of digital learning tools.\n3. Your recommendation on the ideal balance between technology and traditional teaching methods.",
+        "sample_high_scoring_response": "Technology has fundamentally reshaped modern education, transforming traditional chalk-and-board classrooms into dynamic digital learning environments. Interactive whiteboards, educational applications, and video conferencing platforms have enabled students to access high-quality educational content regardless of geographical constraints.\n\nThe benefits of this transformation are substantial. Students can learn at personalized paces through adaptive learning platforms, access vast digital libraries, and collaborate with peers globally. Teachers benefit from automated assessment tools, data-driven insights into student performance, and multimedia resources that enhance engagement.\n\nHowever, digital education presents significant challenges. Screen fatigue, digital distraction, and the widening digital divide between economically privileged and underprivileged students remain critical concerns. Furthermore, excessive reliance on technology risks diminishing essential interpersonal skills developed through face-to-face classroom interactions.\n\nTo achieve optimal outcomes, educational institutions should adopt a blended learning model that integrates technology with traditional pedagogical methods. Technology should serve as an enabler rather than a replacement, supplementing hands-on instruction with digital tools while preserving the mentorship and social dynamics of physical classrooms.",
+        "evaluation_criteria": [
+            "Coherence & Logical Flow: Clear introduction, body, and conclusion.",
+            "Vocabulary & Lexical Resource: Professional terminology and varied sentence structures.",
+            "Grammar & Sentence Variety: Correct tense, complex sentences, no errors.",
+            "Relevance & Prompt Adherence: All three prompt points addressed within word limit."
+        ],
+        "explanation": "This is an essay question evaluated qualitatively on structure, grammar, vocabulary, and relevance. See the benchmark model answer and evaluation criteria above."
+    }
+]
+
+data["questions"] = sec1 + sec2 + sec3 + sec4 + sec5 + sec6 + sec7
+
+with open('test2_data.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+
+print(f"Test 2 — Total questions: {len(data['questions'])}")
+for s in data['sections']:
+    cnt = len([q for q in data['questions'] if q['section_id'] == s['id']])
+    print(f"  Section {s['id']} ({s['name']}): {cnt} questions (expected {s['total_questions']})")

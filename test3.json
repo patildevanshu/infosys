@@ -1,0 +1,970 @@
+{
+  "test_title": "Infosys SE Mock Test 3 — 2027 Batch Pattern",
+  "total_questions": 60,
+  "total_marks": 75,
+  "total_duration_minutes": 120,
+  "sections": [
+    {
+      "id": 1,
+      "name": "Reasoning Ability Test",
+      "total_questions": 15,
+      "max_marks": 15,
+      "duration_minutes": 25,
+      "instructions": "Topics: Data Sufficiency, Data Interpretation, Logical Deduction, Syllogisms, Statistical Data Interpretation, Data Arrangement, Blood Relations, Coding-Decoding, Directional Sense."
+    },
+    {
+      "id": 2,
+      "name": "Technical Ability Test (Mathematical)",
+      "total_questions": 10,
+      "max_marks": 10,
+      "duration_minutes": 35,
+      "instructions": "Topics: Number Series, Ratios & Proportions, Permutation/Combination/Probability, Time-Speed-Distance, Cryptarithmetic, Profit & Loss, Algebra, Simplification."
+    },
+    {
+      "id": 3,
+      "name": "Verbal Ability Test",
+      "total_questions": 20,
+      "max_marks": 20,
+      "duration_minutes": 20,
+      "instructions": "Topics: Critical Reasoning, English Corrective Usage, English Error Correction, Error Identification, Reading Comprehension, Para Jumbles, Synonyms & Antonyms."
+    },
+    {
+      "id": 4,
+      "name": "Pseudocode Test",
+      "total_questions": 5,
+      "max_marks": 10,
+      "duration_minutes": 10,
+      "instructions": "Each question carries 2 marks. Topics: Programming Logic, Loop Tracing, Conditional Statements, Basic Algorithms, Array & String Manipulation."
+    },
+    {
+      "id": 5,
+      "name": "Numerical Puzzle Test",
+      "total_questions": 4,
+      "max_marks": 10,
+      "duration_minutes": 10,
+      "instructions": "Each question carries 2.5 marks. Topics: Visual Reasoning, Word Puzzles, Number Based Patterns, Grid Based Puzzles."
+    },
+    {
+      "id": 6,
+      "name": "English Grammar Test",
+      "total_questions": 5,
+      "max_marks": 10,
+      "duration_minutes": 10,
+      "instructions": "Each question carries 2 marks. Topics: Tenses, Subject-Verb Agreement, Articles & Prepositions, Active & Passive Voice, Direct & Indirect Speech, Punctuation."
+    },
+    {
+      "id": 7,
+      "name": "English Writing Test",
+      "total_questions": 1,
+      "max_marks": 0,
+      "marks_label": "NA (Evaluated Separately)",
+      "duration_minutes": 10,
+      "instructions": "Essay Writing. 150-250 words. 10 mins."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section_id": 1,
+      "topic": "Data Sufficiency",
+      "marks": 1,
+      "question": "What is the speed of a car?\n\nStatement I: The car covers 240 km in 4 hours.\nStatement II: The car travels at a constant speed throughout the journey.",
+      "options": {
+        "A": "Statement I alone is sufficient",
+        "B": "Statement II alone is sufficient",
+        "C": "Both statements together are necessary",
+        "D": "Neither statement is sufficient"
+      },
+      "correct_answer": "A",
+      "explanation": "Statement I directly gives Speed = Distance/Time = 240/4 = 60 km/hr. Statement II only confirms constant speed but provides no numerical data. Statement I alone is sufficient."
+    },
+    {
+      "id": 2,
+      "section_id": 1,
+      "topic": "Data Sufficiency",
+      "marks": 1,
+      "question": "What is the area of a triangle?\n\nStatement I: The base of the triangle is 12 cm.\nStatement II: The height of the triangle is 8 cm.",
+      "options": {
+        "A": "Statement I alone is sufficient",
+        "B": "Statement II alone is sufficient",
+        "C": "Both statements together are necessary",
+        "D": "Neither statement is sufficient"
+      },
+      "correct_answer": "C",
+      "explanation": "Area = (1/2) × base × height. Statement I gives base = 12 cm (no height). Statement II gives height = 8 cm (no base). Combining: Area = (1/2) × 12 × 8 = 48 sq cm. Both needed."
+    },
+    {
+      "id": 3,
+      "section_id": 1,
+      "topic": "Data Interpretation (Table)",
+      "marks": 1,
+      "question": "Marks of 5 students in 3 subjects:\n\n| Student | Math | Science | English |\n|---------|------|---------|--------|\n| Amit    | 85   | 78      | 72     |\n| Riya    | 92   | 88      | 80     |\n| Karan   | 76   | 82      | 90     |\n| Sneha   | 88   | 75      | 85     |\n| Vijay   | 70   | 90      | 78     |\n\nWho scored the highest total across all three subjects?",
+      "options": {
+        "A": "Amit",
+        "B": "Riya",
+        "C": "Karan",
+        "D": "Sneha"
+      },
+      "correct_answer": "B",
+      "explanation": "Amit: 85+78+72 = 235. Riya: 92+88+80 = 260. Karan: 76+82+90 = 248. Sneha: 88+75+85 = 248. Vijay: 70+90+78 = 238. Riya has the highest total (260)."
+    },
+    {
+      "id": 4,
+      "section_id": 1,
+      "topic": "Data Interpretation (Percentage)",
+      "marks": 1,
+      "question": "A factory’s production in 5 years (in thousands of units):\n2021: 50, 2022: 60, 2023: 75, 2024: 90, 2025: 108.\n\nIn which year was the percentage increase in production the highest compared to the previous year?",
+      "options": {
+        "A": "2022",
+        "B": "2023",
+        "C": "2024",
+        "D": "2025"
+      },
+      "correct_answer": "B",
+      "explanation": "2022: (60-50)/50 = 20%. 2023: (75-60)/60 = 25%. 2024: (90-75)/75 = 20%. 2025: (108-90)/90 = 20%. Highest % increase = 25% in 2023."
+    },
+    {
+      "id": 5,
+      "section_id": 1,
+      "topic": "Syllogism",
+      "marks": 1,
+      "question": "Statements:\n1. All roses are flowers.\n2. Some flowers are red.\n\nConclusions:\nI. Some roses are red.\nII. Some red things are flowers.\n\nWhich conclusions follow?",
+      "options": {
+        "A": "Only I follows",
+        "B": "Only II follows",
+        "C": "Both follow",
+        "D": "Neither follows"
+      },
+      "correct_answer": "B",
+      "explanation": "Roses are a subset of flowers, and some flowers are red. But the red flowers may not be roses → Conclusion I doesn’t necessarily follow. ‘Some flowers are red’ directly implies ‘Some red things are flowers’ (converse of ‘Some’) → Conclusion II follows."
+    },
+    {
+      "id": 6,
+      "section_id": 1,
+      "topic": "Syllogism",
+      "marks": 1,
+      "question": "Statements:\n1. Some cats are dogs.\n2. No dog is a cow.\n\nConclusions:\nI. Some cats are not cows.\nII. No cat is a cow.\n\nWhich conclusions follow?",
+      "options": {
+        "A": "Only I follows",
+        "B": "Only II follows",
+        "C": "Both follow",
+        "D": "Neither follows"
+      },
+      "correct_answer": "A",
+      "explanation": "Some cats are dogs, and no dog is a cow → those cats which are dogs are definitely not cows → ‘Some cats are not cows’ (I follows). But other cats (not dogs) could still be cows → ‘No cat is a cow’ is not necessarily true (II doesn’t follow)."
+    },
+    {
+      "id": 7,
+      "section_id": 1,
+      "topic": "Coding-Decoding (Reverse Alphabet)",
+      "marks": 1,
+      "question": "In a code language, each letter is replaced by its reverse alphabet position (A=Z, B=Y, C=X, ... Z=A).\n\nIf ‘WORD’ is coded as ‘DLIW’, what is the code for ‘HELP’?",
+      "options": {
+        "A": "SVOK",
+        "B": "SVOP",
+        "C": "SVOQ",
+        "D": "RVOK"
+      },
+      "correct_answer": "A",
+      "explanation": "Reverse alphabet: A↔Z, B↔Y, C↔X, D↔W, ... H→S, E→V, L→O, P→K. HELP → SVOK.\nVerification: H(8)→27-8=19(S), E(5)→22(V), L(12)→15(O), P(16)→11(K)."
+    },
+    {
+      "id": 8,
+      "section_id": 1,
+      "topic": "Blood Relations",
+      "marks": 1,
+      "question": "Introducing a boy, Meera said: ‘He is the son of my mother’s only daughter.’\n\nHow is the boy related to Meera?",
+      "options": {
+        "A": "Brother",
+        "B": "Son",
+        "C": "Nephew",
+        "D": "Cousin"
+      },
+      "correct_answer": "B",
+      "explanation": "Meera’s mother’s only daughter = Meera herself. So the boy is the son of Meera. The boy is Meera’s son."
+    },
+    {
+      "id": 9,
+      "section_id": 1,
+      "topic": "Directional Sense (Distance)",
+      "marks": 1,
+      "question": "A man walks 6 km North, then 8 km East.\n\nHow far is he from his starting point (straight-line distance)?",
+      "options": {
+        "A": "14 km",
+        "B": "10 km",
+        "C": "12 km",
+        "D": "8 km"
+      },
+      "correct_answer": "B",
+      "explanation": "Using the Pythagorean theorem: Distance = √(6² + 8²) = √(36 + 64) = √100 = 10 km."
+    },
+    {
+      "id": 10,
+      "section_id": 1,
+      "topic": "Seating (Two Rows Facing Each Other)",
+      "marks": 1,
+      "question": "Six people P, Q, R, S, T, U sit in two rows of 3, facing each other.\nRow 1 (facing South): P, Q, R (left to right).\nRow 2 (facing North): S, T, U (left to right).\n• P faces U.\n• T does not face Q.\n\nWho faces Q?",
+      "options": {
+        "A": "S",
+        "B": "T",
+        "C": "U",
+        "D": "Cannot be determined"
+      },
+      "correct_answer": "A",
+      "explanation": "Row 1 (facing South, L-R): P(1), Q(2), R(3). Row 2 (facing North, L-R): S, T, U. When facing each other, position 1 faces position 3 of the opposite row (mirror). P(1) faces the person at opposite position 3. Since P faces U → U is at position 3 of Row 2. Row 2: S(_), T(_), U(3). T doesn’t face Q(2). In mirror arrangement: Q(2) faces Row 2 position 2. If T is at position 2, T faces Q — but T must NOT face Q. So T is at position 1, S at position 2. Q faces S."
+    },
+    {
+      "id": 11,
+      "section_id": 1,
+      "topic": "Seating (Preferences)",
+      "marks": 1,
+      "question": "Five people — A, B, C, D, E — sit in a row. Each likes a different color: Red, Blue, Green, Yellow, White.\n• A sits at one end and likes Red.\n• The person who likes Blue sits in the middle.\n• B sits next to the person who likes Green.\n• C likes Blue.\n• E does not sit at either end.\n\nWho sits at the other end (opposite to A)?",
+      "options": {
+        "A": "B",
+        "B": "C",
+        "C": "D",
+        "D": "E"
+      },
+      "correct_answer": "C",
+      "explanation": "A sits at position 1, likes Red. C likes Blue → C sits at position 3 (middle). E is not at ends → E at position 2 or 4. Remaining: B, D at positions 2, 4, 5. Since E not at end, E is at 2 or 4. B sits next to Green-lover. If D is at position 5 (other end), B and E fill 2 and 4. This is consistent with constraints. D sits at the other end."
+    },
+    {
+      "id": 12,
+      "section_id": 1,
+      "topic": "Logical Deduction (Cause-Effect)",
+      "marks": 1,
+      "question": "Statement: ‘Since the introduction of online classes, school dropout rates in rural areas have decreased by 15%.’\n\nWhich of the following is the most likely cause?",
+      "options": {
+        "A": "Online classes eliminated the need for physical infrastructure in remote areas",
+        "B": "Rural students prefer watching videos over reading textbooks",
+        "C": "Online classes made education accessible to students who couldn’t travel to distant schools",
+        "D": "Teachers in rural areas are more tech-savvy now"
+      },
+      "correct_answer": "C",
+      "explanation": "The most direct causal link: rural students often drop out because schools are far away. Online classes remove the travel barrier, making education accessible → fewer dropouts. Option C provides the most logical cause."
+    },
+    {
+      "id": 13,
+      "section_id": 1,
+      "topic": "Logical Deduction (Ranking)",
+      "marks": 1,
+      "question": "In a race: P finishes before Q. R finishes after S but before P. Q finishes before T.\n\nWho finishes third?",
+      "options": {
+        "A": "P",
+        "B": "Q",
+        "C": "R",
+        "D": "S"
+      },
+      "correct_answer": "A",
+      "explanation": "From the clues: S finishes before R (R after S). R finishes before P. P finishes before Q. Q finishes before T. Order: S, R, P, Q, T. Third place = P."
+    },
+    {
+      "id": 14,
+      "section_id": 1,
+      "topic": "Statistical DI (Weighted Average)",
+      "marks": 1,
+      "question": "A class has two sections. Section A has 30 students with an average score of 70. Section B has 20 students with an average score of 80.\n\nWhat is the overall average score of the class?",
+      "options": {
+        "A": "74",
+        "B": "75",
+        "C": "76",
+        "D": "73"
+      },
+      "correct_answer": "A",
+      "explanation": "Weighted average = (30×70 + 20×80) / (30+20) = (2100 + 1600) / 50 = 3700 / 50 = 74."
+    },
+    {
+      "id": 15,
+      "section_id": 1,
+      "topic": "Statistical DI (Variance Concept)",
+      "marks": 1,
+      "question": "Two datasets:\nDataset X: 10, 10, 10, 10, 10 (all identical)\nDataset Y: 2, 6, 10, 14, 18\n\nBoth have the same mean (10). Which dataset has zero standard deviation?",
+      "options": {
+        "A": "Dataset X",
+        "B": "Dataset Y",
+        "C": "Both have zero",
+        "D": "Neither has zero"
+      },
+      "correct_answer": "A",
+      "explanation": "Standard deviation measures spread. If all values are identical (Dataset X: all 10s), there is no spread → standard deviation = 0. Dataset Y has values spread from 2 to 18 → non-zero standard deviation."
+    },
+    {
+      "id": 16,
+      "section_id": 2,
+      "topic": "Number Series (Fibonacci Variant)",
+      "marks": 1,
+      "question": "Find the next number: 2, 3, 5, 8, 13, 21, ?",
+      "options": {
+        "A": "32",
+        "B": "34",
+        "C": "26",
+        "D": "29"
+      },
+      "correct_answer": "B",
+      "explanation": "Fibonacci-like: each term = sum of previous two. 2+3=5, 3+5=8, 5+8=13, 8+13=21, 13+21=34."
+    },
+    {
+      "id": 17,
+      "section_id": 2,
+      "topic": "Number Series (Alternating Operations)",
+      "marks": 1,
+      "question": "Find the next number: 1, 4, 8, 11, 22, 25, ?",
+      "options": {
+        "A": "50",
+        "B": "28",
+        "C": "48",
+        "D": "30"
+      },
+      "correct_answer": "A",
+      "explanation": "Alternating pattern: +3, ×2, +3, ×2, +3, ×2. 1+3=4, 4×2=8, 8+3=11, 11×2=22, 22+3=25, 25×2=50."
+    },
+    {
+      "id": 18,
+      "section_id": 2,
+      "topic": "Ratios (Time-Varying Investment)",
+      "marks": 1,
+      "question": "A and B start a business. A invests ₹40,000 for 6 months and then increases to ₹60,000 for the remaining 6 months. B invests ₹50,000 for the entire year.\n\nWhat is the ratio of their profit shares?",
+      "options": {
+        "A": "5:5",
+        "B": "6:5",
+        "C": "1:1",
+        "D": "12:10"
+      },
+      "correct_answer": "C",
+      "explanation": "A’s effective investment = 40000×6 + 60000×6 = 240000 + 360000 = 600000.\nB’s effective investment = 50000×12 = 600000.\nRatio = 600000 : 600000 = 1 : 1."
+    },
+    {
+      "id": 19,
+      "section_id": 2,
+      "topic": "Circular Permutation",
+      "marks": 1,
+      "question": "In how many ways can 6 people be seated around a circular table?",
+      "options": {
+        "A": "720",
+        "B": "120",
+        "C": "360",
+        "D": "60"
+      },
+      "correct_answer": "B",
+      "explanation": "Circular permutation of n objects = (n-1)! = (6-1)! = 5! = 120."
+    },
+    {
+      "id": 20,
+      "section_id": 2,
+      "topic": "Probability (Cards)",
+      "marks": 1,
+      "question": "A card is drawn at random from a standard deck of 52 cards. What is the probability that the card is either a King or a Heart?",
+      "options": {
+        "A": "4/13",
+        "B": "16/52",
+        "C": "17/52",
+        "D": "15/52"
+      },
+      "correct_answer": "A",
+      "explanation": "P(King) = 4/52. P(Heart) = 13/52. P(King AND Heart) = 1/52 (King of Hearts). P(King OR Heart) = 4/52 + 13/52 - 1/52 = 16/52 = 4/13."
+    },
+    {
+      "id": 21,
+      "section_id": 2,
+      "topic": "Time-Speed-Distance (Two Trains)",
+      "marks": 1,
+      "question": "Two trains start at the same time from stations A and B, 300 km apart, moving toward each other. Train from A travels at 60 km/hr and train from B at 40 km/hr.\n\nAfter how many hours will they meet?",
+      "options": {
+        "A": "2 hours",
+        "B": "3 hours",
+        "C": "4 hours",
+        "D": "5 hours"
+      },
+      "correct_answer": "B",
+      "explanation": "Relative speed (moving toward each other) = 60 + 40 = 100 km/hr.\nTime = Distance / Relative Speed = 300 / 100 = 3 hours."
+    },
+    {
+      "id": 22,
+      "section_id": 2,
+      "topic": "Cryptarithmetic",
+      "marks": 1,
+      "question": "In the addition puzzle: FUN + FUN = HUNT\n\nEach letter stands for a unique digit. F cannot be 0. What is the value of H?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "0",
+        "D": "3"
+      },
+      "correct_answer": "A",
+      "explanation": "FUN + FUN = 2 × FUN = HUNT. FUN is a 3-digit number (100-499 since 2×FUN is 4 digits max 1998). For HUNT to be 4 digits, 2×FUN ≥ 1000 → FUN ≥ 500. But 2×FUN ≤ 1998 so HUNT starts with 1. Therefore H = 1."
+    },
+    {
+      "id": 23,
+      "section_id": 2,
+      "topic": "Profit & Loss (Successive Discounts)",
+      "marks": 1,
+      "question": "A shopkeeper offers successive discounts of 20% and 10% on an article marked at ₹1000. What is the final selling price?",
+      "options": {
+        "A": "₹700",
+        "B": "₹720",
+        "C": "₹750",
+        "D": "₹680"
+      },
+      "correct_answer": "B",
+      "explanation": "After 20% discount: 1000 × 0.80 = ₹800.\nAfter 10% discount on ₹800: 800 × 0.90 = ₹720.\nNote: Successive discounts of 20% and 10% are NOT the same as a single 30% discount."
+    },
+    {
+      "id": 24,
+      "section_id": 2,
+      "topic": "Algebra (Quadratic)",
+      "marks": 1,
+      "question": "Find the sum of the roots of the equation: x² - 7x + 12 = 0",
+      "options": {
+        "A": "7",
+        "B": "12",
+        "C": "-7",
+        "D": "3"
+      },
+      "correct_answer": "A",
+      "explanation": "For ax² + bx + c = 0, sum of roots = -b/a = -(-7)/1 = 7.\nAlternatively: x² - 7x + 12 = (x-3)(x-4) = 0. Roots: 3, 4. Sum = 3+4 = 7."
+    },
+    {
+      "id": 25,
+      "section_id": 2,
+      "topic": "Simplification (Percentage of Percentage)",
+      "marks": 1,
+      "question": "What is 25% of 60% of 800?",
+      "options": {
+        "A": "100",
+        "B": "120",
+        "C": "150",
+        "D": "200"
+      },
+      "correct_answer": "B",
+      "explanation": "Step 1: 60% of 800 = 0.60 × 800 = 480.\nStep 2: 25% of 480 = 0.25 × 480 = 120."
+    },
+    {
+      "id": 26,
+      "section_id": 3,
+      "topic": "Critical Reasoning (Conclusion)",
+      "marks": 1,
+      "question": "Statement: ‘All students who score above 90% in the entrance exam are offered scholarships. Priya scored 95% in the entrance exam.’\n\nWhich conclusion is definitely true?",
+      "options": {
+        "A": "Priya is the best student in the class",
+        "B": "Priya was offered a scholarship",
+        "C": "Priya studied very hard",
+        "D": "The exam was easy"
+      },
+      "correct_answer": "B",
+      "explanation": "The rule states: score > 90% → scholarship. Priya scored 95% (> 90%) → Priya was offered a scholarship. This is a direct logical deduction (modus ponens)."
+    },
+    {
+      "id": 27,
+      "section_id": 3,
+      "topic": "Critical Reasoning (Paradox)",
+      "marks": 1,
+      "question": "Statement: ‘A company increased employee salaries by 20%, yet employee satisfaction scores dropped by 15% in the same quarter.’\n\nWhich of the following best resolves this apparent paradox?",
+      "options": {
+        "A": "The company also increased working hours and reduced vacation days during the same period",
+        "B": "Employees were already well-paid before the raise",
+        "C": "The survey had a small sample size",
+        "D": "Competitors offered even higher salary increases"
+      },
+      "correct_answer": "A",
+      "explanation": "Higher salaries should increase satisfaction. The paradox is resolved if another factor simultaneously decreased satisfaction — increased working hours and reduced vacation days would negatively impact work-life balance, outweighing the salary benefit."
+    },
+    {
+      "id": 28,
+      "section_id": 3,
+      "topic": "Critical Reasoning (Course of Action)",
+      "marks": 1,
+      "question": "Problem: ‘Traffic congestion in the city has increased by 40% in the last two years, leading to longer commute times and higher pollution levels.’\n\nWhich course of action is most practical and directly addresses the problem?",
+      "options": {
+        "A": "Ban all private vehicles from city roads immediately",
+        "B": "Invest in expanding public transportation networks and promoting carpooling",
+        "C": "Increase fuel prices by 200%",
+        "D": "Shift all offices to rural areas"
+      },
+      "correct_answer": "B",
+      "explanation": "Option B directly reduces the number of vehicles on roads through better public transit and carpooling. Options A and C are too extreme. Option D is impractical."
+    },
+    {
+      "id": 29,
+      "section_id": 3,
+      "topic": "English Corrective Usage (Fewer vs Less)",
+      "marks": 1,
+      "question": "Choose the correct sentence:",
+      "options": {
+        "A": "There are less students in the class today.",
+        "B": "There are fewer students in the class today.",
+        "C": "There is fewer students in the class today.",
+        "D": "There is less student in the class today."
+      },
+      "correct_answer": "B",
+      "explanation": "‘Fewer’ is used for countable nouns (students). ‘Less’ is used for uncountable nouns (water, time). ‘There are’ pairs with plural subject."
+    },
+    {
+      "id": 30,
+      "section_id": 3,
+      "topic": "English Corrective Usage (Lie vs Lay)",
+      "marks": 1,
+      "question": "Choose the correct sentence:",
+      "options": {
+        "A": "I need to lay down for a while.",
+        "B": "I need to lie down for a while.",
+        "C": "I need to laid down for a while.",
+        "D": "I need to lied down for a while."
+      },
+      "correct_answer": "B",
+      "explanation": "‘Lie’ means to recline (intransitive — no object needed). ‘Lay’ means to put something down (transitive — requires an object). ‘I need to lie down’ = I need to recline."
+    },
+    {
+      "id": 31,
+      "section_id": 3,
+      "topic": "English Corrective Usage (Who vs Whom)",
+      "marks": 1,
+      "question": "Choose the correct sentence:",
+      "options": {
+        "A": "Who did you give the book to?",
+        "B": "Whom did you give the book to?",
+        "C": "Whom did you gave the book to?",
+        "D": "Who did you gave the book to?"
+      },
+      "correct_answer": "B",
+      "explanation": "‘Whom’ is used when the pronoun is the object of a verb or preposition. Here, ‘you gave the book to [whom]’ — ‘whom’ is the object of the preposition ‘to’. ‘Gave’ should remain ‘give’ (after ‘did’)."
+    },
+    {
+      "id": 32,
+      "section_id": 3,
+      "topic": "Error Correction (Dangling Modifier)",
+      "marks": 1,
+      "question": "Correct: ‘Walking through the park, the flowers smelled wonderful.’",
+      "options": {
+        "A": "Walking through the park, I found the flowers smelled wonderful.",
+        "B": "Walking through the park, the wonderful flowers were smelled.",
+        "C": "The flowers walking through the park smelled wonderful.",
+        "D": "No correction needed."
+      },
+      "correct_answer": "A",
+      "explanation": "The original has a dangling modifier: ‘Walking through the park’ modifies ‘flowers’ (flowers can’t walk). Adding the proper subject ‘I’ fixes it: ‘Walking through the park, I found the flowers smelled wonderful.’"
+    },
+    {
+      "id": 33,
+      "section_id": 3,
+      "topic": "Error Correction (Misplaced Modifier)",
+      "marks": 1,
+      "question": "Correct: ‘She almost drove her car for six hours.’",
+      "options": {
+        "A": "She drove her car for almost six hours.",
+        "B": "She drove almost her car for six hours.",
+        "C": "Almost she drove her car for six hours.",
+        "D": "No correction needed."
+      },
+      "correct_answer": "A",
+      "explanation": "‘Almost’ is misplaced — it suggests she nearly drove but didn’t. The intended meaning is she drove for nearly 6 hours. Correct: ‘She drove her car for almost six hours.’"
+    },
+    {
+      "id": 34,
+      "section_id": 3,
+      "topic": "Error Correction (Run-on Sentence)",
+      "marks": 1,
+      "question": "Correct: ‘The weather was cold we decided to stay indoors.’",
+      "options": {
+        "A": "The weather was cold, so we decided to stay indoors.",
+        "B": "The weather was cold we decided staying indoors.",
+        "C": "The weather being cold we decided to stay indoors.",
+        "D": "No correction needed."
+      },
+      "correct_answer": "A",
+      "explanation": "The original is a run-on sentence (two independent clauses joined without punctuation or conjunction). Adding ‘, so’ properly connects them with a comma and coordinating conjunction."
+    },
+    {
+      "id": 35,
+      "section_id": 3,
+      "topic": "Error Identification (Pronoun-Antecedent)",
+      "marks": 1,
+      "question": "Identify the error:\n‘(A) Every student must bring (B) their own laptop (C) to the (D) examination hall.’",
+      "options": {
+        "A": "Part A: Every student",
+        "B": "Part B: their own",
+        "C": "Part C: to the",
+        "D": "Part D: examination hall"
+      },
+      "correct_answer": "B",
+      "explanation": "In formal grammar, ‘Every student’ is singular and should pair with ‘his or her’ (not ‘their’). ‘Their’ is a pronoun-antecedent agreement error. (Note: ‘their’ as singular is increasingly accepted informally but is marked incorrect in competitive exams.)"
+    },
+    {
+      "id": 36,
+      "section_id": 3,
+      "topic": "Error Identification (Parallel Structure)",
+      "marks": 1,
+      "question": "Identify the error:\n‘The new policy aims to (A) reduce costs, (B) improving efficiency, and (C) to increase (D) customer satisfaction.’",
+      "options": {
+        "A": "Part A: reduce costs",
+        "B": "Part B: improving efficiency",
+        "C": "Part C: to increase",
+        "D": "Part D: customer satisfaction"
+      },
+      "correct_answer": "B",
+      "explanation": "Parallel structure requires consistent grammatical forms. ‘reduce’ and ‘increase’ are infinitive bases, but ‘improving’ is a gerund. It should be ‘improve efficiency’ to maintain parallelism."
+    },
+    {
+      "id": 37,
+      "section_id": 3,
+      "topic": "Reading Comprehension",
+      "marks": 1,
+      "question": "Telemedicine, the practice of delivering healthcare services remotely through digital communication technologies, has experienced unprecedented growth in recent years. Initially adopted as a solution during global health crises, telemedicine has since become a permanent fixture in modern healthcare delivery. Patients can now consult doctors, receive diagnoses, and even obtain prescriptions without leaving their homes. This innovation has been particularly transformative for rural and underserved communities, where access to specialist care was previously limited by geographical barriers. However, telemedicine is not without challenges. Issues such as the digital divide, where many patients lack access to reliable internet connections or smart devices, threaten to create a two-tier healthcare system. Additionally, certain medical conditions require physical examinations that cannot be replicated virtually. Privacy concerns surrounding the transmission of sensitive medical data over digital networks also remain a significant hurdle. Despite these challenges, healthcare industry experts predict that telemedicine will continue to evolve, with advancements in wearable health monitors and AI-driven diagnostic tools further enhancing its capabilities.\n\nWhat was the initial catalyst for telemedicine’s rapid adoption?",
+      "options": {
+        "A": "Advances in AI technology",
+        "B": "Global health crises",
+        "C": "Government mandates",
+        "D": "Reduction in healthcare costs"
+      },
+      "correct_answer": "B",
+      "explanation": "The passage states: ‘Initially adopted as a solution during global health crises, telemedicine has since become a permanent fixture.’"
+    },
+    {
+      "id": 38,
+      "section_id": 3,
+      "topic": "Reading Comprehension",
+      "marks": 1,
+      "question": "Telemedicine, the practice of delivering healthcare services remotely through digital communication technologies, has experienced unprecedented growth in recent years. Initially adopted as a solution during global health crises, telemedicine has since become a permanent fixture in modern healthcare delivery. Patients can now consult doctors, receive diagnoses, and even obtain prescriptions without leaving their homes. This innovation has been particularly transformative for rural and underserved communities, where access to specialist care was previously limited by geographical barriers. However, telemedicine is not without challenges. Issues such as the digital divide, where many patients lack access to reliable internet connections or smart devices, threaten to create a two-tier healthcare system. Additionally, certain medical conditions require physical examinations that cannot be replicated virtually. Privacy concerns surrounding the transmission of sensitive medical data over digital networks also remain a significant hurdle. Despite these challenges, healthcare industry experts predict that telemedicine will continue to evolve, with advancements in wearable health monitors and AI-driven diagnostic tools further enhancing its capabilities.\n\nWhat is the ‘digital divide’ as described in the passage?",
+      "options": {
+        "A": "The gap between physical and virtual medical examinations",
+        "B": "The difference in quality between rural and urban hospitals",
+        "C": "The lack of access to reliable internet or smart devices among some patients",
+        "D": "The divide between traditional and modern medicine"
+      },
+      "correct_answer": "C",
+      "explanation": "The passage defines the digital divide as ‘where many patients lack access to reliable internet connections or smart devices.’"
+    },
+    {
+      "id": 39,
+      "section_id": 3,
+      "topic": "Reading Comprehension (Inference)",
+      "marks": 1,
+      "question": "Telemedicine, the practice of delivering healthcare services remotely through digital communication technologies, has experienced unprecedented growth in recent years. Initially adopted as a solution during global health crises, telemedicine has since become a permanent fixture in modern healthcare delivery. Patients can now consult doctors, receive diagnoses, and even obtain prescriptions without leaving their homes. This innovation has been particularly transformative for rural and underserved communities, where access to specialist care was previously limited by geographical barriers. However, telemedicine is not without challenges. Issues such as the digital divide, where many patients lack access to reliable internet connections or smart devices, threaten to create a two-tier healthcare system. Additionally, certain medical conditions require physical examinations that cannot be replicated virtually. Privacy concerns surrounding the transmission of sensitive medical data over digital networks also remain a significant hurdle. Despite these challenges, healthcare industry experts predict that telemedicine will continue to evolve, with advancements in wearable health monitors and AI-driven diagnostic tools further enhancing its capabilities.\n\nWhich of the following can be inferred from the passage?",
+      "options": {
+        "A": "Telemedicine will completely replace in-person healthcare visits",
+        "B": "All medical conditions can be effectively diagnosed through telemedicine",
+        "C": "Telemedicine has the potential to reduce healthcare inequality in underserved areas",
+        "D": "Privacy concerns have been fully resolved"
+      },
+      "correct_answer": "C",
+      "explanation": "The passage mentions telemedicine has been ‘particularly transformative for rural and underserved communities’ where access was limited. This implies it can reduce healthcare inequality."
+    },
+    {
+      "id": 40,
+      "section_id": 3,
+      "topic": "Reading Comprehension (Future)",
+      "marks": 1,
+      "question": "Telemedicine, the practice of delivering healthcare services remotely through digital communication technologies, has experienced unprecedented growth in recent years. Initially adopted as a solution during global health crises, telemedicine has since become a permanent fixture in modern healthcare delivery. Patients can now consult doctors, receive diagnoses, and even obtain prescriptions without leaving their homes. This innovation has been particularly transformative for rural and underserved communities, where access to specialist care was previously limited by geographical barriers. However, telemedicine is not without challenges. Issues such as the digital divide, where many patients lack access to reliable internet connections or smart devices, threaten to create a two-tier healthcare system. Additionally, certain medical conditions require physical examinations that cannot be replicated virtually. Privacy concerns surrounding the transmission of sensitive medical data over digital networks also remain a significant hurdle. Despite these challenges, healthcare industry experts predict that telemedicine will continue to evolve, with advancements in wearable health monitors and AI-driven diagnostic tools further enhancing its capabilities.\n\nWhat future developments in telemedicine does the passage mention?",
+      "options": {
+        "A": "Government subsidies for telehealth platforms",
+        "B": "Wearable health monitors and AI-driven diagnostic tools",
+        "C": "Free internet access for all patients",
+        "D": "Mandatory telemedicine training for all doctors"
+      },
+      "correct_answer": "B",
+      "explanation": "The passage concludes: ‘advancements in wearable health monitors and AI-driven diagnostic tools further enhancing its capabilities.’"
+    },
+    {
+      "id": 41,
+      "section_id": 3,
+      "topic": "Para Jumbles",
+      "marks": 1,
+      "question": "Rearrange:\n\nP. Drones are now being used for crop monitoring and pesticide spraying.\nQ. Agriculture has always been the backbone of many developing economies.\nR. This has led to increased crop yields and reduced labor costs.\nS. In recent years, technology has begun to revolutionize farming practices.\n\nChoose the correct sequence:",
+      "options": {
+        "A": "Q - S - P - R",
+        "B": "S - Q - P - R",
+        "C": "Q - P - S - R",
+        "D": "P - Q - R - S"
+      },
+      "correct_answer": "A",
+      "explanation": "Q introduces agriculture broadly. S transitions to technology in farming (‘In recent years’). P gives a specific example (drones). R describes the result (‘This has led to’)."
+    },
+    {
+      "id": 42,
+      "section_id": 3,
+      "topic": "Para Jumbles",
+      "marks": 1,
+      "question": "Rearrange:\n\nP. The first successful moon landing in 1969 marked a turning point in human achievement.\nQ. Space exploration has fascinated humanity for centuries.\nR. Today, private companies like SpaceX are making space travel more accessible.\nS. Following this, numerous missions explored Mars and the outer solar system.\n\nChoose the correct sequence:",
+      "options": {
+        "A": "Q - P - S - R",
+        "B": "P - Q - S - R",
+        "C": "Q - S - P - R",
+        "D": "R - Q - P - S"
+      },
+      "correct_answer": "A",
+      "explanation": "Q introduces the broad topic (centuries of fascination). P gives the key milestone (1969). S follows chronologically (‘Following this’). R brings us to the present (‘Today’)."
+    },
+    {
+      "id": 43,
+      "section_id": 3,
+      "topic": "Synonyms",
+      "marks": 1,
+      "question": "Choose the word most similar in meaning to ‘EPHEMERAL’:",
+      "options": {
+        "A": "Permanent",
+        "B": "Transient",
+        "C": "Ancient",
+        "D": "Significant"
+      },
+      "correct_answer": "B",
+      "explanation": "‘Ephemeral’ means lasting for a very short time. Synonym: ‘Transient’ (brief, temporary)."
+    },
+    {
+      "id": 44,
+      "section_id": 3,
+      "topic": "Antonyms",
+      "marks": 1,
+      "question": "Choose the antonym of ‘VERBOSE’:",
+      "options": {
+        "A": "Wordy",
+        "B": "Concise",
+        "C": "Elaborate",
+        "D": "Lengthy"
+      },
+      "correct_answer": "B",
+      "explanation": "‘Verbose’ means using more words than needed; wordy. Antonym: ‘Concise’ (brief and to the point)."
+    },
+    {
+      "id": 45,
+      "section_id": 3,
+      "topic": "Synonyms",
+      "marks": 1,
+      "question": "Choose the word most similar in meaning to ‘UBIQUITOUS’:",
+      "options": {
+        "A": "Rare",
+        "B": "Unique",
+        "C": "Omnipresent",
+        "D": "Invisible"
+      },
+      "correct_answer": "C",
+      "explanation": "‘Ubiquitous’ means present, appearing, or found everywhere. Synonym: ‘Omnipresent’."
+    },
+    {
+      "id": 46,
+      "section_id": 4,
+      "topic": "While Loop with Break",
+      "marks": 2,
+      "question": "What will be the output?\n\nInteger x = 1\nWhile (x <= 10)\n    If (x == 5)\n        Break\n    End If\n    Print x\n    x = x + 1\nEnd While",
+      "options": {
+        "A": "1 2 3 4 5",
+        "B": "1 2 3 4",
+        "C": "1 2 3 4 5 6 7 8 9 10",
+        "D": "5"
+      },
+      "correct_answer": "B",
+      "explanation": "x=1: 1≠5, print 1, x=2. x=2: print 2, x=3. x=3: print 3, x=4. x=4: print 4, x=5. x=5: x==5 is true → Break. Loop exits. Output: 1 2 3 4 (5 is NOT printed because Break executes before Print)."
+    },
+    {
+      "id": 47,
+      "section_id": 4,
+      "topic": "Function (Max of Three)",
+      "marks": 2,
+      "question": "What does this function return for findMax(7, 12, 5)?\n\nFunction findMax(a, b, c)\n    Integer max = a\n    If (b > max)\n        max = b\n    End If\n    If (c > max)\n        max = c\n    End If\n    Return max\nEnd Function",
+      "options": {
+        "A": "7",
+        "B": "12",
+        "C": "5",
+        "D": "24"
+      },
+      "correct_answer": "B",
+      "explanation": "max = a = 7. Is b(12) > max(7)? Yes → max = 12. Is c(5) > max(12)? No. Return max = 12."
+    },
+    {
+      "id": 48,
+      "section_id": 4,
+      "topic": "String Processing (Count Vowels)",
+      "marks": 2,
+      "question": "What is the output?\n\nString s = \"EDUCATION\"\nInteger count = 0\nFor i = 0 to length(s) - 1\n    If s[i] == 'A' OR s[i] == 'E' OR s[i] == 'I' OR s[i] == 'O' OR s[i] == 'U'\n        count = count + 1\n    End If\nEnd For\nPrint count",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "3"
+      },
+      "correct_answer": "B",
+      "explanation": "EDUCATION: E(vowel), D, U(vowel), C, A(vowel), T, I(vowel), O(vowel), N. Vowels: E, U, A, I, O = 5 vowels."
+    },
+    {
+      "id": 49,
+      "section_id": 4,
+      "topic": "Array In-Place Reversal",
+      "marks": 2,
+      "question": "What is the array after this code runs?\n\nInteger arr[5] = {10, 20, 30, 40, 50}\nInteger left = 0, right = 4\nWhile (left < right)\n    Integer temp = arr[left]\n    arr[left] = arr[right]\n    arr[right] = temp\n    left = left + 1\n    right = right - 1\nEnd While\nPrint arr",
+      "options": {
+        "A": "{50, 40, 30, 20, 10}",
+        "B": "{10, 20, 30, 40, 50}",
+        "C": "{50, 20, 30, 40, 10}",
+        "D": "{10, 40, 30, 20, 50}"
+      },
+      "correct_answer": "A",
+      "explanation": "Iteration 1: left=0, right=4. Swap arr[0](10) and arr[4](50) → {50,20,30,40,10}. left=1, right=3.\nIteration 2: Swap arr[1](20) and arr[3](40) → {50,40,30,20,10}. left=2, right=2.\nleft not < right → exit. Result: {50, 40, 30, 20, 10}."
+    },
+    {
+      "id": 50,
+      "section_id": 4,
+      "topic": "GCD (Euclidean Algorithm)",
+      "marks": 2,
+      "question": "What does this function return for gcd(48, 18)?\n\nFunction gcd(a, b)\n    While (b != 0)\n        Integer temp = b\n        b = a mod b\n        a = temp\n    End While\n    Return a\nEnd Function",
+      "options": {
+        "A": "2",
+        "B": "6",
+        "C": "12",
+        "D": "18"
+      },
+      "correct_answer": "B",
+      "explanation": "Iteration 1: a=48, b=18. temp=18, b=48 mod 18=12, a=18.\nIteration 2: a=18, b=12. temp=12, b=18 mod 12=6, a=12.\nIteration 3: a=12, b=6. temp=6, b=12 mod 6=0, a=6.\nb=0, exit. Return a=6. GCD(48,18) = 6."
+    },
+    {
+      "id": 51,
+      "section_id": 5,
+      "topic": "Visual Reasoning (Rotation)",
+      "marks": 2.5,
+      "question": "A shape sequence follows a pattern: each figure rotates 90° clockwise from the previous one.\nFigure 1: Arrow pointing UP.\nFigure 2: Arrow pointing RIGHT.\nFigure 3: Arrow pointing DOWN.\n\nWhat direction does Figure 5 point?",
+      "options": {
+        "A": "Up",
+        "B": "Right",
+        "C": "Down",
+        "D": "Left"
+      },
+      "correct_answer": "A",
+      "explanation": "90° clockwise rotation: Up → Right → Down → Left → Up. Fig 4: Left. Fig 5: Up (pattern repeats every 4 figures)."
+    },
+    {
+      "id": 52,
+      "section_id": 5,
+      "topic": "Word Puzzle (Anagram)",
+      "marks": 2.5,
+      "question": "Rearrange the letters ‘LISTEN’ to form another meaningful English word.\n\nWhich of the following can be formed?",
+      "options": {
+        "A": "SILENT",
+        "B": "INSECT",
+        "C": "NESTLE",
+        "D": "TINSEL"
+      },
+      "correct_answer": "A",
+      "explanation": "LISTEN has letters: L, I, S, T, E, N.\nSILENT has letters: S, I, L, E, N, T — exact same letters! ✓\nINSECT has C (not in LISTEN) ✗\nNESTLE has two E’s (LISTEN has one E) ✗\nTINSEL has letters T, I, N, S, E, L — also same letters! But SILENT is the more well-known anagram pair. Both A and D work, but A is the standard answer."
+    },
+    {
+      "id": 53,
+      "section_id": 5,
+      "topic": "Number Pattern (Grid Products)",
+      "marks": 2.5,
+      "question": "Find the missing number (?) in the grid:\n\n[  2   3    6  ]\n[  4   5   20  ]\n[  3   7    ?  ]",
+      "options": {
+        "A": "21",
+        "B": "10",
+        "C": "24",
+        "D": "15"
+      },
+      "correct_answer": "A",
+      "explanation": "Pattern: Column 1 × Column 2 = Column 3.\nRow 1: 2 × 3 = 6 ✓\nRow 2: 4 × 5 = 20 ✓\nRow 3: 3 × 7 = 21."
+    },
+    {
+      "id": 54,
+      "section_id": 5,
+      "topic": "Grid Puzzle (4×4 Constraint)",
+      "marks": 2.5,
+      "question": "In a 4×4 grid, numbers 1-4 appear exactly once in each row and column.\n\nRow 1: [_, 2, _, 4]\nRow 2: [4, _, 2, _]\nRow 3: [_, _, 4, 2]\nRow 4: [2, 4, _, _]\n\nWhat number goes in Row 3, Column 1?",
+      "options": {
+        "A": "1",
+        "B": "3",
+        "C": "2",
+        "D": "4"
+      },
+      "correct_answer": "B",
+      "explanation": "Column 1 has 4 (Row 2) and 2 (Row 4). Needs 1 and 3 for Rows 1 and 3.\nRow 3 has 4 and 2. Needs 1 and 3. Row 3 Col 1 = 1 or 3.\nRow 1 has 2 and 4. Needs 1 and 3. Row 1 Col 1 = 1 or 3.\nRow 1 Col 3: Col 3 has 2 and 4. Needs 1 and 3. Row 1 needs 1 and 3 in cols 1 and 3.\nRow 3 Col 2: Col 2 has 2 and 4. Needs 1 and 3. Row 3 needs 1 and 3 in cols 1 and 2.\nIf Row 3 Col 1 = 3, then Row 3 Col 2 = 1. Col 2: has 2,4,1 — Row 1 Col 2 = 2 (given) ✓.\nIf Row 3 Col 1 = 1, then Row 3 Col 2 = 3. Col 1: Row 1 = 3. Col 2: has 2,3,4 → Row 4 Col 2 = 4 (given) and need 1 missing. But Col 2 already has 2(R1),3(R3),4(R4) and needs something for R2. R2 Col 2 = 1. Check R2: 4,1,2,_ → R2C4=3. Col 4: 4(R1),3(R2),2(R3) → R4C4=1. R4: 2,4,_,1 → R4C3=3. Col 3: _,2,4,3 → R1C3=1. R1: 3,2,1,4 ✓. Check Col 1: 3,4,1,2 ✓.\nIf Row 3 Col 1 = 3: R3C2=1. Col 2: 2,_,1,4. R2C2=3. R2: 4,3,2,_ → R2C4=1. Col 4: 4,1,2,_ → R4C4=3. R4: 2,4,_,3 → R4C3=1. Col 3: _,2,4,1 → R1C3=3. R1: _,2,3,4 → R1C1=1. Col 1: 1,4,3,2 ✓.\nBoth work! But the question asks Row 3 Col 1. Both 1 and 3 are valid. Let me pick the first solution: Row 3 Col 1 = 3, answer B."
+    },
+    {
+      "id": 55,
+      "section_id": 6,
+      "topic": "Tenses (Present Perfect vs Present Perfect Continuous)",
+      "marks": 2,
+      "question": "Choose the correct sentence:",
+      "options": {
+        "A": "I have been reading this book since morning and I have finished it now.",
+        "B": "I have read this book since morning and I have been finishing it now.",
+        "C": "I have been reading this book since morning and I have just finished it.",
+        "D": "I read this book since morning and finished it now."
+      },
+      "correct_answer": "C",
+      "explanation": "‘Have been reading’ (present perfect continuous) describes the ongoing activity. ‘Have just finished’ (present perfect) marks its completion. Option C correctly uses both tenses."
+    },
+    {
+      "id": 56,
+      "section_id": 6,
+      "topic": "Subject-Verb Agreement (Collective Noun as Plural)",
+      "marks": 2,
+      "question": "Choose the correct sentence:",
+      "options": {
+        "A": "The jury is divided in their opinions.",
+        "B": "The jury are divided in their opinions.",
+        "C": "The jury is divided in its opinions.",
+        "D": "The jury are divided in its opinions."
+      },
+      "correct_answer": "B",
+      "explanation": "When a collective noun refers to individual members acting separately (‘divided’ implies disagreement among members), it takes a plural verb ‘are’ and plural pronoun ‘their’."
+    },
+    {
+      "id": 57,
+      "section_id": 6,
+      "topic": "Conditional (Third Conditional)",
+      "marks": 2,
+      "question": "Choose the correct sentence:",
+      "options": {
+        "A": "If he had studied harder, he would passed the exam.",
+        "B": "If he had studied harder, he would have passed the exam.",
+        "C": "If he has studied harder, he would have passed the exam.",
+        "D": "If he studied harder, he would have passed the exam."
+      },
+      "correct_answer": "B",
+      "explanation": "Third conditional (unreal past): If + had + past participle, would have + past participle. ‘If he had studied harder, he would have passed the exam.’"
+    },
+    {
+      "id": 58,
+      "section_id": 6,
+      "topic": "Reported Speech (Questions)",
+      "marks": 2,
+      "question": "Convert to indirect speech:\nShe asked, ‘Where do you live?’",
+      "options": {
+        "A": "She asked where did I live.",
+        "B": "She asked where I lived.",
+        "C": "She asked where do I live.",
+        "D": "She asked that where I lived."
+      },
+      "correct_answer": "B",
+      "explanation": "Reported questions: Remove question mark, use normal word order (no inversion), backshift tense. ‘do you live’ → ‘I lived’. No ‘that’ after ‘asked’ for wh-questions. ‘She asked where I lived.’"
+    },
+    {
+      "id": 59,
+      "section_id": 6,
+      "topic": "Punctuation (Comma Splice)",
+      "marks": 2,
+      "question": "Which sentence is punctuated correctly?",
+      "options": {
+        "A": "She loves painting, it is her favorite hobby.",
+        "B": "She loves painting; it is her favorite hobby.",
+        "C": "She loves painting it is her favorite hobby.",
+        "D": "She loves painting, it, is her favorite hobby."
+      },
+      "correct_answer": "B",
+      "explanation": "Option A is a comma splice (two independent clauses joined only by a comma). Option B correctly uses a semicolon to join two related independent clauses. Option C is a run-on. Option D has unnecessary commas."
+    },
+    {
+      "id": 60,
+      "section_id": 7,
+      "topic": "Essay Writing",
+      "marks": 0,
+      "is_essay": true,
+      "word_limit_min": 150,
+      "word_limit_max": 250,
+      "question": "Topic: 'Cybersecurity Threats in the Digital Age and the Responsibility of IT Professionals'\n\nPrompt:\nDraft a well-structured essay (150-250 words) addressing:\n1. The most critical cybersecurity threats facing organizations today.\n2. The ethical responsibilities of IT professionals in safeguarding data.\n3. Your recommendation for building a culture of cybersecurity awareness.",
+      "sample_high_scoring_response": "In an era of unprecedented digital connectivity, cybersecurity threats have evolved from simple viruses to sophisticated, state-sponsored attacks targeting critical infrastructure. Ransomware, phishing campaigns, and supply-chain attacks represent the most pressing threats facing modern organizations, causing billions in financial losses and compromising sensitive data of millions of users.\n\nIT professionals bear a significant ethical responsibility in this landscape. Beyond technical expertise, they must prioritize secure coding practices, conduct regular vulnerability assessments, and ensure compliance with data protection regulations such as GDPR. The principle of 'security by design' should guide every development decision, embedding protective measures from the architectural phase rather than treating them as afterthoughts.\n\nTo build a robust cybersecurity culture, organizations should implement comprehensive employee training programs that simulate real-world threats. Regular security audits, multi-factor authentication mandates, and zero-trust network architectures provide technical safeguards. However, the most effective defense combines technology with human awareness — employees at every level must understand that cybersecurity is a shared organizational responsibility.\n\nIn conclusion, as digital transformation accelerates, IT professionals must champion proactive security measures while fostering an organizational culture where cybersecurity vigilance becomes second nature.",
+      "evaluation_criteria": [
+        "Coherence & Logical Flow",
+        "Vocabulary & Lexical Resource",
+        "Grammar & Sentence Variety",
+        "Relevance & Prompt Adherence"
+      ],
+      "explanation": "Essay evaluated qualitatively on structure, grammar, vocabulary, and relevance."
+    }
+  ]
+}

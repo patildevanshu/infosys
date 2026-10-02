@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infosys SE Mock Test — 2027 Batch | Multi-Test Assessment Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="all_tests.js" onerror="document.getElementById('test-cards-container').innerHTML='<p style=color:red>Error loading test data. Please refresh.</p>'"></script>
+  <style>
+    /* Test Selection Screen */
+    .selection-screen {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 50%, #f8fafc 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .selection-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .selection-header .logo-badge-lg {
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.5rem;
+      padding: 0.6rem 1.5rem;
+      border-radius: var(--radius-md);
+      display: inline-block;
+      margin-bottom: 1rem;
+      letter-spacing: 1px;
+    }
+    .selection-header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--secondary);
+      margin-bottom: 0.5rem;
+    }
+    .selection-header p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .test-cards-container {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 900px;
+    }
+    .test-card {
+      background: #ffffff;
+      border: 2px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      width: 380px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+    .test-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    .test-card .card-badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.4rem 1rem;
+      border-bottom-left-radius: var(--radius-md);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .test-card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 0.75rem;
+      padding-right: 80px;
+    }
+    .test-card .card-description {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+    }
+    .test-card .card-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+    .stat-item {
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 0.5rem 0.7rem;
+      text-align: center;
+    }
+    .stat-item .stat-val {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .stat-item .stat-label {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    .btn-start-test {
+      width: 100%;
+      padding: 0.8rem;
+      background: var(--primary);
+      color: #ffffff;
+      border: none;
+      border-radius: var(--radius-md);
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-start-test:hover {
+      background: var(--primary-hover);
+    }
+    .selection-footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== TEST SELECTION SCREEN ==================== -->
+  <div class="selection-screen" id="selection-screen">
+    <div class="selection-header">
+      <div class="logo-badge-lg">Infosys</div>
+      <h1>Systems Engineer (SE) — Mock Test Platform</h1>
+      <p>2027 Batch Pattern • PYQ-Based • 7 Sections • Section Timers • Detailed Results & Mistake Analysis</p>
+    </div>
+
+    <div class="test-cards-container" id="test-cards-container">
+      <!-- Cards rendered dynamically -->
+    </div>
+
+    <div class="selection-footer">
+      <p>📝 Each test has <strong>60 unique questions</strong> • No questions are repeated between tests</p>
+      <p>⏱️ Total Duration: 120 Minutes per test • Section-wise auto-advancing timers</p>
+    </div>
+  </div>
+
+  <!-- ==================== EXAM SCREEN (Hidden Initially) ==================== -->
+
+  <header class="app-header" id="app-header" style="display: none;">
+    <div class="brand-section">
+      <div class="logo-badge">Infosys</div>
+      <div class="brand-title">
+        <h1 id="header-test-title">Systems Engineer (SE) — 2027 Batch Mock Assessment</h1>
+        <p>Updated Syllabus Pattern • 7 Sections • 60 Questions • 120 Minutes • PYQ-Based</p>
+      </div>
+    </div>
+    <div class="timer-section" id="timer-section">
+      <button class="btn btn-outline" onclick="backToSelection()" style="margin-right:0.5rem; font-size:0.8rem;">← Back to Tests</button>
+      <div class="timer-box section-timer" id="section-timer-box">
+        <div class="timer-label">Section Time Left</div>
+        <div class="timer-value" id="section-timer-val">25:00</div>
+      </div>
+      <div class="timer-box total-timer">
+        <div class="timer-label">Total Exam Left</div>
+        <div class="timer-value" id="total-timer-val">02:00:00</div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="section-nav-bar" id="section-nav-bar" style="display: none;"></nav>
+
+  <main class="main-container" id="exam-layout" style="display: none;">
+    <section class="question-area">
+      <div class="q-header">
+        <div class="q-title-group">
+          <span class="q-number-pill" id="q-number-pill">Q 1 of 15</span>
+          <span class="q-topic-tag" id="q-topic-tag">Reasoning • Syllogism</span>
+        </div>
+        <span class="q-marks-pill" id="q-marks-pill">+1 Mark</span>
+      </div>
+      <div class="q-body" id="q-body">Loading...</div>
+      <div class="options-list" id="options-area"></div>
+      <div class="essay-container" id="essay-area" style="display: none;">
+        <div class="essay-meta-bar">
+          <span>Target Word Count: <strong>150 - 250 Words</strong></span>
+          <span id="essay-word-count">0 / 150-250 words</span>
+        </div>
+        <textarea id="essay-textarea" class="essay-textarea" placeholder="Type your response here..."></textarea>
+      </div>
+      <footer class="q-footer">
+        <div class="left-actions">
+          <button class="btn btn-outline" id="btn-prev">← Previous</button>
+          <button class="btn btn-warning" id="btn-review-next">Mark for Review & Next</button>
+          <button class="btn btn-outline" id="btn-clear">Clear Response</button>
+        </div>
+        <div class="right-actions">
+          <button class="btn btn-primary" id="btn-save-next">Save & Next →</button>
+        </div>
+      </footer>
+    </section>
+    <aside class="sidebar-palette">
+      <div class="palette-header"><h3>Question Palette</h3></div>
+      <div class="legend-grid">
+        <div class="legend-item"><span class="status-dot dot-answered"></span><span>Answered (<strong id="count-answered">0</strong>)</span></div>
+        <div class="legend-item"><span class="status-dot dot-review"></span><span>Marked Review (<strong id="count-review">0</strong>)</span></div>
+        <div class="legend-item"><span class="status-dot dot-unanswered"></span><span>Not Answered (<strong id="count-unanswered">1</strong>)</span></div>
+        <div class="legend-item"><span class="status-dot dot-unvisited"></span><span>Not Visited (<strong id="count-unvisited">59</strong>)</span></div>
+      </div>
+      <div class="q-grid" id="q-grid"></div>
+      <div class="submit-test-box">
+        <button class="btn-full-submit" id="btn-submit-test-sidebar">Submit Assessment</button>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Submit Modal -->
+  <div class="modal-overlay" id="submit-modal" style="display: none;">
+    <div class="modal-content">
+      <h2>Submit Online Assessment?</h2>
+      <p>Once submitted, your answers will be evaluated immediately with a full performance report and mistake analysis.</p>
+      <div class="modal-actions">
+        <button class="btn btn-outline" id="modal-cancel-btn">Return to Test</button>
+        <button class="btn btn-danger" id="modal-confirm-btn">Yes, Final Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results Dashboard -->
+  <div class="results-container" id="results-dashboard" style="display: none;">
+    <div class="scorecard-banner">
+      <div class="score-stats">
+        <h2>Assessment Performance Scorecard</h2>
+        <p id="results-subtitle">Infosys SE — 2027 Batch Pattern • PYQ-Based Benchmark Evaluation</p>
+      </div>
+      <div class="score-circle-group">
+        <div class="metric-card"><div class="metric-val" id="res-total-score">0 / 75</div><div class="metric-label">Total Score</div></div>
+        <div class="metric-card"><div class="metric-val" id="res-percent">0%</div><div class="metric-label">Percentage</div></div>
+        <div class="metric-card"><div class="metric-val" id="res-verdict">PENDING</div><div class="metric-label">Infosys Cutoff Verdict</div></div>
+      </div>
+    </div>
+    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+      <div style="flex:1; background:#fff; padding:1rem; border-radius:8px; border:1px solid #e2e8f0; text-align:center;">
+        <span style="color:#10b981; font-size:1.6rem; font-weight:800;" id="res-correct-count">0</span>
+        <div style="font-size:0.8rem; color:#64748b; font-weight:600;">CORRECT</div>
+      </div>
+      <div style="flex:1; background:#fff; padding:1rem; border-radius:8px; border:1px solid #e2e8f0; text-align:center;">
+        <span style="color:#ef4444; font-size:1.6rem; font-weight:800;" id="res-incorrect-count">0</span>
+        <div style="font-size:0.8rem; color:#64748b; font-weight:600;">MISTAKES</div>
+      </div>
+      <div style="flex:1; background:#fff; padding:1rem; border-radius:8px; border:1px solid #e2e8f0; text-align:center;">
+        <span style="color:#94a3b8; font-size:1.6rem; font-weight:800;" id="res-unanswered-count">0</span>
+        <div style="font-size:0.8rem; color:#64748b; font-weight:600;">UNATTEMPTED</div>
+      </div>
+    </div>
+    <div class="section-breakdown-card">
+      <h3>Section-Wise Performance & Cutoff Analysis</h3>
+      <table class="breakdown-table">
+        <thead><tr><th>Section Name</th><th>Questions</th><th>Correct</th><th>Incorrect</th><th>Unattempted</th><th>Score</th><th>Accuracy %</th><th>Cutoff Verdict (65%+)</th></tr></thead>
+        <tbody id="section-breakdown-tbody"></tbody>
+      </table>
+    </div>
+    <div class="section-breakdown-card">
+      <div class="review-header">
+        <h3>Question-Wise Solutions & Mistakes Breakdown</h3>
+        <div class="review-filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Questions (60)</button>
+          <button class="filter-btn" data-filter="incorrect">Mistakes Only</button>
+          <button class="filter-btn" data-filter="correct">Correct Only</button>
+          <button class="filter-btn" data-filter="unanswered">Unattempted</button>
+        </div>
+      </div>
+      <div id="review-list-container"></div>
+    </div>
+    <div style="display:flex; justify-content:center; gap:1rem; margin-top:2rem; margin-bottom:3rem;">
+      <button class="btn btn-outline" onclick="window.print()">🖨️ Print / Save PDF</button>
+      <button class="btn btn-primary" onclick="backToSelection()">🏠 Back to Test Selection</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    // Fallback: ensure test cards render even if DOMContentLoaded already fired
+    (function() {
+      console.log('[DEBUG] ALL_TESTS loaded:', typeof window.ALL_TESTS !== 'undefined');
+      if (window.ALL_TESTS) {
+        console.log('[DEBUG] Tests count:', window.ALL_TESTS.tests.length);
+        console.log('[DEBUG] Test 1 questions:', window.ALL_TESTS.tests[0].questions.length);
+        console.log('[DEBUG] Test 2 questions:', window.ALL_TESTS.tests[1].questions.length);
+      }
+      const container = document.getElementById('test-cards-container');
+      if (container && container.children.length === 0 && window.ALL_TESTS) {
+        console.log('[DEBUG] Cards empty, re-rendering...');
+        renderTestCards();
+      }
+    })();
+  </script>
+</body>
+</html>
