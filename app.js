@@ -49,26 +49,31 @@ function renderTestCards() {
 
   container.innerHTML = '';
   tests.forEach((test, idx) => {
+    const difficultyLabel = { 4: ' 🔥 Advanced', 5: ' 💀 Expert' };
     const topicHighlights = {
       0: 'Syllogisms, Data Sufficiency, Coding-Decoding, Number Series, Ratios, P&C, RC Passage (IoT), Critical Reasoning, Bubble Sort',
       1: 'Seating Arrangements, Blood Relations, Mixture Problems, Probability, Boats & Streams, RC Passage (Climate Change), Recursion, Binary Search, Magic Square',
       2: 'Fibonacci Series, Reverse Alphabet Coding, Two Rows Seating, RC Passage (Telemedicine), Fewer/Less, Lie/Lay, GCD Algorithm, Array Reversal, Cybersecurity Essay',
-      3: 'Prime Series, Alligation, Derangement, Shadow Direction, RC Passage (Blockchain), Affect/Effect, Its/It\'s, Stack Operations, Fibonacci Pseudocode, Digital Privacy Essay'
+      3: 'Prime Series, Alligation, Derangement, Shadow Direction, RC Passage (Blockchain), Affect/Effect, Stack Operations, Fibonacci Pseudocode, Digital Privacy Essay',
+      4: '🔥 HARD: Trap DS (x²=4 puzzle), 4-statement Syllogisms, 10-person Circular Seating, Tower of Hanoi, RC (Cognitive Biases & Behavioral Economics), OBFUSCATE/MAGNANIMOUS vocab, Inverted Conditionals, Quantum Computing Essay',
+      5: '💀 EXPERT: DS where NEITHER stmt is sufficient, 3-set Venn Diagram, 2¹⁰⁰ mod 7 (cyclicity), XOR missing number, Geometric Probability, RC (Neuroplasticity & TBI), SANCTION/CLEAVE dual-meaning vocab, AI Existential Risk Essay'
     };
 
     const card = document.createElement('div');
     card.className = 'test-card';
+    if (idx === 4) card.style.borderColor = '#f59e0b';
+    if (idx === 5) card.style.borderColor = '#ef4444';
     card.innerHTML = `
-      <div class="card-badge">Test ${idx + 1}</div>
+      <div class="card-badge" style="${idx===4?'background:#f59e0b':idx===5?'background:#ef4444':''}">Test ${idx + 1}${difficultyLabel[idx] || ''}</div>
       <h2>${test.test_title || `Infosys SE Mock Test ${idx + 1}`}</h2>
       <p class="card-description">${topicHighlights[idx] || 'Full-length assessment covering all 7 sections with unique PYQ-based questions.'}</p>
       <div class="card-stats">
         <div class="stat-item"><div class="stat-val">${test.total_questions || 60}</div><div class="stat-label">Questions</div></div>
         <div class="stat-item"><div class="stat-val">${test.total_marks || 75}</div><div class="stat-label">Total Marks</div></div>
-        <div class="stat-item"><div class="stat-val">${test.sections ? test.sections.length : 7}</div><div class="stat-label">Sections</div></div>
+        <div class="stat-item"><div class="stat-val">${idx >= 4 ? '⚠️ Hard' : 'Normal'}</div><div class="stat-label">Difficulty</div></div>
         <div class="stat-item"><div class="stat-val">${test.total_duration_minutes || 120} min</div><div class="stat-label">Duration</div></div>
       </div>
-      <button class="btn-start-test" onclick="startTest(${idx})">▶ Start Mock Test ${idx + 1}</button>
+      <button class="btn-start-test" style="${idx===4?'background:#f59e0b':idx===5?'background:#ef4444':''}" onclick="startTest(${idx})">▶ Start Mock Test ${idx + 1}${difficultyLabel[idx] || ''}</button>
     `;
     container.appendChild(card);
   });
